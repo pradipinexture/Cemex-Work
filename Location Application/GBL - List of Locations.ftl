@@ -1022,7 +1022,7 @@ function uploadFileToFolder(folderId, file, callback) {
 
    var xhr = new XMLHttpRequest();
    xhr.open('POST', '/api/jsonws/dlapp/add-file-entry', true);
-   xhr.setRequestHeader('Authorization', 'Basic bWFub2ouZ29oZWxAZXh0LmNlbWV4LmNvbTpDZW1leDEyMzQ1Ng==');
+   xhr.setRequestHeader('Authorization', 'Basic sfsdfsdfsdf');
 
    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
