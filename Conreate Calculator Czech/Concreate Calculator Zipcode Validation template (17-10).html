@@ -1,0 +1,322 @@
+<style>
+    .suggestion-container {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+        margin: 5px 0 5px 49%;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .grey-image {
+        filter: grayscale(100%);
+    }
+    .new-element img {
+        width: 250px;
+        height: 170px;
+        border-radius: 7px;
+        border: 1px solid #ccc;
+    }
+    .drop-message{
+        color: #003876;
+        font-weight: 400;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+</style>
+
+<script>
+$(document).ready(function() {
+    $('body').on('click', function() { $('.suggestion-container').hide(); });
+    
+    let count = 0;
+    let interval;
+
+    if (!interval) {
+        interval = setInterval(function() {
+            count++;
+
+            if(count == 5)clearInterval(interval); 
+            $("[id*='PSČ']").attr("disabled", true);
+        }, 1000);
+    }
+    
+    var timeoutId;
+    
+    $(document).on("keyup", ".form-control[id*='AdresaStavby']", function() {
+        var inputValue = $(this).val().trim();
+        $(".suggestion-container").show().empty();
+        $(".suggestion-container").html("<div class='loader'></div>");
+
+        $("[id*='PSČ']").val("").attr("disabled", true);
+        
+        // Clear any previously set timeouts to avoid unnecessary API calls
+        clearTimeout(timeoutId)
+        
+        timeoutId = setTimeout(function () {
+            const vatEndpoint = "https://api.mapy.cz/v1/suggest";
+            $.ajax({
+                url: vatEndpoint + "?lang=cs" + "&apikey=05iurSVgM4tRio7uAQRgnHNpIK4FoXDdJ8jcBHm-n6E" + "&query=" + inputValue + "&limit=5",
+                type: "GET",
+                success: function(response) {
+                    var items = response.items;
+                    var parentOfGenAddress = $(".form-control[id*='AdresaStavby']").parent();
+                    
+                    var addrSuggestionContainer = $(".suggestion-container");
+                    
+                    // Check if the suggestion container exists, and if not, create it
+                    if ($(".suggestion-container").length === 0) {
+                        parentOfGenAddress.append("<div class='suggestion-container'></div>");
+                        $(".suggestion-container").hide();
+                    }
+                    $(".suggestion-container").empty();
+                    if(!items || items.length == 0) {
+                        addrSuggestionContainer.html('<p class="list-group-item list-group-item-action py-1">No results found.</p>')
+                    } else if (items && Array.isArray(items)) {
+                        for (var i = 0; i < items.length; i++) {
+                                    var itemText = items[i].name + ', ' + items[i].location;
+
+                            var itemElement = '<a class="list-group-item list-group-item-action py-1" ' + 'name="' + (items[i].name || '') + '" locationname="' + (items[i].location || '') + '" ' + 'zipValues="' + (items[i].zip || '') + '">' + itemText  + '</a>';
+                            addrSuggestionContainer.append(itemElement);
+                        }
+                    }
+                }
+            });
+        }, 50);
+    });
+
+
+     $(document).on("mousedown", "div.suggestion-container a", function(event) {
+        event.stopPropagation();
+
+        // Fill the selected values in the corresponding input fields using attribute selectors
+        $("[id*='AdresaStavby']").val($(this).attr("name") + ', ' + $(this).attr("locationname"));
+        var selectedZipCode = $(this).attr("zipValues");
+        if(selectedZipCode) {
+            $("[id*='PSČ']").val(selectedZipCode);            
+            $("[id*='PSČ']").attr("disabled", true);
+            $('[id*="PSČ"]').parent().parent().removeClass("has-error").find(".error-message").addClass('hide').prop('hidden', true).css('display', 'none').text("");
+        } else {
+            $("[id*='PSČ']").attr("disabled", false);
+        }
+
+        // Additional logic or actions after selecting a suggestion
+        $('.suggestion-container').empty();
+    });
+
+    async function validateZipCode(zipCode) {
+        try {
+            const response = await fetch("https://app.zipcodebase.com/api/v1/search?apikey=dabedd20-8c59-11ef-83b8-bf77ea0917a1&codes=" + zipCode + "&country=CZ");
+            if (!response.ok) throw new Error('Network response was not ok');
+            
+            const data = await response.json();
+            return !!data.results?.[zipCode]?.length;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function showError(message) {
+        $('[id*="PSČ"]').parent().parent().addClass("has-error").find(".error-message").removeClass('hide').prop('hidden', false).css('display', 'block').text(message); 
+    }
+
+    function clearError() {
+        $('[id*="PSČ"]').parent().parent().removeClass("has-error").find(".error-message").addClass('hide').prop('hidden', true).css('display', 'none').text("");
+    }
+    
+    $(document).on("blur", '[id*="PSČ"]', async function() {
+        var pscValue = $(this).val();
+        try {
+            const isValid = await validateZipCode(pscValue);
+            
+            isValid ? clearError() : showError('Zadejte prosím platné české poštovní směrovací číslo.');
+        } catch (error) {
+            console.error('Error validating PSČ:', error);
+        }
+    });
+
+    function areAllErrorsHidden() {
+        var $visibleErrors = $('.error-message').filter(function() {
+            return $(this).css('display') !== 'none';
+        });
+        return $visibleErrors.length === 0;
+    }
+
+    function checkRequiredFields() {
+        let emptyFields = $('.icon-asterisk')
+            .closest('.form-group')
+            .find('input[id*="_com_liferay_dynamic_data_lists_form_web_portlet_DDLFormPortlet_ddm"]')
+            .filter(function() {
+                return !this.value.trim();
+            })
+            .map(function() {
+                return $(this).closest('.form-group').find('label').text().trim();
+            })
+            .get();
+
+        return (emptyFields.length === 0);
+    }
+
+    $(document).on("click", '.btn-primary.lfr-ddm-form-submit', async function(event) {
+        if(checkRequiredFields()) {
+            event.preventDefault();
+        
+            var pscValue = $("[id*='PSČ']").val();
+
+            try {
+                const isValid = await validateZipCode(pscValue);
+                if (isValid) {
+                    clearError();
+                    clearInterval(interval);
+                    var form = $('form#_com_liferay_dynamic_data_lists_form_web_portlet_DDLFormPortlet_fm');
+                    if (form.length && checkRequiredFields() && areAllErrorsHidden()) form.submit();
+                    
+                } else showError('Zadejte prosím platné české poštovní směrovací číslo.');
+                
+            } catch (error) {
+                console.error('Error validating PSČ:', error);
+            }
+        }
+    });
+
+    $("[id*='PSČ']").attr("disabled", true);
+});
+
+ </script>       
+
+<script>
+$(document).ready(function() {
+    var images = $(".-cproject-img");
+
+    var newImageSources = [
+        "/documents/46856796/59941444/zaklady-stropy.jpg",
+        "/documents/46856796/59941444/podlahy-zpevnene-plochy.jpg",
+        "/documents/46856796/59941444/ostatni-konstrukce.jpg",
+        "/documents/46856796/59941444/monoliticke-konstrukce.jpg"
+    ];
+    
+    images.each(function(index) {
+        $(this).attr("src", newImageSources[index]);
+    });
+});
+</script>
+
+<style>
+        .-cproject-img {
+            width: 120px;
+            height: 90px;
+        }
+        a{
+            cursor:pointer;
+        }
+    
+    /*.zip-dropdown {*/
+    /*    display: inline-block;*/
+    /*    width:100%;*/
+    /*}*/
+    /*zip-suggestion-container {*/
+    /*    background-color: white;*/
+    /*    border: 1px solid #ccc;*/
+    /*    max-height: 200px;*/
+    /*    overflow-y: auto;*/
+    /*    z-index: 1000;*/
+    /*}*/
+    /*.dropdown-item {*/
+    /*    padding: 8px;*/
+    /*    cursor: pointer;*/
+    /*    border-bottom: 1px solid #ddd; */
+    /*}*/
+</style>
+
+
+<script>
+    //$(document).ready(function() {
+        
+        
+        
+        const imageSources = {
+            'PožadavekNačerpáníBetonu': 'https://liferayqa.cemex.com/documents/46856796/46979694/1080_Aspect_Ratio-Podebrady-foundation-CZ-2021.jpeg',
+            'DopravaBetonu': 'https://liferayqa.cemex.com/documents/46856796/46979694/1080_Aspect_Ratio-Readymix+truck+with+new+branding.jpeg'
+        };
+        
+        var messages = {
+            'DopravaBetonu': {
+                unchecked: 'Vlastní doprava, přijedu si pro beton sám.',
+                checked: 'Beton Vám dovezeme na stavbu.'
+            },
+            'PožadavekNačerpáníBetonu': {
+                unchecked: 'Ne, nepotřebuji beton čerpat.',
+                checked: 'Ano, potřebuji beton čerpat.'
+            }
+        };
+
+        function updateDropdownAndSetupClickEvents() {
+            ['PožadavekNačerpáníBetonu', 'DopravaBetonu'].forEach(function (idName) {
+                updateDropdownInDom(idName);
+                setupClickEvent(idName);
+            });
+        }
+
+        function updateDropdownInDom(currentElem) {
+            var commonId = '[id^="_com_liferay_dynamic_data_lists_form_web_portlet_DDLFormPortlet_ddm$$';
+         
+            var radioSpe = $('' + commonId + currentElem + '"]').first();
+            var radioValue = $('input[name="' + radioSpe.attr('name') + '"]:checked').val() === 'Ano';
+
+            var parentEleTip = radioSpe.parent().parent().parent();
+
+            var containerClass = 'new-element';
+
+            var imageSrc = imageSources[currentElem];
+
+            var messageForDrop = radioValue ? messages[currentElem].checked : messages[currentElem].unchecked;
+
+            
+            if (parentEleTip.find('.' + containerClass).length === 0) {
+                parentEleTip.append(
+                    '<div class="' + containerClass + '">' +
+                    '<img class="' + (radioValue ? '' : 'grey-image') + '" src="' + imageSrc + '" alt="Cemex">' +
+                    '<p class="drop-message ' + currentElem + '-message' +'">'+ messageForDrop +'</p>' +
+                    '</div>'
+                );
+            } else {
+                var imgElement = parentEleTip.find('.' + containerClass + ' img');
+                var messagePara = parentEleTip.find('.drop-message');
+                imgElement.attr('src', imageSrc);
+                imgElement.attr('class', radioValue ? '' : 'grey-image');
+                messagePara.text(messageForDrop);
+            }
+        }
+
+        function setupClickEvent(currentElem) {
+            var commonId = '[id^="_com_liferay_dynamic_data_lists_form_web_portlet_DDLFormPortlet_ddm$$';
+
+            var radioSpe = $('' + commonId + currentElem + '"]').first();
+            var radioName = radioSpe.attr('name');
+
+            $('input[name="' + radioName + '"]').on('click', function () {
+                updateDropdownInDom(currentElem);
+            });
+        }
+
+        var counter = 0;
+        var interval = setInterval(function () {
+            if(counter++ === 10) {
+              clearInterval(interval)  
+            } else {
+                updateDropdownAndSetupClickEvents()
+            }
+            
+        }, 3000);
+        
+        
+    //});
+</script>

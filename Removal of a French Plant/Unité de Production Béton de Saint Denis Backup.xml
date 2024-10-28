@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+
+<root available-locales="fr_FR" default-locale="fr_FR">
+	<dynamic-element name="locationName" type="text" index-type="keyword" instance-id="jqjv">
+		<dynamic-content language-id="fr_FR"><![CDATA[Unité de Production Béton de Saint Denis]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="yextCode" type="text" index-type="" instance-id="qaxg">
+		<dynamic-content language-id="fr_FR"><![CDATA[FR355]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="sapCode" type="text" index-type="" instance-id="rpqw">
+		<dynamic-content language-id="fr_FR"><![CDATA[J355]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="SummaryLabel" type="text" index-type="keyword" instance-id="eaxl">
+		<dynamic-element name="SummaryText" instance-id="zrct" type="text" index-type="text">
+			<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="ExtraNotes" type="text_area" index-type="text" instance-id="augq">
+		<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="LocationImage" type="image" index-type="keyword" instance-id="jibl">
+		<dynamic-content language-id="fr_FR" fileEntryId=""></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="geoLoc_customgeolocation" type="ddm-geolocation" index-type="keyword" instance-id="ydjt">
+		<dynamic-content language-id="fr_FR"><![CDATA[{"latitude":"49.2141638","longitude":"16.5866249"}]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="QuotePageLink" type="link_to_layout" index-type="keyword" instance-id="yikm">
+		<dynamic-content language-id="fr_FR"><![CDATA[146@public@51489845]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="locationAddress" type="selection_break" index-type="keyword" instance-id="qwel">
+		<dynamic-element name="street" instance-id="vfox" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[64 boulevard Anatole France]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="city" instance-id="ddas" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[Saint Denis]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="region" instance-id="qeru" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="postcode" instance-id="pqhj" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[93200]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="area" instance-id="ymef" type="list" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[Ile de France]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="country" instance-id="rfjq" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[France]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="GoogleLocationID" type="text" index-type="keyword" instance-id="qvas">
+		<dynamic-content language-id="fr_FR"><![CDATA[ChIJkaLxBCBv5kcRTNU-PF-2Qp4]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="openingHours" type="text" index-type="keyword" instance-id="mjdv">
+		<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="telephoneNumbers" type="selection_break" index-type="keyword" instance-id="wbmr">
+		<dynamic-element name="telephoneNumberTitle" instance-id="cuae" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[Téléphone]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="telephoneNumber" instance-id="hnha" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[07 86 30 67 55]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="telephoneNumbers" type="selection_break" index-type="keyword" instance-id="mlpq">
+		<dynamic-element name="telephoneNumberTitle" instance-id="fevu" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[Numéro de téléphone commande]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="telephoneNumber" instance-id="yyul" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[01 60 77 37 84]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="telephoneNumbers" type="selection_break" index-type="keyword" instance-id="yisj">
+		<dynamic-element name="telephoneNumberTitle" instance-id="uolp" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[Renseignement commerciaux pour les professionnels]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="telephoneNumber" instance-id="ggqs" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[01 79 82 74 74]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="DependOn" type="selection_break" index-type="keyword" instance-id="caca">
+		<dynamic-element name="DTitle" instance-id="orsl" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[Île-de-France]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="DAdress" instance-id="uwrj" type="selection_break" index-type="keyword">
+			<dynamic-element name="DStreet" instance-id="omgi" type="text" index-type="keyword">
+				<dynamic-content language-id="fr_FR"><![CDATA[2 rue Paul Doumer]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-element name="DComplement" instance-id="dsuq" type="text" index-type="keyword">
+				<dynamic-content language-id="fr_FR"><![CDATA[CS 45411]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-element name="DZipCode" instance-id="fncp" type="ddm-integer" index-type="keyword">
+				<dynamic-content language-id="fr_FR"><![CDATA[91120]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-element name="DCity" instance-id="hyao" type="text" index-type="keyword">
+				<dynamic-content language-id="fr_FR"><![CDATA[Palaiseau]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-element name="DPhone" instance-id="yyfi" type="text" index-type="keyword">
+				<dynamic-content language-id="fr_FR"><![CDATA[01 69 93 46 10]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-element name="DFax" instance-id="fiqo" type="text" index-type="keyword">
+				<dynamic-content language-id="fr_FR"><![CDATA[01 69 93 46 17]]></dynamic-content>
+			</dynamic-element>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="LocalContact" type="text" index-type="keyword" instance-id="ayiw">
+		<dynamic-element name="WorkPositionLabel" instance-id="oajz" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="email" instance-id="zeys" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="PhoneNumber" instance-id="bemv" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="PricelistDocumentFile" type="document_library" index-type="keyword" instance-id="twxn">
+		<dynamic-element name="FileDisplayName" instance-id="zqbs" type="text" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="FileTypeIcon" instance-id="lhcr" type="list" index-type="keyword">
+			<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="ProductRange" type="ddm-journal-article" index-type="keyword" instance-id="nkho">
+		<dynamic-content language-id="fr_FR"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+</root>

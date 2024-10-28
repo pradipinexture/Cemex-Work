@@ -1,0 +1,168 @@
+new Map([
+    [
+        "LocationId",
+        "61032543"
+    ],
+    [
+        "LocationTitle",
+        [
+            "Springetts Asphalt Plant"
+        ]
+    ],
+    [
+        "Address",
+        [
+            "Harewood Street, Ravensdale"
+        ]
+    ],
+    [
+        "Address2",
+        [
+            "West Midlands"
+        ]
+    ],
+    [
+        "TownCity",
+        [
+            "Stoke on Trent"
+        ]
+    ],
+    [
+        "Country",
+        [
+            "United Kingdom - GB"
+        ]
+    ],
+    [
+        "Postcode",
+        [
+            "ST6 4PP"
+        ]
+    ],
+    [
+        "PhoneNumber",
+        [
+            "07827 939193"
+        ]
+    ],
+    [
+        "Monday_Separator",
+        [
+            {
+                "openTime": "06:00",
+                "closeTime": "14:30"
+            }
+        ]
+    ],
+    [
+        "Tuesday_Separator",
+        [
+            {
+                "openTime": "06:00",
+                "closeTime": "14:30"
+            }
+        ]
+    ],
+    [
+        "Wednesday_Separator",
+        [
+            {
+                "openTime": "06:00",
+                "closeTime": "14:30"
+            }
+        ]
+    ],
+    [
+        "Thursday_Separator",
+        [
+            {
+                "openTime": "06:00",
+                "closeTime": "14:30"
+            }
+        ]
+    ],
+    [
+        "Friday_Separator",
+        [
+            {
+                "openTime": "06:00",
+                "closeTime": "14:30"
+            }
+        ]
+    ],
+    [
+        "Saturday_Separator",
+        [
+            {
+                "openTime": "06:00",
+                "closeTime": "09:30"
+            }
+        ]
+    ],
+    [
+        "Sunday_Separator",
+        [
+            "-"
+        ]
+    ],
+    [
+        "GeolocationData",
+        []
+    ],
+    [
+        "Latitude",
+        [
+            "53.05363464"
+        ]
+    ],
+    [
+        "Longitude",
+        [
+            "-2.217456102"
+        ]
+    ],
+    [
+        "ContactDetail",
+        [
+            {
+                "ContactName": "Asphalt Sales",
+                "JobPosition": "-",
+                "EmailAddress": "-",
+                "PhoneNumber1": "07827 939193"
+            },
+            {
+                "ContactName": "Asphalt Plant",
+                "JobPosition": "-",
+                "EmailAddress": "-",
+                "PhoneNumber1": "01782 814418"
+            }
+        ]
+    ],
+    [
+        "isYextRestrict",
+        [
+            "true"
+        ]
+    ],
+    [
+        "RichText",
+        [
+            "The CEMEX Asphalt Plant in Springetts can supply asphalt (also known as tarmac) for a wide range of small, medium and even large construction projects and builds in the Springetts and wider Stoke-on-Trent and Staffordshire regions. Find out how we can help - give us a call or request a quote and we will be happy to talk through the range of products and building solutions on offer."
+        ]
+    ],
+    [
+        "AddPage",
+        [
+            {
+                "PageName": "Springetts Asphalt Plant",
+                "PageUrl": "https://cemex.co.uk/springetts-asphalt-plant.aspx"
+            }
+        ]
+    ],
+    [
+        "Region",
+        [
+            "Staffordshire"
+        ]
+    ]
+])
