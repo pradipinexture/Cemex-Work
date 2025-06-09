@@ -1,0 +1,40 @@
+
+        {
+            "contentFieldValue": {},
+            "dataType": "",
+            "label": "Image",
+            "name": "Fieldset18815862",
+            "nestedContentFields": [
+                {
+                    "contentFieldValue": {
+                        "image": {
+                            "contentType": "Document",
+                            "contentUrl": "/documents/d/guest/screenshot-from-2025-03-31-16-33-25-png",
+                            "description": "",
+                            "encodingFormat": "image/png",
+                            "fileExtension": "png",
+                            "id": 33586,
+                            "sizeInBytes": 3893,
+                            "title": "Screenshot from 2025-03-31 16-33-25.png"
+                        }
+                    },
+                    "dataType": "image",
+                    "label": "Image Banner",
+                    "name": "Image46648305",
+                    "nestedContentFields": [],
+                    "repeatable": false
+                },
+                {
+                    "contentFieldValue": {
+                        "data": ""
+                    },
+                    "dataType": "string",
+                    "inputControl": "text",
+                    "label": "Image Description",
+                    "name": "Text32983158",
+                    "nestedContentFields": [],
+                    "repeatable": false
+                }
+            ],
+            "repeatable": false
+        },

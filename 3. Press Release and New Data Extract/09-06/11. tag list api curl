@@ -1,0 +1,4 @@
+curl -X 'GET' \
+  'http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/sites/20117/keywords?fields=id,name' \
+  -H 'accept: application/json' \
+  -H 'x-csrf-token: EzRocsKR'

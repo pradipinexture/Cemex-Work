@@ -1,0 +1,107 @@
+Categories
+
+curl -X 'GET' \
+  'http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/taxonomy-categories/88449/taxonomy-categories?fields=id,name' \
+  -H 'accept: application/json' \
+  -H 'x-csrf-token: EzRocsKR'
+
+
+{
+  "actions": {
+    "add-category": {
+      "method": "POST",
+      "href": "http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/taxonomy-categories/88449/taxonomy-categories"
+    },
+    "get": {
+      "method": "GET",
+      "href": "http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/taxonomy-categories/88449/taxonomy-categories"
+    }
+  },
+  "facets": [],
+  "items": [
+    {
+      "id": "88452",
+      "name": "MEDIA-PressReleases"
+    },
+    {
+      "id": "88456",
+      "name": "Story"
+    },
+    {
+      "id": "88460",
+      "name": "Press Release"
+    },
+    {
+      "id": "88464",
+      "name": "2021"
+    },
+    {
+      "id": "88468",
+      "name": "2020"
+    },
+    {
+      "id": "88472",
+      "name": "2019"
+    },
+    {
+      "id": "88476",
+      "name": "2009"
+    },
+    {
+      "id": "88480",
+      "name": "2010"
+    },
+    {
+      "id": "88484",
+      "name": "Projects Blog"
+    },
+    {
+      "id": "88488",
+      "name": "2012"
+    },
+    {
+      "id": "88492",
+      "name": "2008"
+    },
+    {
+      "id": "88496",
+      "name": "2007"
+    },
+    {
+      "id": "88500",
+      "name": "2013"
+    },
+    {
+      "id": "88504",
+      "name": "2014"
+    },
+    {
+      "id": "88508",
+      "name": "2022"
+    },
+    {
+      "id": "88512",
+      "name": "2015"
+    },
+    {
+      "id": "88516",
+      "name": "2016"
+    },
+    {
+      "id": "88520",
+      "name": "2017"
+    },
+    {
+      "id": "88524",
+      "name": "2011"
+    },
+    {
+      "id": "88528",
+      "name": "Main Carousel"
+    }
+  ],
+  "lastPage": 2,
+  "page": 1,
+  "pageSize": 20,
+  "totalCount": 27
+}

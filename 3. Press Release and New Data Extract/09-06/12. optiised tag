@@ -1,0 +1,111 @@
+{
+  "actions": {
+    "updateBatch": {
+      "method": "PUT",
+      "href": "http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/keywords/batch"
+    },
+    "get": {
+      "method": "GET",
+      "href": "http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/sites/20117/keywords"
+    },
+    "create": {
+      "method": "POST",
+      "href": "http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/sites/20117/keywords"
+    },
+    "createBatch": {
+      "method": "POST",
+      "href": "http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/sites/20117/keywords/batch"
+    },
+    "deleteBatch": {
+      "method": "DELETE",
+      "href": "http://192.168.1.206:8080/o/headless-admin-taxonomy/v1.0/keywords/batch"
+    }
+  },
+  "facets": [],
+  "items": [
+    {
+      "id": 88563,
+      "name": "lendahand"
+    },
+    {
+      "id": 88564,
+      "name": "moreton valance"
+    },
+    {
+      "id": 88565,
+      "name": "driffield"
+    },
+    {
+      "id": 88566,
+      "name": "bristol"
+    },
+    {
+      "id": 88567,
+      "name": "scarborough"
+    },
+    {
+      "id": 88568,
+      "name": "pershore"
+    },
+    {
+      "id": 88569,
+      "name": "york"
+    },
+    {
+      "id": 88570,
+      "name": "eversley"
+    },
+    {
+      "id": 88571,
+      "name": "sheffield"
+    },
+    {
+      "id": 88572,
+      "name": "immingham"
+    },
+    {
+      "id": 88573,
+      "name": "gorton"
+    },
+    {
+      "id": 88574,
+      "name": "cardiff"
+    },
+    {
+      "id": 88575,
+      "name": "swindon"
+    },
+    {
+      "id": 88576,
+      "name": "tinto"
+    },
+    {
+      "id": 88577,
+      "name": "stepney"
+    },
+    {
+      "id": 88578,
+      "name": "northfleet"
+    },
+    {
+      "id": 88579,
+      "name": "newton aycliffe"
+    },
+    {
+      "id": 88580,
+      "name": "luton"
+    },
+    {
+      "id": 88581,
+      "name": "basingstoke"
+    },
+    {
+      "id": 88582,
+      "name": "southampton"
+    }
+  ],
+  "lastPage": 2,
+  "page": 1,
+  "pageSize": 20,
+  "totalCount": 23
+}

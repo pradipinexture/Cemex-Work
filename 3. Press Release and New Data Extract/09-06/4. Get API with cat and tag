@@ -1,0 +1,173 @@
+Get API with cat and tag
+
+{
+    "actions": {
+        "get-rendered-content": {
+            "method": "GET",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265/rendered-content/{contentTemplateId}"
+        },
+        "get-rendered-content-by-display-page": {
+            "method": "GET",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265/rendered-content-by-display-page/{displayPageKey}"
+        },
+        "subscribe": {
+            "method": "PUT",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265/subscribe"
+        },
+        "unsubscribe": {
+            "method": "PUT",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265/unsubscribe"
+        },
+        "get": {
+            "method": "GET",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265"
+        },
+        "replace": {
+            "method": "PUT",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265"
+        },
+        "update": {
+            "method": "PATCH",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265"
+        },
+        "delete": {
+            "method": "DELETE",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88265"
+        }
+    },
+    "availableLanguages": [
+        "en-US"
+    ],
+    "contentFields": [
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "dataType": "string",
+            "inputControl": "text",
+            "label": "Display Title",
+            "name": "Text74047409",
+            "nestedContentFields": [],
+            "repeatable": false
+        },
+        {
+            "contentFieldValue": {
+                "data": "2025-06-20T00:00:00Z"
+            },
+            "dataType": "date",
+            "label": "Creation Date",
+            "name": "Date52927629",
+            "nestedContentFields": [],
+            "repeatable": false
+        },
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "dataType": "string",
+            "inputControl": "text",
+            "label": "Summary",
+            "name": "Text65711580",
+            "nestedContentFields": [],
+            "repeatable": false
+        },
+        {
+            "contentFieldValue": {},
+            "dataType": "",
+            "label": "Image",
+            "name": "Fieldset18815862",
+            "nestedContentFields": [
+                {
+                    "contentFieldValue": {
+                        "image": {
+                            "contentType": "Document",
+                            "contentUrl": "/documents/d/guest/screenshot-from-2025-03-31-16-33-25-png",
+                            "description": "",
+                            "encodingFormat": "image/png",
+                            "fileExtension": "png",
+                            "id": 33586,
+                            "sizeInBytes": 3893,
+                            "title": "Screenshot from 2025-03-31 16-33-25.png"
+                        }
+                    },
+                    "dataType": "image",
+                    "label": "Image Banner",
+                    "name": "Image46648305",
+                    "nestedContentFields": [],
+                    "repeatable": false
+                },
+                {
+                    "contentFieldValue": {
+                        "data": ""
+                    },
+                    "dataType": "string",
+                    "inputControl": "text",
+                    "label": "Image Description",
+                    "name": "Text32983158",
+                    "nestedContentFields": [],
+                    "repeatable": false
+                }
+            ],
+            "repeatable": false
+        },
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "dataType": "string",
+            "inputControl": "text",
+            "label": "Body",
+            "name": "Text28258532",
+            "nestedContentFields": [],
+            "repeatable": false
+        },
+        {
+            "contentFieldValue": {
+                "data": "youtue.com"
+            },
+            "dataType": "string",
+            "inputControl": "text",
+            "label": "Video",
+            "name": "Text67247447",
+            "nestedContentFields": [],
+            "repeatable": false
+        }
+    ],
+    "contentStructureId": 87843,
+    "creator": {
+        "additionalName": "",
+        "contentType": "UserAccount",
+        "familyName": "Test",
+        "givenName": "Test",
+        "id": 20123,
+        "name": "Test Test"
+    },
+    "customFields": [],
+    "dateCreated": "2025-06-06T07:16:43Z",
+    "dateModified": "2025-06-09T07:45:57Z",
+    "datePublished": "2025-06-06T07:15:00Z",
+    "description": "",
+    "externalReferenceCode": "a77c2ec6-8c8b-2cc5-7a69-bb7d4089f80a",
+    "friendlyUrlPath": "test-press",
+    "id": 88265,
+    "key": "88263",
+    "keywords": [
+        "basingstoke"
+    ],
+    "neverExpire": true,
+    "numberOfComments": 0,
+    "priority": 0.0,
+    "relatedContents": [],
+    "renderedContents": [],
+    "siteId": 20117,
+    "structuredContentFolderId": 87863,
+    "subscribed": false,
+    "taxonomyCategoryBriefs": [
+        {
+            "taxonomyCategoryId": 88452,
+            "taxonomyCategoryName": "MEDIA-PressReleases"
+        }
+    ],
+    "title": "Test Press",
+    "uuid": "f880b58b-8fea-8b8c-f0b9-a166a63f5764"
+}

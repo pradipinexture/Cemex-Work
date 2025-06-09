@@ -1,0 +1,179 @@
+default body of wcm
+
+{
+  "aggregateRating": {},
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "string",
+        "document": {
+          "description": "string",
+          "id": 0,
+          "title": "string"
+        },
+        "geo": {
+          "latitude": 0,
+          "longitude": 0
+        },
+        "image": {
+          "description": "string",
+          "id": 0,
+          "title": "string"
+        },
+        "link": "string",
+        "structuredContentLink": {
+          "embeddedStructuredContent": "string",
+          "id": 0,
+          "title": "string"
+        },
+        "value": "string"
+      },
+      "contentFieldValue_i18n": {
+        "additionalProp1": {
+          "data": "string",
+          "document": {
+            "description": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "geo": {
+            "latitude": 0,
+            "longitude": 0
+          },
+          "image": {
+            "description": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "link": "string",
+          "structuredContentLink": {
+            "embeddedStructuredContent": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "value": "string"
+        },
+        "additionalProp2": {
+          "data": "string",
+          "document": {
+            "description": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "geo": {
+            "latitude": 0,
+            "longitude": 0
+          },
+          "image": {
+            "description": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "link": "string",
+          "structuredContentLink": {
+            "embeddedStructuredContent": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "value": "string"
+        },
+        "additionalProp3": {
+          "data": "string",
+          "document": {
+            "description": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "geo": {
+            "latitude": 0,
+            "longitude": 0
+          },
+          "image": {
+            "description": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "link": "string",
+          "structuredContentLink": {
+            "embeddedStructuredContent": "string",
+            "id": 0,
+            "title": "string"
+          },
+          "value": "string"
+        }
+      },
+      "name": "string",
+      "nestedContentFields": [
+        "string"
+      ]
+    }
+  ],
+  "contentStructureId": 0,
+  "creator": {
+    "userGroupBriefs": [
+      {}
+    ]
+  },
+  "customFields": [
+    {
+      "customValue": {
+        "data": {},
+        "data_i18n": {
+          "additionalProp1": "string",
+          "additionalProp2": "string",
+          "additionalProp3": "string"
+        },
+        "geo": {
+          "latitude": 0,
+          "longitude": 0
+        }
+      },
+      "name": "string"
+    }
+  ],
+  "dateExpired": "2025-06-09T08:49:12.030Z",
+  "datePublished": "2025-06-09T08:49:12.030Z",
+  "description": "string",
+  "description_i18n": {
+    "additionalProp1": "string",
+    "additionalProp2": "string",
+    "additionalProp3": "string"
+  },
+  "externalReferenceCode": "string",
+  "friendlyUrlPath": "string",
+  "friendlyUrlPath_i18n": {
+    "additionalProp1": "string",
+    "additionalProp2": "string",
+    "additionalProp3": "string"
+  },
+  "keywords": [
+    "string"
+  ],
+  "neverExpire": true,
+  "permissions": [
+    {
+      "actionIds": [
+        "string"
+      ],
+      "roleName": "string"
+    }
+  ],
+  "priority": 0,
+  "relatedContents": [
+    {
+      "contentType": "string",
+      "id": 0
+    }
+  ],
+  "structuredContentFolderId": 0,
+  "taxonomyCategoryIds": [
+    0
+  ],
+  "title": "string",
+  "title_i18n": {
+    "additionalProp1": "string",
+    "additionalProp2": "string",
+    "additionalProp3": "string"
+  },
+  "viewableBy": "Anyone"
+}

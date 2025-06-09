@@ -1,0 +1,54 @@
+api body 1
+
+{
+    "availableLanguages": [
+        "en-US"
+    ],
+    "contentFields": [
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "label": "Display Title",
+            "name": "Text74047409"
+        },
+        {
+            "contentFieldValue": {
+                "data": "2025-06-20T00:00:00Z"
+            },
+            "label": "Creation Date",
+            "name": "Date52927629"
+        },
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "label": "Summary",
+            "name": "Text65711580"
+        },
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "label": "Body",
+            "name": "Text28258532"
+        },
+        {
+            "contentFieldValue": {
+                "data": "youtue.com"
+            },
+            "label": "Video",
+            "name": "Text67247447"
+        }
+    ],
+  "contentStructureId": 87843,
+  "siteId": 20117,
+  "structuredContentFolderId": 87863,
+  "title": "Test Press with Cat",
+  "taxonomyCategoryIds": [
+    88452
+  ],
+  "keywords": [
+    "basingstoke"
+  ]
+}

@@ -1,0 +1,126 @@
+preapre
+
+Get API
+
+
+{
+    "actions": {
+        "get-rendered-content": {
+            "method": "GET",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303/rendered-content/{contentTemplateId}"
+        },
+        "get-rendered-content-by-display-page": {
+            "method": "GET",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303/rendered-content-by-display-page/{displayPageKey}"
+        },
+        "subscribe": {
+            "method": "PUT",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303/subscribe"
+        },
+        "unsubscribe": {
+            "method": "PUT",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303/unsubscribe"
+        },
+        "get": {
+            "method": "GET",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303"
+        },
+        "replace": {
+            "method": "PUT",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303"
+        },
+        "update": {
+            "method": "PATCH",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303"
+        },
+        "delete": {
+            "method": "DELETE",
+            "href": "http://192.168.1.206:8080/o/headless-delivery/v1.0/structured-contents/88303"
+        }
+    },
+    "availableLanguages": [
+        "en-US"
+    ],
+    "contentFields": [
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "label": "Display Title",
+            "name": "Text74047409"
+        },
+        {
+            "contentFieldValue": {
+                "data": "2025-06-20T00:00:00Z"
+            },
+            "label": "Creation Date",
+            "name": "Date52927629"
+        },
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "label": "Summary",
+            "name": "Text65711580",
+        },
+        {
+            "contentFieldValue": {},
+            "dataType": "",
+            "label": "Image",
+            "name": "Fieldset18815862",
+            
+        },
+        {
+            "contentFieldValue": {
+                "data": "Test Press"
+            },
+            "dataType": "string",
+            "inputControl": "text",
+            "label": "Body",
+            "name": "Text28258532",
+            "nestedContentFields": [],
+            "repeatable": false
+        },
+        {
+            "contentFieldValue": {
+                "data": "youtue.com"
+            },
+            "dataType": "string",
+            "inputControl": "text",
+            "label": "Video",
+            "name": "Text67247447",
+            "nestedContentFields": [],
+            "repeatable": false
+        }
+    ],
+    "contentStructureId": 87843,
+    "creator": {
+        "additionalName": "",
+        "contentType": "UserAccount",
+        "familyName": "Test",
+        "givenName": "Test",
+        "id": 20123,
+        "name": "Test Test"
+    },
+    "customFields": [],
+    "dateCreated": "2025-06-06T07:44:32Z",
+    "dateModified": "2025-06-06T07:44:32Z",
+    "datePublished": "2025-06-06T07:44:00Z",
+    "description": "",
+    "externalReferenceCode": "549b59b4-1ab8-5332-88b5-96dbb931888b",
+    "friendlyUrlPath": "test-pressfdffgdfgsdfg-1",
+    "id": 88303,
+    "key": "88301",
+    "keywords": [],
+    "neverExpire": true,
+    "numberOfComments": 0,
+    "priority": 0.0,
+    "relatedContents": [],
+    "renderedContents": [],
+    "siteId": 20117,
+    "structuredContentFolderId": 87863,
+    "subscribed": false,
+    "taxonomyCategoryBriefs": [],
+    "title": "Test Pressfdffgdfgsdfg",
+    "uuid": "549b59b4-1ab8-5332-88b5-96dbb931888b"
+}
