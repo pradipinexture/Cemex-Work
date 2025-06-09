@@ -1,0 +1,23 @@
+Structure Name: Reference Buildings
+
+Asset Publisher Name : Reference Buildings - 4 columns
+
+Parent Page: https://www.cemex.cz/referencni-stavby-cemex
+Detail Page(ADT): https://liferayprod.cemex.com/cs/web/cemex-cz/referencni-stavby-detail
+
+Child Page:  https://www.cemex.cz/-/autosalon-volvo-1
+
+
+Detail Page Analysis:
+
+- Banner WCM: 
+Referenční stavby Detail
+ - They used main image from strcture in the banner
+
+- Breadcrumb:
+
+- Asset Publisher: for detail content view
+
+- Bottom of the page
+	- Asset Publisher: for related assets
+		- Reference Buildings - 3 columns (random)

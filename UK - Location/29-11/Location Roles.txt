@@ -1,0 +1,22 @@
+Content Approver - Croatia	This role has only permission of Croatia region for location applications.	
+Content Approver - Czech Republic	This role has only permission of Czech Republic region for location applications.	
+Content Approver - France	This role has only permission of France region for location applications.	
+Content Approver - Germany	This role has only permission of Germany region for location applications.	
+Content Approver - Poland	This role has only permission of Poland region for location applications.	
+Content Approver - Spain	This role has only permission of Spain region for location applications.	
+Content Approver - United Kingdom	This role has only permission of United Kingdom region for location applications.	
+Content Creator - Croatia	This role has only permission of Croatia region for location applications.	
+Content Creator - Czech Republic	This role has only permission of Czech Republic region for location applications.	
+Content Creator - France	This role has only permission of France region for location applications.	
+Content Creator - Germany	This role has only permission of Germany region for location applications.	
+Content Creator - Poland	This role has only permission of Poland region for location applications.	
+Content Creator - Spain	This role has only permission of Spain region for location applications.	
+Content Creator - United Kingdom	This role has only permission of United Kingdom region for location applications.
+European Admin	European admin has administrative role for location application.
+
+
+Roles to create for UK
+---
+Content Approver - United Kingdom	This role has only permission of United Kingdom region for location applications.	
+Content Creator - United Kingdom	This role has only permission of United Kingdom region for location applications.
+European Admin						European admin has administrative role for location application.

@@ -1,0 +1,1089 @@
+<!-- All css libraries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+
+<link rel="stylesheet" href="https://liferayprod.cemex.com/documents/20152/86673076/sh_toaster.css">
+<link rel="stylesheet" href="https://liferayprod.cemex.com/documents/20152/86673076/add-location.css">
+
+<script src="https://liferayprod.cemex.com/documents/20152/86673076/rte.js"></script>
+<script src="https://liferayprod.cemex.com/documents/20152/86673076/all_plugins.js"></script>
+
+
+<link rel="stylesheet" href="https://liferayprod.cemex.com/documents/20152/86673076/rte_theme_default.css">
+    <style>
+        .time-row .error-message {
+            color: red!important;
+            display: none;
+            margin: 5px 0px 8px 0px!important;
+        }
+        .time-form-group, .time-form-item {
+           margin: 0;
+         }
+         .time-row {
+            margin-bottom: 10px!important;
+         }
+
+         .pro-link-card-container .pro-link-card {
+             padding: 24px;
+             position: relative;
+             width: 100%;
+         }
+         .pro-link-card {
+             background-color: #fff;
+             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+             padding: 24px 300px 24px 24px;
+             margin-bottom: 20px;
+             border-radius: 8px;
+             position: relative;
+         }
+
+         .pro-link-card h2 {
+             margin-top: 0px;
+             color: #001B3A;
+             font-size: 16px;
+             display: inline;
+         }
+
+         .pro-link-card-container .pro-link-card .pro-link-card-edit {
+             right: 45px;
+         }
+
+         .pro-link-card a.pro-link-card-edit {
+             top: 23px;
+             position: absolute;
+             right: 45px;
+             cursor: pointer;
+         }
+
+         .pro-link-card-container .pro-link-card .pro-link-card-remove {
+             right: 24px;
+             left: inherit;
+         }
+
+         .pro-link-card a.pro-link-card-remove {
+             top: 25px;
+             position: absolute;
+             left: 90%;
+             cursor: pointer;
+         }
+
+         .pro-link-card .pro-link {
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             width: 230px;
+         }
+    </style>
+
+   <link rel="stylesheet" href="https://liferayprod.cemex.com//documents/20152/86673076/rte_theme_default.css">
+   <script src="https://liferayprod.cemex.com//documents/20152/86673076/rte.js"></script>
+   <script src="https://liferayprod.cemex.com//documents/20152/86673076/all_plugins.js"></script>
+
+   <!-- All script libraries -->
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src="https://liferayprod.cemex.com/documents/20152/86673076/sh_toaster.js"></script>
+   <script type="module" src="https://www.cemexgo.com/cdn/web-components/latest/cmx-web-components/cmx-web-components.esm.js"></script>
+   <script nomodule src="https://www.cemexgo.com/cdn/web-components/latest/cmx-web-components/cmx-web-components.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+<main>
+      <div class="sh-toast-container" id="shToastContainerTop"></div>
+      <div class="sh-toast-container" id="shToastContainerBottom"></div>
+      <div class="add-location-main">
+         <div class="container">
+            <div class="location-modal">
+               <div class="location-new-modal-content-inner">
+                  <div class="location-new-header">
+                     <h4 id="myModalLabel">${languageUtil.get(locale, "AddLocation", "Add location")}</h4>
+                  </div>
+                  <div class="location-new-body">
+                     <form id="locationForm" onsubmit="return false;">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="locationname" class="LocationTitle"
+                                       required/>
+                                    <label for="locationname">${languageUtil.get(locale, "locationName", "Location Name")} </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <select class="form-control PlantType" name="planttype" id="planttype">
+                                     <option value="">
+                                         ${languageUtil.get(locale, "selectPlanType", "Select Plant Type")}         
+                                    </option>
+                                  
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="address" autocomplete="off" class="Address"
+                                       required />
+                                    <label for="address"> ${languageUtil.get(locale, "address", "Address")} </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="floating-input">
+                                    <input type="text" id="addressone" autocomplete="off"
+                                       class="Address2 input-focus" />
+                                    <label for="addressone" class="focus-label">${languageUtil.get(locale, "address2", "Address 2")}</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="floating-input">
+                                    <input type="text" id="company" autocomplete="off" class="CompanyName input-focus" />
+                                    <label for="company" class="focus-label"> ${languageUtil.get(locale, "companyName", "Company Name")}</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="city" autocomplete="off" class="TownCity"
+                                       required />
+                                    <label for="city"> ${languageUtil.get(locale, "townCity", "City")}</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="floating-input">
+                                    <input type="text" id="state" autocomplete="off" class="State input-focus" />
+                                    <label for="state">State</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="region" autocomplete="off" class="Region"/>
+                                    <label for="addressone" class="focus-label">Region</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="postcode" autocomplete="off"
+                                       class="Postcode" required />
+                                    <label for="postcode"> ${languageUtil.get(locale, "postCode", "PostCode")}</label>
+                                        <span class="text-danger" id="postcode-error"></span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <select class="form-control Country" name="country" id="country" required>
+                                       <option value="" disabled selected>Country</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div id="location-map" style="height: 300px; width:100%; margin-bottom: 20px;"></div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="tel" id="phonenumber" autocomplete="off"
+                                       class="PhoneNumber" required />
+                                    <span class="text-danger" id="phoneNumber-error"></span>
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="map-address" autocomplete="off" required />
+                                 <label for="map-address">${languageUtil.get(locale, "geoLocation", "Map Address")} </label>
+                                    <div id="address-suggestions"></div>
+                                 </div>
+                              </div>
+                              <div class="latitude">
+                                 <div class="form-group">
+                                    <div class="form-item">
+                                       <input type="text" id="latitude" autocomplete="off" required />
+                                       <label for="latitude">${languageUtil.get(locale, "latitude", "Latitude")} </label>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="form-item">
+                                       <input type="text" id="longitude" autocomplete="off" 
+                                          required />
+                                       <label for="longitude">${languageUtil.get(locale, "longitude", "Longitude")} </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div style="margin-top: 40px">
+                                 <button class="current-location" type="button">
+                                 ${languageUtil.get(locale, "currentLocationLabel", "Current Location")}
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <h6>${languageUtil.get(locale, "openingHours", "Opening hours")}</h6>
+                           </div>
+                           <div class="col-md-5">
+                              <ul class="week-list">
+                              </ul>
+                           </div>
+                           <div class="col-md-5">
+                              <div class="all-hours-wrapper">
+                                 <button class="add-contact hours-btn edit-all-hours " type="button" data-target="bs-hours-modal" data-toggle="popup">
+                                 ${languageUtil.get(locale, "editAllHoursLabel", "Edit all hours")}
+                                 </button>
+                                 <button class="add-contact hours-btn mon-to-fri" type="button" data-target="bs-hours-modal" data-toggle="popup">
+                                 ${languageUtil.get(locale, "editMonFriLabel", "Edit Mon-Fri")}
+                                 </button>
+                                 <button class="add-contact hours-btn sat-to-sun" type="button" data-target="bs-hours-modal" data-toggle="popup">
+                                 ${languageUtil.get(locale, "editSatSunLabel", "Edit Sat-Sun")}                             
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <span class="text-danger" id="weeklist-error"></span>
+                           </div>
+                        </div>
+                        <div class="row contact-container">
+                           <div class="col-md-12">
+                              <h6>${languageUtil.get(locale, "contactInformation", "Contact information")}</h6>
+                              <div class="add-tag-main">
+                                 <button class="add-contact" type="button" data-target="bs-contact-modal" data-toggle="popup">
+                                    <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                   ${languageUtil.get(locale, "AddContact", "Add Contact")}
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="row" id="contact-card-container">
+                              </div>
+                           </div>
+                        </div>
+                         <div class="row contact-container">
+                              
+                              <div class="col-md-12">
+                                <h6>${languageUtil.get(locale, "documentInformation", "Attach Documents")}</h6>
+                           
+                                <div class="add-tag-main">
+                                 <button class="add-contact add-file add-doc" type="button" data-target="bs-file-modal" data-toggle="popup">
+                                     <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                   ${languageUtil.get(locale, "addFile", "Add File")}
+                                 </button>
+                                </div>
+                              </div>
+
+                              <div class="col-md-12">
+                                 <div class="row" id="file-card-container">
+                                 </div>
+                              </div>                              
+                         </div>
+                         <div class="row contact-container">     
+                              <div class="col-md-12">
+                               <h6>Connect Webpages</h6>
+                                
+                                <div class="add-tag-main">   
+                                  <button class="add-contact add-page add-doc" type="button" data-target="bs-page-modal" data-toggle="popup">
+                                   <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                    ${languageUtil.get(locale, "addPage", "Add Page")}
+                                 </button>
+                                </div>
+                              </div>   
+
+                              <div class="col-md-12">
+                                 <div class="row" id="page-card-container">
+                                 </div>
+                              </div>                            
+                        </div>
+                        <div class="row contact-container">     
+                              <div class="col-md-12">
+                               <h6>${languageUtil.get(locale, "plantProducts", "Plant Products")}</h6>
+                                <div class="add-product-main">   
+                                  <button class="add-contact add-product" type="button" data-target="bs-product-modal" data-toggle="popup">
+                                   <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                    ${languageUtil.get(locale, "addProduct", "Add Product")}
+                                 </button>
+                                </div>
+                              </div>   
+
+                              <div class="col-md-12">
+                                 <div class="row" id="pro-link-card-container">
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="row contact-container">
+                              <div class="col-md-12">
+                                <h6>Upload Publishers</h6>
+                                <div class="add-tag-main">
+                                 <button class="add-contact add-GMB" type="button" data-target="bs-GMB-modal" data-toggle="popup">
+                                     <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                     ${languageUtil.get(locale, "addPublisher", "Add Publisher")}
+                                 </button>
+                                </div>
+                               </div>  
+                                 
+                               <div class="col-md-12">
+                                  <div class="row" id="GMB-card-container">
+                                  </div>
+                              </div>     
+                        </div>   
+                        <div class="row">
+                           <div class="col-md-12">
+                              <h6 style="margin-bottom: 0px;">${languageUtil.get(locale, "uploadPhoto", "Upload Location Photo")} </h6>
+                              <div class="file-upload">
+                                 <cwc-icon name="camera" color="bright-blue"></cwc-icon>
+                                 <input type="file" id="fileInput" />
+                                 <label for="fileInput">Upload Photo</label>
+                                 <span class="text-danger" id="image-error"></span>
+                              </div>
+                              <div id="imagePreview" class="imagePreview" style="display: none">
+                                 <button id="removeButton" type="button">
+                                    <cwc-icon name="close" color="bright-blue"></cwc-icon>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row description-row">
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                     <div id="div_editor1" class="RichText" > </div>
+                                    <span class="text-danger" id="locationDescription-error"></span>
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <input type="checkbox" id="yextSy" name="YextSync" value="true" checked>
+                           <label for="myCheckbox"> UberAll Sync</label>
+                        </div>
+                       <div class="row">
+                           <div class="col-lg-12">
+                               <div class="location-btn-group">
+                                   <button type="button" class="btn btn-default common-btn" data-dismiss="modal">
+                                       ${(CancelLabel?has_content)?then(CancelLabel, 'Cancel')}
+                                   </button>
+                                   <button id="save" type="submit" class="btn btn-primary common-btn blue-btn" value="Save Location">
+                                       ${(SaveLocationLabel?has_content)?then(SaveLocationLabel, 'Save Location')}
+                                   </button>
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+                  </div>
+               </div>
+               <div id="overlay">
+               <div class="cv-spinner">
+                <span class="spinner"></span>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+            <div id="bs-hours-modal" class="bs-hours-modal popup ">
+         <div class="popup-window">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title" >${(openingHours?has_content)?then(openingHours, 'Opening hours')}</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <ul class="week-list-main ">
+                           <li>
+                              <input class="common-chekbox mon-fri" type="checkbox" id="monday" value="monday" />
+                              <label for="monday">M</label>
+                           </li>
+                           <li>
+                              <input class="common-chekbox mon-fri" type="checkbox" id="tuesday"
+                                 value="tuesday" />
+                              <label for="tuesday">T</label>
+                           </li>
+                           <li>
+                              <input class="common-chekbox mon-fri" type="checkbox" id="wednesday"
+                                 value="wednesday" />
+                              <label for="wednesday">W</label>
+                           </li>
+                           <li>
+                              <input class="common-chekbox mon-fri" type="checkbox" id="thursday"
+                                 value="thursday" />
+                              <label for="thursday">T</label>
+                           </li>
+                           <li>
+                              <input class="common-chekbox mon-fri" type="checkbox" id="friday" value="friday" />
+                              <label for="friday">F</label>
+                           </li>
+                           <li>
+                              <input class="common-chekbox sat-sun" type="checkbox" id="saturday"
+                                 value="saturday" />
+                              <label for="saturday">S</label>
+                           </li>
+                           <li>
+                              <input class="common-chekbox sat-sun" type="checkbox" id="sunday" value="sunday" />
+                              <label for="sunday">S</label>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="form-group">
+                           <div class="form-item">
+                              <select class="form-control" id="opening-hours-type">
+                                 <option value="Open">Open</option>
+                                 <option value="Splitting">Splitting</option>
+                                 <option value="Closed">Closed</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div>
+                     <div id="type-time-container">
+                     </div>
+                     <div class="row" id="close-time-row">
+                        <div class="col-md-12">
+                           <div class="form-group close-group" style="display: none;">
+                              <input type="checkbox" id="close" checked="true" disabled />
+                              <label for="close">Closed</label>
+                           </div>
+                        </div>
+                     </div>
+                     <button type="button" id="new-splitting-row"class="btn btn-default">Add New Splitting Row</button>
+                  </div>
+
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                  Cancel
+                  </button>
+                  <button type="submit" id="btnSubmit" class="btn btn-primary popup-close common-btn blue-btn submit-hours"
+                     data-dismiss="popup">
+                  Save
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="bs-contact-modal" class="bs-contact-modal popup ">
+         <div class="popup-window">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">${(contactInformation?has_content)?then(contactInformation, 'Contact information')}</h4>
+               </div>
+               <form id="contactForm" onsubmit="return false;">
+                  <div class="modal-body">
+                     <input type="hidden" value="" class="update-id" />        
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="floating-input">
+                                 <input class="input-focus" type="text" id="contactname" autocomplete="off" />
+                                 <label for="contactname" class="focus-label"> ${(contactName?has_content)?then(contactName, 'Contact Name')}</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <select class="form-control" id="job-position" >
+  
+                                    </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="email" id="emailaddress" autocomplete="off" placeholder=" "/>
+                                 <label for="emailaddress"> ${(emailAddress?has_content)?then(emailAddress, 'Email address')}</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="tel" id="phonenumbermodal" autocomplete="off" required />
+                                 <span class="text-danger" id="phonenumbermodal-error"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                     Cancel
+                     </button>
+                     <button id="save-contact" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save Contact">
+                     Save
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <div id="bs-page-modal" class="bs-page-modal popup ">
+         <div class="popup-window">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">${(pageInformation?has_content)?then(pageInformation, 'Page information')}</h4>
+               </div>
+               <form id="contactForm" onsubmit="return false;">
+                  <div class="modal-body">
+                     <input type="hidden" value="" class="update-id" />        
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                            <div class="form-item">
+                                 <input class="input-focus" type="text" id="pagename" autocomplete="off" required />
+                                 <label for="pagename" class="focus-label">Page Name </label>
+                             </div> 
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                            <div class="form-item">     
+                                 <input class="input-focus" type="url" id="fileUrl" autocomplete="off" name="homepage" required />
+                                 <label for="pagename" class="focus-label">Page URL</label>
+                              </div> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                     Cancel
+                     </button>
+                     <button id="save-page" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save Page"
+                        >
+                     Save
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <div id="bs-product-modal" class="bs-page-modal popup ">
+       <div class="popup-window">
+          <div class="modal-content">
+             <div class="modal-header">
+                <h4 class="modal-title">${(addProduct?has_content)?then(addProduct, 'Add Product')}</h4>
+             </div>
+             <form id="" onsubmit="return false;">
+                <div class="modal-body">
+                   <input type="hidden" value="" class="update-id" />        
+                   <div class="row">
+                      <div class="col-md-6">
+                         <div class="form-group">
+                          <div class="form-item">
+                              <select class="form-control ProductType" name="product-type" id="pro-link-name">
+                                  <option value="">${(selectTheProduct?has_content)?then(selectTheProduct, 'Select the Product')}</option>     
+                              </select>
+                           </div> 
+                         </div>
+                      </div>
+                      <div class="col-md-6">
+                         <div class="form-group">
+                          <div class="form-item">     
+                               <input class="input-focus" type="url" id="pro-link" autocomplete="off" required />
+                               <label for="pro-link" class="focus-label">${(productLink?has_content)?then(productLink, 'Product Link')}</label>
+                            </div> 
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                   ${(CancelLabel?has_content)?then(CancelLabel, 'Cancel')}
+                   </button>
+                   <button id="save-product" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save Product">Save
+                   </button>
+                </div>
+             </form>
+          </div>
+       </div>
+
+      <div id="bs-file-modal" class="bs-file-modal popup ">
+         <div class="popup-window">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">${(fileInformation?has_content)?then(fileInformation, 'File information')}</h4>
+               </div>
+               <form id="contactForm" onsubmit="return false;">
+                  <div class="modal-body">
+                     <input type="hidden" value="" class="file-update-id" />        
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                           <div class="form-item">
+                              <div class="floating-input">
+                                 <input class="input-focus" type="text" id="filename" autocomplete="off" required />
+                                 <label for="filename" class="focus-label">File Name</label>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                              <div class="form-item">
+                               <span class="control-fileupload">
+                                      <label for="file">Choose a file Demo:</label>
+                                     <input type="file" id="file" required />
+                               </span>
+                              </div>
+                              </div>
+                           </div>
+                        </div>      
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                     Cancel
+                     </button>
+                     <button id="save-file" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save File">
+                     Save
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+       <div id="bs-GMB-modal" class="bs-GMB-modal popup ">
+         <div class="popup-window">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title"> ${(publisherInformation?has_content)?then(publisherInformation, 'Publisher Information')}</h4>
+               </div>
+               <form id="contactForm" onsubmit="return false;">
+                  <div class="modal-body">
+                     <input type="hidden" value="" class="file-update-id" />        
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-group">
+                           <div class="form-item">
+                              <div class="floating-input">
+                                 <input class="input-focus" type="text" id="filePublisher" autocomplete="off" required />
+                                 <label for="filename" class="focus-label">Publisher</label>
+                              </div>
+                           </div>
+                           </div>
+                        </div>
+                      </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-group">
+                           <div class="form-item">
+                              <div class="floating-input">
+                                  <span class="GMB-fileupload">
+                                      <label for="fileGMB">Choose a file :</label>
+                                     <input type="file" id="GMBfile" required />
+                               </span>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">   
+                        <div class="col-md-12">
+                           <div class="form-group">
+                           <div class="form-item">
+                                 <div class="floating-input">
+                                    <input class="input-focus" type="text" id="fileDescription" autocomplete="off" required/>
+                                    <label for="filename" class="focus-label">Description</label>
+                                 </div>
+                              </div>
+                             </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                     Cancel
+                     </button>
+                     <button id="save-GMB-data" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save File" >
+                     Save
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+</main>
+
+<script src="https://cxcdn.lfgwcemex.services/javascript/slidefunction.js"></script>
+<script src="https://cxcdn.lfgwcemex.services/javascript/accordion-v2.js"></script>
+
+<script>
+   var defaultLatitude = 40.7128;
+   var defaultLongitude = -74.006;
+   var defaultMapZoomLevel = 8;
+</script>
+
+<script src="https://cemexeu.uk/documents/d/location-application-uk/map-utilities"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYQKXwHhI8LwTxfxK8PQ3nFZAQc4nsjqU&libraries=places&callback=initMap" async defer></script>
+
+<script>
+
+   $(document).ready(function() {
+var editor1 = new RichTextEditor("#div_editor1");
+   //editor1.setHTMLCode("Use inline HTML or setHTMLCode to init the default content.");
+});
+
+
+   var days = [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday",
+       "Friday",
+       "Saturday",
+       "Sunday"
+   ];
+
+   days.forEach((day, index) => {
+        var dayElement = "<li> <span class='row'> <span class='col-md-6'> <span class='day-value' data-day='" + day.toLowerCase() + "'>" + day + ":</span> </span>" +
+            "<span class='col-md-4'><span id='" + day.toLowerCase() + "-time-container'><input type='text' placeholder='—:— - —:—'></span> </span>"+
+            "<span class='col-md-2'><a class='edit-time'" + day.toLowerCase() + "-edit' data-toggle='modal' data-target='.bs-hours-modal' >" +
+            "<cwc-icon name='edit' color='true-black'></cwc-icon></a></span> </span></li>";
+   
+        var weekElement = $("ul.week-list");
+        weekElement.append(dayElement);
+   });
+
+       $(function () {
+        $(".edit-all-hours").on("click", function () {
+            $(".sat-sun").prop("checked", false);
+            $(".mon-fri").prop("checked", false);
+            $(".common-chekbox").prop("checked", true);
+       });
+   
+        $(".mon-to-fri").on("click", function () {
+            $(".common-chekbox").prop("checked", false);
+            $(".sat-sun").prop("checked", false);
+            $(".mon-fri").prop("checked", true);
+       });
+   
+        $(".sat-to-sun").on("click", function () {
+            $(".mon-fri").prop("checked", false);
+            $(".common-chekbox").prop("checked", false);
+            $(".sat-sun").prop("checked", true);
+       });
+   
+        $(".edit-time").on("click", function () {
+            $(".bs-hours-modal").find(".common-chekbox").prop("checked", false);
+            //let dayname = $(this).parent("li").find(".day-value").data("day");
+            let dayname = $(this).parent().parent().find(".day-value").data("day")
+            $(".bs-hours-modal")
+                .find("input[value=" + dayname + "]")
+                .prop("checked", true);
+   
+            var timeInputs = $(this).parent().parent().find(".col-md-4 input");
+            $("#type-time-container").html("");
+            if(timeInputs.length === 1) {
+               setValueInTimeModel(timeInputs, false)
+           } else {
+               $("#opening-hours-type").val("Splitting")
+               timeInputs.each(function () {
+                  setValueInTimeModel(this, true)
+               })
+           }
+       });
+   
+        function setValueInTimeModel(timeElement, isSplit) {
+            modelOpeningSave()
+            var timeValue = timeElement.val();
+               $("#"+timeElement.parent().attr('id').replace("-time-container","")).prop('checked', true)
+           
+               if(timeValue === "Closed") {
+                  $("#opening-hours-type").val("Closed")
+                  $("#close-time-row").hide();
+                  $('#close').prop('checked', true);
+           } else {
+                  if(!isSplit) {
+                     $("#opening-hours-type").val("Open")
+               }
+              addStartEndRowElement(timeValue)
+           }
+           
+            $('#close').prop('checked', false);
+           
+            $("#close-time-row").hide();
+           
+            $("#new-splitting-row").hide();
+       }
+   
+        $(".submit-hours").on("click", function () {
+            var dayClosed = $("#close").is(':checked');
+            var hoursType = $("#opening-hours-type").val();
+            
+             $('.week-list-main li').each(function () {
+                if ($(this).find('input[type="checkbox"]').is(':checked')) {
+                    var dayVal = $(this).find('input[type="checkbox"]').val();
+                    $("#" + dayVal + "-time-container").html("")
+                   if("Open" === hoursType) {
+                       $("#" + dayVal + "-time-container").append("<input type='text' placeholder='—:— - —:—' value='"+ $(".start-time").val() + " - " + $(".close-time").val() +"'> ")
+                   } else if("Splitting" === hoursType) {
+                       $("#type-time-container").find(".row").each(function() {
+                           $("#" + dayVal + "-time-container").append("<input type='text' placeholder='—:— - —:—' value='"+ $(this).find("input.start-time").val() + " - " + $(this).find("input.close-time").val() +"'> ")
+                       })
+                   } else if("Closed" === hoursType) {
+                       $("#" + dayVal + "-time-container").append("<input type='text' placeholder='—:— - —:—' value='Closed'> ")
+                        var isClosed = $("#close").val();
+                   }
+               }
+           });
+            resetTimer();
+       });
+   });    
+   
+    function addStartEndRowElement(timeValue) {
+      var startTimeValue = "";
+      var closeTimeValue = "";
+      var times = timeValue.split(" - ");
+   
+      if(timeValue) {
+         startTimeValue = times[0];
+         closeTimeValue = times[1];
+       }
+   
+      var startEndRow = '<div class="row time-row">' +
+         '<div class="col-md-6">' +
+            '<div class="form-group time-form-group">' +
+               '<div class="form-item time-form-item">' +
+                  '<input type="time" class="timepicker-24-hr start-time" value="'+ startTimeValue + '" />' +
+                  '<label for="start-time"> Open time </label>' +
+               '</div>' +
+            '</div>' +
+         '</div>' +
+         '<div class="col-md-6">' +
+            '<div class="form-group time-form-group">' +
+               '<div class="form-item time-form-item">' +
+                  '<input type="time" name="timepicker-24-hr" class="timepicker-24S-hr close-time" value="'+ closeTimeValue + '" />' +
+                  '<label for="close-time"> Close time </label>' +
+               '</div>' +
+            '</div>' +
+         '</div>' +
+         '<div class="col-md-12"><p class="error-message"></p></div>' +
+      '</div>';
+   
+      $("#type-time-container").append(startEndRow);
+   }
+   
+   addStartEndRowElement("");
+   
+   $("#new-splitting-row").on("click", function(){
+      modelOpeningSave()
+      addStartEndRowElement("")
+   })
+   
+   $('#opening-hours-type').on('change', function() {
+     var selectedValue = $(this).val();
+   
+     modelOpeningSave();
+     if(selectedValue == "Closed") {
+         modelOpeningSave(false)
+     }
+     addTimeFieldsRowByType(selectedValue);
+   });
+   
+   function addTimeFieldsRowByType(selectedValue) {
+     if(selectedValue === 'Open') {
+       $("#new-splitting-row").hide();
+          $("#type-time-container").html("");
+          addStartEndRowElement("");
+       } else if(selectedValue === 'Splitting') {
+          $("#new-splitting-row").show();
+          $("#type-time-container").html("");
+            $("#close-time-row").hide();
+          addStartEndRowElement("");
+       } else if(selectedValue === 'Closed') {
+          $("#new-splitting-row").hide();
+          $("#type-time-container").html("");
+          $("#close-time-row").show();
+       }  
+   }
+   
+   function validateTime() {
+     let allValid = true;
+     modelOpeningSave(true);
+     $('#type-time-container .row').each(function(index) {
+         const startTime = $(this).find('.start-time').val();
+         const closeTime = $(this).find('.close-time').val();
+         const errorMessage = $(this).find('.error-message');
+         errorMessage.text("")
+         errorMessage.show();
+         
+         if (startTime === "" && closeTime === "") {
+             errorMessage.text("Please fill start and end time.");
+             return;
+         }
+         
+         if (startTime === "" || closeTime === "") {
+             errorMessage.text("One of the fields is empty.");
+             return;
+         }
+         
+         if (startTime > closeTime) {
+             errorMessage.text("Start time is not earlier than close time.");
+             allValid = false;
+         }else if (startTime == closeTime) {
+             errorMessage.text("Start time and close time shoud not same.");
+             allValid = false;
+         }
+          else {
+             errorMessage.hide();
+         }
+     });
+     if(allValid) modelOpeningSave(false);
+     return allValid;
+   }
+   
+   $(document).on('blur', '.start-time, .close-time', function() {
+      validateTime();
+   });
+   
+   function modelOpeningSave(isDisable=true) {
+      $('#btnSubmit').prop('disabled', isDisable);
+   }
+
+</script>
+
+
+
+      var currentCountry =  themeDisplay.getLanguageId();
+
+
+   <!-------------------Phone Number field related script------------------->
+    const preferredCountries = ['GB', 'PL', 'CZ', 'FR', 'DE', 'HR', 'ES'
+   ];
+   const defaultCountryCode = currentCountry.code;
+    document.addEventListener("DOMContentLoaded", function () {
+      setFlagCountryInAllPhone(defaultCountryCode);
+   });
+     
+   function setFlagCountryInAllPhone(dynamicCountryCode) {
+      initializeIntlTelInput(preferredCountries, dynamicCountryCode,"phonenumber","phoneNumber-error");
+      initializeIntlTelInput(preferredCountries, dynamicCountryCode,"phonenumbermodal","phonenumbermodal-error");
+   }
+
+   <!--
+    const selectedCountryCodes = {};
+    $(document).ready(function () {
+        function populateDropdown() {
+            const select = $("#country");
+            const currentCountryCode = currentCountry.code; 
+            $.each(countries, function (index, country) {
+                const option = $("<option></option>").attr("value", country.name).text(country.name);
+                if (country.code === currentCountryCode) {
+                    option.attr("selected","selected"); 
+               }
+               select.append(option);
+           });
+       }
+        populateDropdown();
+   });
+   -->
+
+    function initializeIntlTelInput(preferredCountries, defaultCountryCode, inputId, errorId) {
+      const phoneInputField = document.querySelector("#" + inputId);
+      const phoneInput = window.intlTelInput(phoneInputField,{
+         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+         preferredCountries: preferredCountries
+       });
+
+      phoneInput.setCountry(defaultCountryCode);
+      selectedCountryCodes[inputId] = defaultCountryCode;
+
+      updateSelectedCountryCode(inputId, phoneInput.getSelectedCountryData().iso2);
+      phoneInputField.addEventListener("countrychange", function () {
+         const countryCode = phoneInput.getSelectedCountryData().iso2;
+     
+         selectedCountryCodes[inputId] = countryCode; 
+         updateSelectedCountryCode(inputId, countryCode);
+       });
+     
+      phoneInputField.addEventListener("blur", function () {
+         validatePhoneNumber(phoneInput, errorId);
+       });
+     
+      return phoneInput;
+   }
+     
+    let countryCodeValue;
+    let countryCodeValueModal;
+
+    function updateSelectedCountryCode(inputId, countryCode) {
+      if (inputId === "phonenumber") {
+         countryCodeValue = countryCode;
+       } else if (inputId === "phonenumbermodal") {
+         countryCodeValueModal = countryCode;
+       }
+   }
+     
+    function validatePhoneNumber(itiPhone, errorId) {
+       try {
+         var isValid = itiPhone.isValidNumber();
+         if (!isValid) {
+            var err = itiPhone.getValidationError();
+            switch (err) {
+                 case window.intlTelInputUtils.validationError.INVALID_COUNTRY_CODE:
+                 $("#" + errorId).text(invalidCountryCode);
+                 break;
+
+               case window.intlTelInputUtils.validationError.TOO_SHORT:
+                 $("#" + errorId).text(phoneNoShort);
+                 break;
+
+               case window.intlTelInputUtils.validationError.TOO_LONG:
+                 $("#" + errorId).text(phoneNoLong);
+                 break;
+
+               case window.intlTelInputUtils.validationError.NOT_A_NUMBER:
+                 $("#" + errorId).text(invalidPhoneNo);
+                 break;
+
+               default:
+                 $("#" + errorId).text(phoneNotValid);
+                 break;
+               }
+            return false;
+           } else {
+             $("#" + errorId).text("");
+             return true;
+           }
+       } catch (error) {
+         $("#" + errorId).text(errorPhoneNo);
+         return false;
+       }
+   }

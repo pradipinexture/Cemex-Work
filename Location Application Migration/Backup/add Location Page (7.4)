@@ -1,0 +1,3478 @@
+
+<!-- All css libraries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+<link rel="stylesheet" href="/documents/20151/360453/add-location.css">
+
+
+
+<!-- All script libraries -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<link rel="stylesheet" href="/documents/251100/360182/rte_theme_default.css">
+
+<script src="/documents/251100/360182/rte.js"></script>
+<script src="/documents/251100/360182/all_plugins.js"></script>
+
+<style>
+.file-card {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.file-card h2 {
+    display: inline;
+}
+ 
+.file-card h2 {
+    margin-top: 0px;
+    color: #001B3A;
+    font-size: 16px;
+    display: inline;
+}
+ 
+.file-card a.file-card-edit {
+    position: absolute;
+    right: 22%;
+    cursor: pointer;
+}
+ 
+.file-card a.file-card-remove {
+   
+    position: absolute;
+    right: 12%;
+    cursor: pointer;
+    
+}
+
+.GMB-card {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.GMB-card h2 {
+padding-right: 20px;
+    display: inline;
+}
+ 
+.GMB-card h2 {
+    margin-top: 0px;
+    color: #001B3A;
+    font-size: 16px;
+    display: inline;
+}
+ 
+.GMB-card a.GMB-card-edit {
+    top: 15%;
+    position: absolute;
+    right: 22%;
+    cursor: pointer;
+}
+ 
+.GMB-card a.GMB-card-remove {
+    top: 15%;
+    position: absolute;
+    right: 12%;
+    cursor: pointer;
+    
+}
+
+
+.page-card h2 {
+    display: inline;
+}
+ 
+.page-card h2 {
+    margin-top: 0px;
+    color: #001B3A;
+    font-size: 16px;
+    display: inline;
+}
+     
+.page-card a.page-card-edit {
+ top: 23px;
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+}
+
+ 
+.page-card a.page-card-remove {
+    
+    top: 25px;
+    position: absolute;
+    left: 105%;
+    cursor: pointer;
+}
+
+.page-card {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 24px 300px 24px 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+   #address-suggestions {
+      position: absolute;
+      background-color: white;
+      z-index: 99;
+      border: 1px solid #d4d4d4;
+      border-radius: 5px;
+      left: 0;
+      width: 100%;
+      display:none;
+   }
+
+#address-suggestions div {
+   padding: 5px;
+   cursor: pointer;
+   border: 1px solid #d4d4d4;
+}   
+#address-suggestions div:hover {
+ background-color: #433fe2;
+ color: #fff;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.control-fileupload input[type="file"] {
+  display: block !important;
+  right: 1px;
+  top: 1px;
+  height: 40px;
+  opacity: 0;
+  width: 100%;
+  background: none;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+}
+.control-fileupload {
+  display: block;
+  border: 1px solid #b0b0b0;
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 10px 2px 10px;
+  overflow: hidden;
+  position: relative;
+}
+.control-fileupload:before,
+.control-fileupload input,
+.control-fileupload label {
+  cursor: pointer !important;
+}
+.control-fileupload:before {
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: color 0.2s ease;
+  /* add more custom styles*/
+  content: "Browse";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  right: 2px;
+  line-height: 20px;
+  text-align: center;
+}
+.control-fileupload:hover:before,
+.control-fileupload:focus:before {
+  background-color: #e6e6e6;
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  transition: background-position 0.2s ease-out;
+}
+.control-fileupload label {
+  line-height: 40px;
+  color: #999;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 1;
+  cursor: text;
+  top:0px;
+  left:0px;
+  font-weight:700;
+}
+.control-fileupload input
+{
+  display: block;
+  width: 100%;
+  height: 40px !important;
+  background: transparent;
+  border: solid 1px #B0B0B0;
+  transition: all .3s ease;
+  padding: 0 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333333;
+  box-shadow: none;
+}
+.bs-data-modal .modal-header,
+.bs-page-modal .modal-header,
+.bs-file-modal .modal-header
+{
+  border-bottom: 0px;
+  padding: 20px 40px;
+  background-color: #0074D4;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.add-contact.add-doc
+{
+    width:160px;
+}
+
+button.add-contact.add-GMB {
+    width: 160px;
+}
+
+.GMB-fileupload input[type="file"] {
+  display: block !important;
+  right: 1px;
+  top: 1px;
+  height: 40px;
+  opacity: 0;
+  width: 100%;
+  background: none;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+}
+.GMB-fileupload {
+  display: block;
+  border: 1px solid #b0b0b0;
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 10px 2px 10px;
+  overflow: hidden;
+  position: relative;
+}
+.GMB-fileupload:before,
+.GMB-fileupload input,
+.GMB-fileupload label {
+  cursor: pointer !important;
+}
+.GMB-fileupload:before {
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: color 0.2s ease;
+  /* add more custom styles*/
+  content: "Browse";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  right: 2px;
+  line-height: 20px;
+  text-align: center;
+}
+.GMB-fileupload:hover:before,
+.GMB-fileupload:focus:before {
+  background-color: #e6e6e6;
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  transition: background-position 0.2s ease-out;
+}
+.GMB-fileupload label {
+  line-height: 40px;
+  color: #999;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 1;
+  cursor: text;
+  top:0px;
+  left:0px;
+  font-weight:700;
+}
+.GMB-fileupload input
+{
+  display: block;
+  width: 100%;
+  height: 40px !important;
+  background: transparent;
+  border: solid 1px #B0B0B0;
+  transition: all .3s ease;
+  padding: 0 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333333;
+  box-shadow: none;
+}
+
+</style>
+    
+<!-- All script libraries -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/documents/20152/60315374/sh_toaster.js"></script>
+<script type="module" src="https://www.cemexgo.com/cdn/web-components/latest/cmx-web-components/cmx-web-components.esm.js"></script>
+<script nomodule src="https://www.cemexgo.com/cdn/web-components/latest/cmx-web-components/cmx-web-components.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+
+<#assign listOfEUCountriesdd = [
+  { "name": "Germany", "languageId": "de_DE","JobPosition": 364176 },
+  { "name": "United Kingdom", "languageId": "en_GB", "JobPosition": 363975 },
+  { "name": "Spain", "languageId": "es_ES", "code": "ES" ,"JobPosition": 3639798},
+  { "name": "Czech Republic", "languageId": "cs_CZ", "code": "CZ" },
+  { "name": "Poland", "languageId": "pl_PL"},
+  { "name": "France", "languageId": "fr_FR"},
+  { "name": "Croatia", "languageId": "hr_HR", "planttype": "Plan Demo" }
+]>
+
+<#assign currentLanguageId = themeDisplay.getLanguageId()>
+<#assign jobpositionvalue = "">
+
+<#list listOfEUCountriesdd as country>
+  <#if country.languageId == currentLanguageId>
+        <#assign jobpositionvalue = country.JobPosition />
+  </#if>
+</#list>
+
+
+<#assign ddlRecordLocalService = serviceLocator.findService("com.liferay.dynamic.data.lists.service.DDLRecordLocalService")/>
+<#assign positionRecords = ddlRecordLocalService.getRecords(jobpositionvalue)/>
+
+<#assign parentVocabularyName = "Plant Types">
+<#assign parentVocabulary = staticUtil["com.liferay.asset.kernel.service.AssetVocabularyLocalServiceUtil"].getGroupVocabulary(groupId, parentVocabularyName)>
+<#assign childCategories = staticUtil["com.liferay.asset.kernel.service.AssetCategoryLocalServiceUtil"].getVocabularyCategories(parentVocabulary.getVocabularyId(), -1, -1, null)>
+
+
+<main>
+   <div class="sh-toast-container" id="shToastContainerTop"></div>
+   <div class="sh-toast-container" id="shToastContainerBottom"></div>
+   <div class="add-location-main">
+      <div class="container">
+         <div class="location-modal">
+            <div class="location-new-modal-content-inner">
+               <div class="location-new-header">
+                  <h4 id="myModalLabel" >Add location</h4>
+               </div>
+               <div class="location-new-body">
+                  <form id="locationForm" onsubmit="return false;">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="text" id="locationname" class="LocationTitle"
+                                    required/>
+                                 <label for="locationname">Location Name </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <select class="form-control PlantType" name="planttype" id="planttype">
+                                  <option value="">
+                                                                                        Select Plant Type
+                    </option>
+                    <#list childCategories as category>
+<option value="${category.getCategoryId()}">${category.getName()}</option>
+                    </#list>       
+                                 </select>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="text" id="address" autocomplete="off" class="Address"
+                                    required />
+                                 <label for="address">Address </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="floating-input">
+                                 <input type="text" id="addressone" autocomplete="off"
+                                    class="Address2 input-focus" />
+                                 <label for="addressone" class="focus-label">Address 2 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="floating-input">
+                                 <input type="text" id="company" autocomplete="off" class="CompanyName input-focus" />
+                                 <label for="company" class="focus-label">Company Name </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="text" id="city" autocomplete="off" class="TownCity"
+                                    required />
+                                 <label for="city">City </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="text" id="postcode" autocomplete="off"
+                                    class="Postcode" required />
+                                 <label for="postcode">PostCode </label>
+                                              <span class="text-danger" id="postcode-error"></span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <select class="form-control Country" name="country" id="country" required>
+                                    <option value="" disabled selected>Country</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div id="location-map" style="height: 300px; width:100%; margin-bottom: 20px;"></div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="tel" id="phonenumber" autocomplete="off"
+                                    class="PhoneNumber" required />
+                                 <span class="text-danger" id="phoneNumber-error"></span>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="form-item">
+                                 <input type="text" id="map-address" autocomplete="off" required />
+                                    <label for="map-address">Map Address</label>
+                                 <div id="address-suggestions"></div>
+                              </div>
+                           </div>
+                           <div class="latitude">
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="latitude" autocomplete="off" required />
+                                    <label for="latitude">Latitude </label>
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <div class="form-item">
+                                    <input type="text" id="longitude" autocomplete="off" 
+                                       required />
+                                    <label for="longitude">Longitude </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div style="margin-top: 40px">
+                              <button class="current-location" type="button">
+                              Current Location
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h6>Opening hours</h6>
+                        </div>
+                        <div class="col-md-5">
+                           <ul class="week-list">
+                           </ul>
+                        </div>
+                        <div class="col-md-5">
+                           <div class="all-hours-wrapper">
+                              <button class="add-contact hours-btn edit-all-hours " type="button" data-target="bs-hours-modal" data-toggle="popup"
+                                 >
+                              Edit all hours
+                              </button>
+                              <button class="add-contact hours-btn mon-to-fri" type="button" data-target="bs-hours-modal" data-toggle="popup">
+                              Edit Mon-Fri
+                              </button>
+                              <button class="add-contact hours-btn sat-to-sun" type="button" data-target="bs-hours-modal" data-toggle="popup">
+                              Edit Sat-Sun
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <span class="text-danger" id="weeklist-error"></span>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h6>Add Product</h6>
+                           <div class="add-tag-main">
+                              <div class="form-group">
+                                 <div class="floating-input">
+                                    <input type="text" id="tags-input" class="input-focus"/>
+                                    <label for="tags-input" class="focus-label">Products </label>             
+                                 </div>
+                              </div>
+                              <div id="tags-container"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row contact-container">
+                        <div class="col-md-12">
+                           <h6>Contact information</h6>
+                           <div class="add-tag-main">
+                              <button class="add-contact" type="button" data-target="bs-contact-modal" data-toggle="popup">
+                                 <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                 Add Contact
+                              </button>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="row" id="contact-card-container">
+                           </div>
+                        </div>
+                     </div>
+
+                      <div class="row contact-container">
+                           
+                           <div class="col-md-12">
+                             <h6>Document information</h6>
+                            
+                             <div class="add-tag-main">
+                              <button class="add-contact add-file add-doc" type="button" data-target="bs-file-modal" data-toggle="popup">
+                                  <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                Add File
+                              </button>
+                             </div>
+                           </div>
+
+                           <div class="col-md-12">
+                              <div class="row" id="file-card-container">
+                              </div>
+                           </div>
+                      </div>
+                      <div class="row contact-container">     
+                           <div class="col-md-12">     
+                             <div class="add-tag-main">   
+                               <button class="add-contact add-page add-doc" type="button" data-target="bs-page-modal" data-toggle="popup">
+                                  <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                Add Page
+                              </button>
+                             </div>
+                           </div>   
+
+                           <div class="col-md-12">
+                              <div class="row" id="page-card-container">
+                              </div>
+                           </div>                            
+                     </div>
+                     <div class="row contact-container">
+                           <div class="col-md-12">
+                             <div class="add-tag-main">
+                              <button class="add-contact add-GMB" type="button" data-target="bs-GMB-modal" data-toggle="popup">
+                                  <cwc-icon name="plus" color="bright-blue"></cwc-icon>
+                                Add Publisher
+                              </button>
+                             </div>
+                            </div>  
+                              
+                            <div class="col-md-12">
+                               <div class="row" id="GMB-card-container">
+                               </div>
+                           </div>
+            
+                     </div>   
+   
+
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h6 style="margin-bottom: 0px;">Upload Photo</h6>
+                           <div class="file-upload">
+                              <cwc-icon name="camera" color="bright-blue"></cwc-icon>
+                              <input type="file" id="fileInput" />
+                              <label for="fileInput">Upload Photo </label>
+                              <span class="text-danger" id="image-error"></span>
+                           </div>
+                           <div id="imagePreview" class="imagePreview" style="display: none">
+                              <button id="removeButton" type="button">
+                                 <cwc-icon name="close" color="bright-blue"></cwc-icon>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row description-row">
+                        <div class="col-md-12">
+                           <div class="form-group">
+                              <div class="form-item">
+                                  <div id="div_editor1" class="RichText" > </div>
+                                 <span class="text-danger" id="locationDescription-error"></span>
+                                    </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+
+
+         <div class="row">
+            <input type="checkbox" id="yextSy" name="YextSync" value="true"  checked>
+            <label for="myCheckbox"> Yext Sync</label>
+        </div>
+            
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="location-btn-group">
+                              <button type="button" class="btn btn-default common-btn" data-dismiss="modal">
+                              Cancel
+                              </button>
+                              <button id="save" type="submit" class="btn btn-primary common-btn blue-btn"
+                                 value="Save Location">Save Location
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div id="overlay">
+               <div class="cv-spinner">
+                  <span class="spinner"></span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="bs-hours-modal" class="bs-hours-modal popup ">
+      <div class="popup-window">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title" >Opening Hours</h4>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-md-12">
+                     <ul class="week-list-main ">
+                        <li>
+                           <input class="common-chekbox mon-fri" type="checkbox" id="monday" value="monday" />
+                           <label for="monday">M</label>
+                        </li>
+                        <li>
+                           <input class="common-chekbox mon-fri" type="checkbox" id="tuesday"
+                              value="tuesday" />
+                           <label for="tuesday">T</label>
+                        </li>
+                        <li>
+                           <input class="common-chekbox mon-fri" type="checkbox" id="wednesday"
+                              value="wednesday" />
+                           <label for="wednesday">W</label>
+                        </li>
+                        <li>
+                           <input class="common-chekbox mon-fri" type="checkbox" id="thursday"
+                              value="thursday" />
+                           <label for="thursday">T</label>
+                        </li>
+                        <li>
+                           <input class="common-chekbox mon-fri" type="checkbox" id="friday" value="friday" />
+                           <label for="friday">F</label>
+                        </li>
+                        <li>
+                           <input class="common-chekbox sat-sun" type="checkbox" id="saturday"
+                              value="saturday" />
+                           <label for="saturday">S</label>
+                        </li>
+                        <li>
+                           <input class="common-chekbox sat-sun" type="checkbox" id="sunday" value="sunday" />
+                           <label for="sunday">S</label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="form-group">
+                        <div class="form-item">
+                           <select class="form-control" id="opening-hours-type">
+                              <option value="Open">Open</option>
+                              <option value="Splitting">Splitting</option>
+                              <option value="Closed">Closed</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div>
+                  <div id="type-time-container">
+                  </div>
+                  <div class="row" id="close-time-row">
+                     <div class="col-md-12">
+                        <div class="form-group close-group">
+                           <input type="checkbox" id="close" />
+                           <label for="close">Closed</label>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="button" id="new-splitting-row"class="btn btn-default">Add New Splitting Row</button>
+               </div>
+
+            </div>
+            <p class="center-text">
+               <span class="text-danger" id="common-error"></span>
+            </p>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+               Cancel
+               </button>
+               <button type="submit" id="btnSubmit" class="btn btn-primary popup-close common-btn blue-btn submit-hours"
+                  data-dismiss="popup">
+               Save
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+ 
+   <div id="bs-contact-modal" class="bs-contact-modal popup ">
+      <div class="popup-window">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title">Contact information</h4>
+            </div>
+            <form id="contactForm" onsubmit="return false;">
+               <div class="modal-body">
+                  <input type="hidden" value="" class="update-id" />        
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="floating-input">
+                              <input class="input-focus" type="text" id="contactname" autocomplete="off" />
+                              <label for="contactname" class="focus-label">Contact Name </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="form-item">
+                              <select class="form-control" id="job-position" >
+                        <#if positionRecords?size == 0>
+                        <option value="" disabled selected>Job position</option>
+                        <#else>
+                        <option value="" disabled selected>Job Position</option>
+                        <#list positionRecords as position>
+                        <#assign formValues = position.getDDMFormValues().getDDMFormFieldValues()>
+                        <#list formValues as value>
+                        <#if value.getName() == 'JobPosition'>
+                        <option value="${value.getValue().getString(locale)}">${value.getValue().getString(locale)}</option>
+                        </#if>
+                        </#list>  
+                        </#list>
+                        </#if>    
+                        </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="form-item">
+                              <input type="email" id="emailaddress" autocomplete="off" placeholder=" " required />
+                              <label for="emailaddress">Email address </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="form-item">
+                              <input type="tel" id="phonenumbermodal" autocomplete="off" required />
+                              <span class="text-danger" id="phonenumbermodal-error"></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                  Cancel
+                  </button>
+                  <button id="save-contact" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save Contact"
+                     >
+                  Save
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div id="bs-page-modal" class="bs-page-modal popup ">
+      <div class="popup-window">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title">Page information</h4>
+            </div>
+            <form id="contactForm" onsubmit="return false;">
+               <div class="modal-body">
+                  <input type="hidden" value="" class="update-id" />        
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="floating-input">
+                              <input class="input-focus" type="text" id="pagename" autocomplete="off" />
+                              <label for="pagename" class="focus-label">Page Name </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="floating-input">
+                              <input class="input-focus" type="url" id="fileUrl" autocomplete="off" name="homepage">
+                              <label for="pagename" class="focus-label">Page URL</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                  Cancel
+                  </button>
+                  <button id="save-page" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save Page"
+                     >
+                  Save
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div id="bs-file-modal" class="bs-file-modal popup ">
+      <div class="popup-window">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title">File information</h4>
+            </div>
+            <form id="contactForm" onsubmit="return false;">
+               <div class="modal-body">
+                  <input type="hidden" value="" class="file-update-id" />        
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="floating-input">
+                              <input class="input-focus" type="text" id="filename" autocomplete="off" required/>
+                              <label for="filename" class="focus-label">File Name </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <div class="form-item">
+                            <span class="control-fileupload">
+                                   <label for="file">Choose a file Demo:</label>
+                                  <input type="file" id="file" required>
+                            </span>
+                           </div>
+                        </div>
+                     </div>
+                  
+                 
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                  Cancel
+                  </button>
+                  <button id="save-file" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save File"
+                     >
+                  Save
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+    <div id="bs-GMB-modal" class="bs-GMB-modal popup ">
+      <div class="popup-window">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title">Publisher Information</h4>
+            </div>
+            <form id="contactForm" onsubmit="return false;">
+               <div class="modal-body">
+                  <input type="hidden" value="" class="file-update-id" />        
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="form-group">
+                           <div class="floating-input">
+                              <input class="input-focus" type="text" id="filePublisher" autocomplete="off" />
+                              <label for="filename" class="focus-label">Publisher</label>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="form-group">
+                           <div class="floating-input">
+                               <span class="GMB-fileupload">
+                                   <label for="fileGMB">Choose a file :</label>
+                                  <input type="file" id="GMBfile">
+                            </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">   
+                     <div class="col-md-12">
+                        <div class="form-group">
+                              <div class="floating-input">
+                                 <input class="input-focus" type="text" id="fileDescription" autocomplete="off" />
+                                 <label for="filename" class="focus-label">Description</label>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default common-btn popup-close" data-dismiss="popup">
+                  Cancel
+                  </button>
+                  <button id="save-GMB-data" type="submit" class="btn btn-primary  common-btn blue-btn" value="Save File" >
+                  Save
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</main>
+
+<!-------------------Script for the google map feature------------------->
+
+<script>
+document.getElementById("planttype").addEventListener("change", handleCategorySelection);
+    
+    var selectedCategoryIds = [];
+ 
+    function handleCategorySelection() {
+        selectedCategoryIds = [];
+     
+        var selectElement = document.getElementById("planttype");
+     
+        for (var i = 0; i < selectElement.selectedOptions.length; i++) {
+            var categoryId = selectElement.selectedOptions[i].value;
+            selectedCategoryIds.push(categoryId);
+        }
+        console.log("Selected category IDs:", selectedCategoryIds);
+    }
+
+    var defaultLatitude = 40.7128;
+    var defaultLongitude = -74.006;
+    var defaultMapZoomLevel = 8;
+    
+    $('.current-location').click(function () {
+        getCurrentLocation();
+    });
+
+    $('#latitude, #longitude').keyup(function () {
+        updateMap()
+    });
+
+
+    let map;
+    let marker;
+    let geocoder;
+
+    function initMap() {
+        const mapOptions = {
+            center: { lat: defaultLatitude, lng: defaultLongitude },
+            zoom: defaultMapZoomLevel
+        };
+
+        map = new google.maps.Map(document.getElementById("location-map"), mapOptions);
+        geocoder = new google.maps.Geocoder();
+
+        google.maps.event.addListener(map, "click", function (event) {
+            placeMarker(event.latLng);
+            updateCoordinates(event.latLng);
+            getAddress(event.latLng);
+        });
+    }
+
+    function placeMarker(location) {
+        if (marker) {
+            marker.setMap(null);
+        }
+
+        marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+    function updateCoordinates(latLng) {
+        let latitude, longitude;
+
+        if (latLng instanceof google.maps.LatLng) {
+            latitude = latLng.lat();
+            longitude = latLng.lng();
+        } else if (typeof latLng.lat === 'function' && typeof latLng.lng === 'function') {
+            latitude = latLng.lat();
+            longitude = latLng.lng();
+        } else {
+            latitude = latLng.lat;
+            longitude = latLng.lng;
+        }
+
+        document.getElementById("latitude").value = latitude;
+        document.getElementById("longitude").value = longitude;
+    }
+
+    function getCurrentLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    const userLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    map.setCenter(userLocation);
+                    placeMarker(userLocation);
+                    updateCoordinates(userLocation);
+                    getAddress(userLocation);
+                },
+                function (error) {
+                    console.log("Error getting user location:", error);
+                }
+            );
+        } else {
+            console.log("Geolocation is not supported by your browser.");
+        }
+    }
+
+    function updateMap() {
+        const latitude = parseFloat(document.getElementById("latitude").value);
+        const longitude = parseFloat(document.getElementById("longitude").value);
+
+        if (isNaN(latitude) || isNaN(longitude)) {
+            console.log("Please enter valid latitude and longitude.");
+            return;
+        }
+
+        const newLocation = new google.maps.LatLng(latitude, longitude);
+        map.setCenter(newLocation);
+        placeMarker(newLocation);
+        getAddress(newLocation)
+    }
+
+    function getAddress(latLng) {
+        geocoder.geocode({ location: latLng }, function (results, status) {
+            if (status === "OK") {
+                if (results[0]) {
+                    document.getElementById("map-address").value = results[0].formatted_address;
+                } else {
+                    document.getElementById("map-address").value = "Address not found";
+                }
+                //$("#map-addr-label").hide();
+            } else {
+                console.log("Geocoder failed due to: " + status);
+            }
+        });
+    }
+    
+    // New
+    
+    document.getElementById('map-address').addEventListener('input', function () {
+    const inputText = this.value;
+    if (inputText.length > 0) {
+        const service = new google.maps.places.AutocompleteService();
+        service.getPlacePredictions({ input: inputText }, (predictions, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                updateAddressSuggestions(predictions);
+            }
+        });
+    } else {
+        document.getElementById('address-suggestions').innerHTML = '';
+    }
+});
+function updateAddressSuggestions(predictions) {
+    const suggestionsList = document.getElementById('address-suggestions');
+    suggestionsList.innerHTML = '';
+    predictions.forEach((prediction) => {
+        const suggestionItem = document.createElement('div');
+        suggestionItem.textContent = prediction.description;
+        suggestionItem.addEventListener('click', () => {
+            document.getElementById('address-suggestions').innerHTML = '';
+            document.getElementById('map-address').value = prediction.description;
+            onPlaceChanged();
+        });
+        suggestionsList.appendChild(suggestionItem);
+        $("#address-suggestions").show();
+    });
+}
+
+function onPlaceChanged() {
+    const address = document.getElementById('map-address').value;
+    $("#address-suggestions").hide();
+    geocoder.geocode({ address: address }, function (results, status) {
+        if (status === "OK" && results[0].geometry) {
+            const location = results[0].geometry.location;
+            map.setCenter(location);
+            placeMarker(location);
+            updateCoordinates(location);
+            getAddress(location);
+        } else {
+            console.error("Geocoder failed due to: " + status);
+        }
+    });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC3tFBaJSuWO8_avlwxrfaFzVE-sNVVvc&callback=initMap" async defer></script>
+
+<!--<script src="/documents/20152/60315374/add-location.js"></script>-->
+
+
+<script>
+    <!-------------------Constants------------------->
+$('.input-focus').focus(function() {
+  $(this).parent().addClass('focused');
+});
+
+$('#locationForm').on('keypress', function(e) {
+  var keyPressed = e.keyCode || e.which; 
+
+  if ($(event.target).is('textarea')) return;
+
+  if (keyPressed === 13) {
+      event.preventDefault();
+      return false; 
+  }
+});
+
+var fileValues = []; // Array to store fileValue values
+var GMBfileValues = [];
+
+var updateIndexId =  null;
+var GMBupdateIndexId = null;
+
+var countryFolderId = null;
+var documentMediaFolderId = null;
+var coutryLanguageId = null;
+var layoutUUID = null;
+var articleStructureId = '399443';
+var articleTemplateId = '399516';
+var siteURLs = ["https://liferayqa.cemex.com"];
+var thankYouPage = "/thank-you-for-location";
+var defaultLatitude = 40.7128;
+var defaultLongitude = -74.006;
+var defaultMapZoomLevel = 8;
+const countryGroupId = themeDisplay.getScopeGroupId();
+var countryCompanyId = themeDisplay.getCompanyId();
+var guestRoleId= 20123;
+
+var planttype = null;
+
+
+
+//opening hours
+var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+// For coutry dropdown
+var countries = [
+  { code: "HR", name: "Croatia" },
+  { code: "CZ", name: "Czech Republic" },
+  { code: "FR", name: "France" },
+  { code: "DE", name: "Germany" },
+  { code: "PL", name: "Poland" },
+  { code: "ES", name: "Spain" },
+  { code: "GB", name: "United Kingdom" },
+  { code: "BA", name: "Bosnia and Herzegovina" },
+  { code: "ME", name: "Montenegro" },
+  { code: "RS", name: "Serbia" }
+];
+
+
+
+// List of eu countries with data
+var listOfEUCountries = [
+  { name: 'Germany', languageId: 'de_DE', wcmFolderId: 60265754, documentMediaFolderId: '60265900',layoutUUID: "a19c4060-07be-dcb9-5b60-03f5c795e4cc",code: "DE",JobPosition : 364176},
+  { name: 'United Kingdom', languageId: 'en_GB', wcmFolderId: 360229, documentMediaFolderId: '60329921',layoutUUID: "",code: "GB",planttype :"Plant Types",JobPosition:'21222222222'},
+  { name: 'Spain', languageId: 'es_ES', wcmFolderId: 360229, documentMediaFolderId: '360182',layoutUUID: "d9fb9a9f-999c-6401-ea51-ed8f2a8aa985",code: "ES"},
+  { name: 'Czech Republic', languageId: 'cs_CZ', wcmFolderId: 60326347, documentMediaFolderId: '60326349',layoutUUID: "f8dc0ec0-0bac-3acc-4461-2ac9361a59f0",code: "CZ"},
+  { name: 'Poland', languageId: 'pl_PL', wcmFolderId: 60330119, documentMediaFolderId: '60330121',layoutUUID: "d9113e4a-0025-2bfa-d448-c2ff1fa51ae6",code: "PL"},
+  { name: 'France', languageId: 'fr_FR', wcmFolderId: 60353105, documentMediaFolderId: '60353107',layoutUUID: "1dfadceb-64b8-cc19-e32e-c714ba361ad8",code: "FR"},
+  { name: 'Croatia', languageId: 'hr_HR', wcmFolderId: 60354285, documentMediaFolderId: '60354287',layoutUUID: "b19d49ae-6bae-1163-5e9b-308af376dc71",code: "HR" ,planttype :"Plan Demo"}
+];
+
+// Get current coutry data and init values
+var currentCountry = listOfEUCountries.find(country => country.languageId === themeDisplay.getLanguageId());
+
+if(currentCountry){
+  countryFolderId = currentCountry.wcmFolderId;
+  documentMediaFolderId = currentCountry.documentMediaFolderId;
+  coutryLanguageId = currentCountry.languageId;
+  layoutUUID = currentCountry.layoutUUID;
+   countryJobPosition = currentCountry.JobPosition;
+
+} else {
+  console.error("Error while fetching current coutry from array");
+}
+
+
+
+
+//render dynamic id of the products
+var tagId = 1;
+
+// use for rendor dynamic id of the contact cards
+var contactCardId = 1;
+
+var fileCardId = 1;
+var pageCardId = 1;
+var GMBCardId = 1;
+
+
+// List of location structure fields name
+var idSubstrings = ["LocationTitle", "Address", "Address2", "CompanyName", "TownCity", "Country", "Postcode", "PhoneNumber","Time","GeolocationData", "Products", "ContactDetail", "LocationImage","isYextRestrict","RichText","FileCard","AddPage","PublisherImages"];
+
+var currentOrigin = window.location.origin;
+if(siteURLs.includes(currentOrigin)){
+  let extractedPath = '/' + window.location.pathname.split('/').filter(Boolean).slice(0, 2).join('/');
+  currentOrigin += extractedPath
+}
+
+var thankYouPageURL = currentOrigin + thankYouPage
+
+// It is used for not required field need to add remove focused class on focus and blur event
+var needFocusedIds = ["company","contactname","addressone"];
+
+$.each(needFocusedIds, function(index, fId) {
+$('#' + fId).on('blur', function() {
+    if($("#"+ fId).val() == "") {
+        $("#"+ fId).parent().removeClass("focused");
+    }
+});
+});
+
+<!-------------------Model script------------------->
+document.addEventListener('click', function (e) {
+  e = e || window.event;
+  var target = e.target || e.srcElement;
+
+  if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'popup') {
+      if (target.hasAttribute('data-target')) {
+          var m_ID = target.getAttribute('data-target');
+          document.getElementById(m_ID).classList.add('open');
+          e.preventDefault();
+      }
+  }
+
+  // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+  if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'popup') || target.classList.contains('popup')) {
+      const popupDiv = document.getElementsByClassName('popup');
+      if(popupDiv && popupDiv?.length > 0){
+          for (let item of popupDiv) {
+              if(item?.classList?.contains('open')){
+                  item?.classList?.remove('open');
+              }
+          }
+      }
+      e.preventDefault();
+  }
+}, false);
+
+$(document).ready(function() {
+var editor1 = new RichTextEditor("#div_editor1");
+   //editor1.setHTMLCode("Use inline HTML or setHTMLCode to init the default content.");
+
+});
+function validatePostalCode(postalCode) {
+    var apiURL = "https://app.zipcodebase.com/api/v1/search?apikey=3eeee100-cefc-11ee-b060-635cb775ed1a&codes=" + postalCode;
+    var isValid = false;
+
+    // Make an AJAX request to the API with the updated URL
+    $.ajax({
+        url: apiURL,
+        method: "GET",
+        async: false, // Make the request synchronous
+        success: function(response) {
+            if (response.results.length === 0) {
+                console.log("No results found for the postal code: " + postalCode);
+                $("#postcode-error").text("Postal code is not valid");
+                isValid = false;
+            } else {
+                console.log(response); // Log the response to the console
+                $("#postcode-error").text(""); // Clear any previous error message
+                isValid = true;
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error(error); // Log any errors to the console
+            $("#postcode-error").text("An error occurred while validating the postal code");
+            isValid = false;
+        }
+    });
+
+    return isValid;
+}
+
+
+$(document).ready(function() {
+    // Attach keyup event handler to the postal code input field
+    $(document).on("keyup", "#postcode", function() {
+        var pos = $(this).val(); // Get the value of the postal code input field
+
+        // Check if the length of the postal code is at least 3 characters
+        if (pos.length >= 3) {
+            // Call the validatePostalCode function
+            validatePostalCode(pos, function(valid) {
+                if (valid) {
+                    console.log("True Result: Postal code is valid");
+                    // Postal code is valid, handle accordingly
+                } else {
+                    console.log("False Result: Postal code is not valid");
+                    // Postal code is not valid, handle accordingly
+                }
+            });
+        } else {
+            console.log("Postal code is too short"); // Handle the case where the postal code is too short
+        }
+    });
+});
+
+
+
+
+<!-------------------validation scripts------------------->
+ function genericValidations() {
+   var requiredValidateIds = ['LocationTitle', 'Address', 'TownCity', 'Country', 'Postcode', 'PhoneNumber', 'GeolocationData', 'LocationImage'];
+
+   for (var i = 0; i < requiredValidateIds.length; i++) {
+     var field = requiredValidateIds[i];
+
+     if (field === 'GeolocationData') {
+       var longitude = $("#longitude").val();
+       var latitude = $("#latitude").val();
+
+       if (longitude === '' || isNaN(longitude) || latitude === '' || isNaN(latitude)) return false;
+     } else {
+       var fieldValue = $("." + field).val();
+
+       if (field === 'PhoneNumber') {
+         var phoneInputtt = initializeIntlTelInput(preferredCountries, countryCodeValue, 'phonenumber', "phoneNumber-error");
+         
+         if (fieldValue === ''  || !validatePhoneNumber(phoneInputtt, "phoneNumber-error")) return false;
+       }  else if (field === 'LocationImage') {
+         if (!validateImage()) return false;
+       }else if(field === 'Postcode') {
+         var postcoded= $("#postcode").val();
+        if(!validatePostalCode(postcoded)) return false;
+       } else {
+         if (fieldValue === '') return false;
+       }
+     }
+   }
+
+   return true;
+ }
+
+ var fileInputImage = document.getElementById('fileInput');
+var uploadedImage = null;
+
+ function validateImage() {
+   if (fileInputImage && fileInputImage.files && fileInputImage.files.length > 0) {      
+     var fileExtension = fileInputImage.files[0].name.split('.').pop().toLowerCase();
+     var allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+
+     if (allowedExtensions.indexOf(fileExtension) === -1) {
+      fileInputImage.value = '';
+         return false;
+     } 
+   }
+   return true;
+ }
+
+ fileInputImage.addEventListener('change', function () {
+         imageGlobal = null;
+         if(validateImage()){
+         uploadImage();
+      }else{
+              Toast.danger('Please select image only')
+      }
+ });
+
+// Image 
+const fileInput = document.getElementById("fileInput");
+ const imagePreview = document.getElementById("imagePreview");
+ const removeButton = document.getElementById("removeButton");
+
+ fileInput.addEventListener("change", handleFiles);
+ function handleFiles() {
+     const file = this.files[0];
+
+     if (validateImage()) {
+         const reader = new FileReader();
+         reader.onload = function () {
+             imagePreview.style.backgroundImage = "url(" + reader.result + ")";
+             imagePreview.style.display = "block";
+             removeButton.style.display = "block";
+             fileInput.style.display = "none";
+         };
+         reader.readAsDataURL(file);
+     }
+ }
+
+ removeButton.addEventListener("click", () => {
+     imagePreview.style.backgroundImage = "none";
+     fileInput.value = "";
+     removeButton.style.display = "none";
+     fileInput.style.display = "block";
+     imagePreview.style.display = "none";
+ });
+ 
+
+ // Save File Modal Data 
+// Usage example
+var resultList = [];
+
+ // File Upload for 
+ // Event listener for the Save File button click
+
+document.getElementById('save-file').addEventListener('click', function(event) {
+      
+      uploadFile(function(error, response) {
+      
+       if (error) {
+           console.error('Error:', error);
+       } else {
+           if(articleIdFromUrl != null) {
+
+            
+            if(updateIndexId === null){
+               fileValues.push(response);
+            }   
+            
+            var idNumber = updateIndexId.split('-')[3];
+
+            var itemToUpdate = fileValues.find(item => item.id == idNumber);  
+            if (itemToUpdate) {
+             // Update specific properties of the item
+             itemToUpdate.groupId = response.groupId;
+             itemToUpdate.folderId = response.folderId;
+             itemToUpdate.fileName = response.fileName;
+             itemToUpdate.uuid = response.uuid;
+             itemToUpdate.modifiedDate = response.modifiedDate;
+             updateIndexId = null;
+          }
+           
+
+           }else{
+            resultList.push(response);
+           }
+           
+       }
+   });
+});
+
+
+
+// Usage example
+var GMBFileList = [];
+
+document.getElementById('save-GMB-data').addEventListener('click', function(event) {
+      
+
+      uploadGMBFile(function(error, response) {      
+       if (error) {
+           console.error('Error:', error);
+       } else {
+
+            if(articleIdFromUrl != null) {
+
+            
+            if(GMBupdateIndexId === null){
+       
+               GMBfileValues.push(response);
+               return;
+       
+            }   
+            
+            var idNumber = GMBupdateIndexId.split('-')[3];
+
+            var itemToUpdate = GMBfileValues.find(item => item.id == idNumber);  
+    
+            if (itemToUpdate) {         
+             // Update specific properties of the item
+             itemToUpdate.groupId = response.groupId;
+             itemToUpdate.folderId = response.folderId;
+             itemToUpdate.fileName = response.fileName;
+             itemToUpdate.uuid = response.uuid;
+             itemToUpdate.modifiedDate = response.modifiedDate;
+             GMBupdateIndexId = null;
+          }
+           
+        }else{
+         GMBFileList.push(response);
+        }
+       }
+   });
+});
+
+$(document).ready(function () { 
+     function validateStartTime() {
+         var startTime = $("#start-time").val();
+         var endTime = $("#close-time").val();
+
+         if (startTime === '' || endTime === '') {
+             $('#btnSubmit').prop('disabled', true);
+             return;
+         }
+
+         if (startTime < endTime) {
+             clearErrors();
+             clearStartTimeError();
+         } else if (startTime > endTime) {
+             clearErrors();
+             showError("Start time should be earlier");
+             $('#btnSubmit').prop('disabled', true);
+             return;
+         } else {
+             if (startTime.trim() !== "") {
+                 clearCloseTimeError();
+             }
+             clearErrors();
+             showEqualError("Start time and end time cannot be the same.");
+             $('#btnSubmit').prop('disabled', true);
+             return; // exit the function early
+         }
+
+         $('#btnSubmit').prop('disabled', false);
+     }
+
+     function validateCloseTime() {
+         var startTime = $("#start-time").val();
+         var endTime = $("#close-time").val();
+
+         if (startTime === '' || endTime === '') {
+             $('#btnSubmit').prop('disabled', true);
+             return;
+         }
+
+         if (startTime < endTime) {
+             clearErrors();
+             clearStartTimeError();
+         } else if (startTime > endTime) {
+             clearErrors();
+             showError("End time should be later than start time.");
+             $('#btnSubmit').prop('disabled', true);
+             return;
+         } else {
+             if (startTime.trim() !== "") {
+                 clearCloseTimeError();
+             }
+             clearErrors();
+             showEqualError("Start time and end time cannot be the same.");
+             $('#btnSubmit').prop('disabled', true);
+             return;
+         }
+
+         $('#btnSubmit').prop('disabled', false);
+     }
+
+     function clearErrors() {
+         $("#common-error").text("").hide();
+     }
+
+     function clearStartTimeError() {
+         $("#start-time-error").text("").hide();
+     }
+
+     function clearCloseTimeError() {
+         $("#close-time-error").text("").hide();
+     }
+
+     function showError(errorMessage) {
+         $("#common-error").text(errorMessage).show();
+     }
+
+     function showEqualError(equalError) {
+         $("#common-error").text(equalError).show();
+     }
+
+     $('#start-time').change(function () {
+         validateStartTime();
+     });
+
+     $('#close-time').change(function () {
+         validateCloseTime();
+     });
+
+     $(document).ready(function () {
+         clearErrors();
+     }); 
+   
+});
+
+
+<!-------------In below script we are performing add, update, rendor location------------->
+
+async function getWebcontentCategories(resourcePK) {
+  return new Promise((resolve, reject) => {
+    Liferay.Service(
+      '/assetcategory/get-categories',
+      {
+        className: 'com.liferay.journal.model.JournalArticle',
+        classPK: parseInt(resourcePK)
+      },
+      function(obj) {
+        resolve(obj);
+      }
+    );
+  });
+}
+
+
+ const urlParams = new URLSearchParams(window.location.search);
+ const articleIdFromUrl = urlParams.get('articleId');
+ var imageGlobal = null;
+
+ const locationFieldsIds = {
+   'LocationTitle' : '#locationname',
+   'Address' : '#address',
+   'Address2' : '#addressone',
+   'CompanyName' : '#company',
+   'TownCity' : '#city',
+   'Country' : '#country',
+   'Postcode' : '#postcode',
+   'PhoneNumber' : '#phonenumber',
+   'GeolocationData' : {
+      'mapAddress' : '#map-address',
+      'latitude' : '#latitude',
+      'longitude' : '#longitude'
+   },
+   'Monday_Separator' : '#monday-time-container',
+   'Tuesday_Separator' : '#tuesday-time-container',
+   'Wednesday_Separator' : '#wednesday-time-container',
+   'Thursday_Separator' : '#thursday-time-container',
+   'Friday_Separator' : '#friday-time-container',
+   'Saturday_Separator' : '#saturday-time-container',
+   'Sunday_Separator' : '#sunday-time-container',
+ 
+   'Products' : '#tags-input',
+   'ContactDetail': '#contact-card-container',
+   'LocationImage': '#imagePreview',
+   'RichText' : '#div_editor1',
+   'isYextRestrict': '#yextSy',
+   'AddPage': '#page-card-container',
+   'FileCard': '#file-card-container',
+   'PublisherImages': '#GMB-card-container',
+}
+
+ // get location data by id and rendor it in the form 
+ $(document).ready(function () { 
+     var submitButton = document.getElementById("save");
+     var modelHading = document.getElementById("myModalLabel");
+     if (articleIdFromUrl) {
+         submitButton.innerText = "Update Location";
+         modelHading.innerText = "Update Location";
+     }
+
+        // Rendor article data
+     if (articleIdFromUrl) {
+         Liferay.Service(
+             '/journal.journalarticle/get-article',
+             {
+                 groupId: countryGroupId,
+                 articleId: articleIdFromUrl
+             },
+             function (webContent) {
+                 webData = webContent;
+                 const parser = new DOMParser();
+                 const locationXmlDoc = parser.parseFromString(webContent.content, 'application/xml');
+                 
+                 const locationXMLRootChilds = locationXmlDoc.childNodes;
+                 if(locationXMLRootChilds && locationXMLRootChilds.length != 0) {
+                     var allFieldElements= locationXMLRootChilds[0].children;
+
+                     allFieldElements.forEach(function (locationElement) {
+                        const elementName = locationElement.getAttribute('name');
+                        console.log(elementName)
+                        if(!locationFieldsIds[elementName]) return;
+
+                        console.log(locationElement)
+                        const elementContent = locationElement.querySelector('dynamic-content');
+                        const elementContentValue = elementContent.textContent;
+                        const elelemtChildren = locationElement.children;
+   
+                        if(elelemtChildren && elelemtChildren.length == 0) return;
+
+                        if(elementName == 'ContactDetail') {
+                           var contactName = "",contactPhone = "", contactEmail = "", contactJob = "";
+
+                           elelemtChildren.forEach(contactField => {
+                              var attrName = contactField.getAttribute('name');
+                              var attrContent = contactField.querySelector('dynamic-content').textContent;
+                              
+                              if (attrName == "JobPosition") contactJob = attrContent;
+                              else if (attrName == "EmailAddress") contactEmail = attrContent;
+                              else if (attrName == "PhoneNumber1") contactPhone = attrContent;
+                              else if (attrName == "ContactName") contactName = attrContent;
+                           })
+
+                           $(locationFieldsIds[elementName]).append(generateContactElement(contactName, contactJob, contactEmail, contactPhone));
+                        }
+                        else if(elementName == 'Products') {
+                           if(elementContent.textContent) addProductDynamic(elementContent.textContent);
+                        } 
+                        else if(elementName.includes('day_Separator')) {
+                           $(locationFieldsIds[elementName]).html("")
+
+                           elelemtChildren.forEach(dayElem => {
+                              var attrName = dayElem.getAttribute('name'), timeValue = ''
+
+                              if(attrName.includes('TimingSeparator')) {
+                                var openCloseElem = dayElem.children;
+                                const startTime = openCloseElem[0].querySelector('dynamic-content').textContent;
+                                const closeTime = openCloseElem[1].querySelector('dynamic-content').textContent
+
+                                if(startTime && closeTime) timeValue = (startTime +" - "+closeTime);
+                              }
+                              if(attrName.includes('isClosed')) {
+                                var openCloseElemValue = dayElem.querySelector('dynamic-content').textContent;
+                                
+                                if(openCloseElemValue == 'true') timeValue = "Closed";
+                              }
+                              if(timeValue) $(locationFieldsIds[elementName]).append("<input type='text' placeholder='—:— - —:—' value='"+timeValue+"'> ")
+                           })
+                        }
+                        else if(elementName == 'Country') {
+                           var parts = elementContentValue.split(' - ');
+                           if (parts.length === 2) $(locationFieldsIds[elementName]).val(parts[0].trim());
+                           else $(locationFieldsIds[elementName]).val(elementContentValue);
+                        } 
+                        else if(elementName == 'GeolocationData') {
+                           const geolocationData = JSON.parse(elementContentValue);
+
+                           $(locationFieldsIds[elementName]['latitude']).val(geolocationData.latitude);
+                           $(locationFieldsIds[elementName]['longitude']).val(geolocationData.longitude);
+                           
+                           updateMap();
+                        } 
+                        else if(elementName == 'isYextRestrict') {
+                           var isYext = false;
+
+                           if(elementContentValue && elementContentValue == 'true') isYext = true;
+
+                           $(locationFieldsIds[elementName]). attr("checked", isYext)
+                        } 
+                        else if(elementName == 'LocationImage') {
+                           const imagePre = elementContentValue;
+                           imageGlobal = locationElement;
+
+                           $(locationFieldsIds[elementName]).css({"background-image": "url("+imagePre+")", "display": "block"});
+                        } 
+                        else if(elementName == 'AddPage') {
+                            var pageName = elelemtChildren[0].querySelector('dynamic-content').textContent;
+                            var pageURL = elelemtChildren[1].querySelector('dynamic-content').textContent;
+
+                            if(pageName && pageURL) $(locationFieldsIds[elementName]).append(generatePageElement(pageName, pageURL));
+                        }
+                        else if(elementName == 'FileCard') {
+                             var pageName = elelemtChildren[0].querySelector('dynamic-content').textContent;
+                             var pageURL = elelemtChildren[1].querySelector('dynamic-content').textContent;
+                           
+                             const urlParts = pageURL.substring(1).split("/"); // Remove leading slash
+                                   
+                             const locationPriceList = { id:fileCardId, groupId: urlParts[1], folderId: urlParts[2], fileName: urlParts[3],
+                                    uuid: urlParts[4].split("?")[0], modifiedDate: urlParts[4].split("?")[1].split("=")[1] };
+                            
+                            fileValues.push(locationPriceList); 
+                        
+                            $(locationFieldsIds[elementName]).append(generateFileCard(pageName,pageURL.split('/').slice(-2, -1)[0]));
+                        }
+                        else if(elementName == 'PublisherImages') {
+
+
+                            var publisher = "";
+                            var GMBfile = "";
+                            var description = ""; 
+
+                            var publisher = elelemtChildren[0].querySelector('dynamic-content').textContent;
+                            var gmbFile = elelemtChildren[1].querySelector('dynamic-content').textContent;
+                            var description = elelemtChildren[2].querySelector('dynamic-content').textContent;
+
+                            const urlPartss = gmbFile.substring(1).split("/");
+
+                            if (urlPartss.length >= 5) {
+                                GMBfileValues.push({ id: GMBCardId, groupId: urlPartss[1], folderId: urlPartss[2], fileName: urlPartss[3], 
+                                    uuid: urlPartss[4].split("?")[0], modifiedDate: urlPartss[4].split("?")[1].split("=")[1]});
+                            }
+                           
+                            $(locationFieldsIds[elementName]).append(generateGMBDiv(publisher, description, gmbFile.split('/').slice(-2, -1)[0]));
+                        }
+                        else {
+                           $(locationFieldsIds[elementName]).val(elementContentValue)
+                        }            
+                     })
+                 }
+
+             }
+         );
+     }
+ });
+
+ 
+
+function generateGMBDiv(publisher, description, fileValue) {
+    return "<div class='col-md-3'>" +
+    "<div class='GMB-card' id='GMB-card-id-" + (GMBCardId++) + "'>" +
+    "<h2 class='file-Publisher'>" + publisher +
+    "</h2><br>" + 
+    "<a class='GMB-card-edit'>" +
+    "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+    "</a>" +
+    "<a class='GMB-card-remove'>" +
+    "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+    "</a>" +
+    "<h2 class='file-Description'>" + description +
+    "</h2>" +
+    "<p class='file-value'>" + fileValue + "</p>" +
+    "</div>" +
+    "</div>";
+}
+
+function generateFileCard(fileName,fileValue) {
+    return "<div class='col-md-3'>" +
+    "<div class='file-card' id='file-card-id-" + (fileCardId++) + "'>" +
+    "<h2 class='file-name'>" + fileName +
+    "</h2>" +
+    "<a class='file-card-edit'>" +
+    "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+    "</a>" +
+    "<a class='file-card-remove'>" +
+    "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+    "</a>" +
+    "<p class='file-value'>" + fileValue + "</p>" +
+    "</div>" +
+    "</div>";
+}
+
+function generatePageElement(pageName, PageURL) {
+    return "<div class='col-md-3'>" +
+        "<div class='page-card' id='page-card-id-" + (pageCardId++) + "'>" +
+            "<h2 class='page-name'>" + pageName + "</h2>" +
+            "<a class='page-card-edit'>" +
+            "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+            "</a>" +
+            "<a class='page-card-remove'>" +
+            "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+            "</a>" +
+            "<p class='page-url'>" + PageURL + "</p>" +
+        "</div>" +
+    "</div>";
+}
+
+ const xmlBuilder = document.implementation.createDocument(null, null);
+ 
+ function formDataTOXMLString() {
+
+     const currentDate = new Date();
+
+     const declaration = xmlBuilder.createProcessingInstruction('xml', 'version="1.0"');
+     xmlBuilder.appendChild(declaration);
+
+     const rootElement = xmlBuilder.createElement('root');
+     rootElement.setAttribute('available-locales', "" + coutryLanguageId + "");
+     rootElement.setAttribute('default-locale', "" + coutryLanguageId + "");
+     xmlBuilder.appendChild(rootElement);
+
+     for (const idName of idSubstrings) {
+         
+         const instanceId = String(idName).toLowerCase();;
+
+          if(idName.includes("Time")){
+
+               days.forEach((day, index) => {
+                var dayHoursContainer=$("#"+day.toLowerCase()+"-time-container").children();
+                
+               // create parent dynamic element
+                const dayDynamicElementParent = getynamicElement(day+"_Separator", "selection_break", "keyword", day+"_Separator"+index)
+
+                dayHoursContainer.each(function (index,currentEle) {
+                   var fieldValue = currentEle.value;
+                   var startTime = '';
+                   var endTime = '';                   
+                   
+                   if(fieldValue) {
+
+                     var dayDynamicElementChild = getynamicElement("TimingSeparator"+day, "selection_break", "keyword", "TimingSeparator"+day+index);
+                   
+                     if(fieldValue === "Closed") {
+                        var closeXML = createDynamicElement("isClosed"+day, "boolean", "true", "isClosed"+day+index, false);
+                        dayDynamicElementChild.append(closeXML);
+                     } else if(fieldValue.includes(" - ")) {
+                        startTime = fieldValue.split(" - ")[0];
+                        endTime = fieldValue.split(" - ")[1];
+                     }
+
+                        
+                     var startXML = createDynamicElement(day+"Open", "text", startTime, day+"Open"+index, false);
+                     var endXML = createDynamicElement(day+"Close", "text", endTime, day+"Close"+index, false);
+
+                     dayDynamicElementChild.append(startXML);
+                     dayDynamicElementChild.append(endXML)
+                     dayDynamicElementParent.append(dayDynamicElementChild);
+                   }
+                   
+                });
+                
+                console.log(dayDynamicElementParent)          
+                xmlBuilder.documentElement.appendChild(dayDynamicElementParent);
+             });
+
+
+         } else if (idName.includes("Country")) {
+             var countryField = $("." + idName);
+             const selectedCountryObj = countries.find(country => country.name === countryField.val());
+             if (selectedCountryObj) {
+                 createDynamicElement(idName, "text", (countryField.val() + " - " + selectedCountryObj.code), instanceId, true);
+             }
+         } else if (idName.includes("GeolocationData")) {
+             var latitude = $("#latitude").val();
+             var longitude = $("#longitude").val();
+
+             createDynamicElement(idName, "ddm-geolocation", "{\"latitude\":\"" + latitude + "\",\"longitude\":\"" + longitude + "\"}", instanceId, true);
+         } else if (idName.includes("Products")) {
+
+             $('#tags-container [class^="product"]').toArray().forEach((product, index) => {
+                 createDynamicElement("Products", "text", $(product).text().replace("x", ""), ("product" + index), true);
+             });
+         } else if (idName.includes("ContactDetail")) {
+
+             $('[id^="contact-card-id-"]').toArray().forEach((contact, index) => {
+                 const contactInsId = ("contact-detail-" + index);
+                 const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+                 dynamicElement.setAttribute('name', "ContactDetail");
+                 dynamicElement.setAttribute('type', "selection_break");
+                 dynamicElement.setAttribute('index-type', 'keyword');
+                 dynamicElement.setAttribute('instance-id', contactInsId);
+
+                 dynamicElement.appendChild(createDynamicElement("ContactName", "text", $(contact).find(".contact-name").text().trim(), contactInsId + "-name"), false);
+                 dynamicElement.appendChild(createDynamicElement("JobPosition", "text", $(contact).find(".contact-job").text().trim(), contactInsId + "-job"), false);
+                 dynamicElement.appendChild(createDynamicElement("EmailAddress", "text", $(contact).find(".contact-email a").text().trim(), contactInsId + "-email"), false);
+                 dynamicElement.appendChild(createDynamicElement("PhoneNumber1", "text", $(contact).find(".contact-phone").text().trim(), contactInsId + "-phone"), false);
+
+                 xmlBuilder.documentElement.appendChild(dynamicElement);
+             });
+         } else if (idName.includes("FileCard")) {
+
+             $('[id^="file-card-id-"]').toArray().forEach((filed, index) => {
+
+                 var fileInput = document.getElementById('file');
+                 var file = fileInput.files[0];
+
+                 const contactInsId = ("card-detail-" + index);
+                 const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+                 dynamicElement.setAttribute('name', "FileCard");
+                 dynamicElement.setAttribute('type', "selection_break");
+                 dynamicElement.setAttribute('index-type', 'keyword');
+                 dynamicElement.setAttribute('instance-id', contactInsId);
+
+                 dynamicElement.appendChild(createDynamicElement("PriceName", "text", $(filed).find(".file-name").text().trim(), contactInsId + "-name"), false);
+
+                 if (resultList && resultList.length > 0) {
+                     resultList.forEach((result, resultIndex) => {
+                        if (resultIndex === index) {
+                               var dyEle = createDynamicElementForFile(result);
+                               dynamicElement.appendChild(dyEle, false);
+                     }
+                  });
+                 } 
+               
+
+                if (articleIdFromUrl != null && fileValues != null) {
+
+                   fileValues.forEach((result, resultIndex) => {
+               
+                       if (resultIndex === index) {
+                                                  
+                     
+                           var dyEle = createDynamicElementForFile(result);
+                           
+                           dynamicElement.appendChild(dyEle, false);
+                       }
+                   });
+                 
+               }
+                 xmlBuilder.documentElement.appendChild(dynamicElement);
+                 //xmlBuilder.documentElement.appendChild(dyEle);
+
+             });
+         }else if (idName.includes("PublisherImages")) {
+
+             $('[id^="GMB-card-id-"]').toArray().forEach((filed, index) => {
+
+                 var fileInput = document.getElementById('file');
+                
+                 var file = fileInput.files[0];
+
+                 const contactInsId = ("GMBcard-detail-" + index);
+                 const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+                 dynamicElement.setAttribute('name', "PublisherImages");
+                 dynamicElement.setAttribute('type', "selection_break");
+                 dynamicElement.setAttribute('index-type', 'keyword');
+                 dynamicElement.setAttribute('instance-id', contactInsId);
+
+                 dynamicElement.appendChild(createDynamicElement("Publisher", "text", $(filed).find(".file-Publisher").text().trim(), contactInsId + "-name"), false);
+
+                 if (GMBFileList && GMBFileList.length > 0) {
+                     GMBFileList.forEach((result, resultIndex) => {
+                        if (resultIndex === index) {
+                                  var dyEle = createDynamicElementForGMBFile(result);
+                                  dynamicElement.appendChild(dyEle, false);
+                     }
+                  });
+                 } 
+               
+
+               if (articleIdFromUrl != null && GMBfileValues != null) {
+                   GMBfileValues.forEach((result, resultIndex) => {
+                       if (resultIndex === index) {                         
+                           var dyEle = createDynamicElementForGMBFile(result);
+                           dynamicElement.appendChild(dyEle, false);
+                       }
+                   });
+               }
+
+               dynamicElement.appendChild(createDynamicElement("Description", "text", $(filed).find(".file-Description").text().trim(), contactInsId + "-name"), false);
+
+               xmlBuilder.documentElement.appendChild(dynamicElement);
+             });
+            }
+            else if (idName.includes("AddPage")) {
+            
+             $('[id^="page-card-id-"]').toArray().forEach((addPages, index) => {
+             
+                 const contactInsId = ("page-detail-" + index);
+                 const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+                 dynamicElement.setAttribute('name', "AddPage");
+                 dynamicElement.setAttribute('type', "selection_break");
+                 dynamicElement.setAttribute('index-type', 'keyword');
+                 dynamicElement.setAttribute('instance-id', contactInsId);
+
+                 dynamicElement.appendChild(createDynamicElement("PageName", "text", $(addPages).find(".page-name").text().trim(), contactInsId + "-name"), false);
+                 dynamicElement.appendChild(createDynamicElement("PageUrl", "text", $(addPages).find(".page-url").text().trim(), contactInsId + "-job"), false);
+
+                 xmlBuilder.documentElement.appendChild(dynamicElement);
+             });
+         }else if (idName.includes("LocationImage")) {
+             var fileInput = document.getElementById('fileInput');
+             var file = fileInput.files[0];
+
+             if (articleIdFromUrl != null && imageGlobal != null) {
+                 xmlBuilder.documentElement.appendChild(imageGlobal);
+             } else {
+                 if (file && file.size) {
+                     var dyEle = createDynamicElementForImage(uploadedImage);
+                     xmlBuilder.documentElement.appendChild(dyEle);
+                 }
+             }
+         }else if (idName.includes("RichText")){
+     var richData = $("#div_editor1 iframe").contents().find("body").html();
+
+     createDynamicElement(idName, "text", richData, instanceId, true);
+    }else if (idName.includes("isYextRestrict")){
+         
+            var checkBox = document.getElementById("yextSy");
+            var isChecked = checkBox.checked;
+            if (isChecked) {
+                createDynamicElement(idName, "text", true, instanceId, true);
+
+            } else {
+                createDynamicElement(idName, "text",'', instanceId, true);
+            }
+         } else {
+             var fieldValue = $("." + idName).val();
+             createDynamicElement(idName, "text", fieldValue, instanceId, true);
+         }
+     }
+
+     const xmlContent = new XMLSerializer().serializeToString(xmlBuilder);
+     return xmlContent;
+ }
+
+
+function generateContactElement(contactName, contactJob, contactEmail, contactPhone) {
+   return "<div class='col-md-3'>" +
+   "<div class='contact-card' id='contact-card-id-" + (contactCardId++) + "'>" +
+   "<h2 class='contact-name'>" + contactName +
+   "</h2>" +
+   "<a class='card-edit'>" +
+   "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+   "</a>" +
+   "<a class='contact-card-remove'>" +
+      "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+      "</a>" +
+   "<p class='contact-job'>" + contactJob + "</p>" +
+   "<p class='contact-email'><a href='mailto:" + contactEmail + "'>" + contactEmail + "</a></p>" +
+   "<p class='contact-phone'>" + contactPhone + "</p>" +
+   "</div>" +
+   "</div>";
+}
+
+ function createDynamicElement(name, type, value, instanceId, appendInXML) {
+     const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+     dynamicElement.setAttribute('name', name);
+     dynamicElement.setAttribute('type', type);
+     dynamicElement.setAttribute('index-type', 'keyword');
+     dynamicElement.setAttribute('instance-id', instanceId);
+
+     const dynamicContent = xmlBuilder.createElement('dynamic-content');
+     dynamicContent.setAttribute('language-id', "" + coutryLanguageId + "");
+
+     const cdata = xmlBuilder.createCDATASection(value);
+     dynamicContent.appendChild(cdata);
+
+     dynamicElement.appendChild(dynamicContent);
+     if (appendInXML) {
+         xmlBuilder.documentElement.appendChild(dynamicElement);
+     }
+
+     return dynamicElement;
+ }
+
+ function createDynamicElementForImage(documentResponse) {
+     const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+     dynamicElement.setAttribute('name', 'LocationImage');
+     dynamicElement.setAttribute('type', 'image');
+     dynamicElement.setAttribute('index-type', 'text');
+     dynamicElement.setAttribute('instance-id', 'sffadsfgdsadf');
+
+     const dynamicContent = xmlBuilder.createElement('dynamic-content');
+     dynamicContent.setAttribute('language-id', coutryLanguageId);
+     dynamicContent.setAttribute('alt', documentResponse.fileName);
+     dynamicContent.setAttribute('name', documentResponse.fileName);
+     dynamicContent.setAttribute('title', documentResponse.fileName);
+     dynamicContent.setAttribute('type', 'document');
+     dynamicContent.setAttribute('fileEntryId', documentResponse.fileEntryId);
+
+     var imagePath = "/documents/" + documentResponse.groupId
+         + "/" + documentResponse.folderId + "/" + documentResponse.fileName;
+
+     const cdata = xmlBuilder.createCDATASection(imagePath);
+     dynamicContent.appendChild(cdata);
+
+     dynamicElement.appendChild(dynamicContent);
+
+     return dynamicElement;
+ }
+
+  function createDynamicElementForFile(documentResponse) {
+    const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+    dynamicElement.setAttribute('name', 'LocationPriceList');
+    dynamicElement.setAttribute('instance-id', documentResponse.uuid);
+    dynamicElement.setAttribute('type', 'document_library');
+    dynamicElement.setAttribute('index-type', 'keyword');
+
+    const dynamicContent = xmlBuilder.createElement('dynamic-content');
+   //dynamicContent.setAttribute('language-id', themeDisplay.getLanguageId);
+   dynamicContent.setAttribute('language-id', "" + coutryLanguageId + "");
+
+    var filePath = "/documents/" + documentResponse.groupId
+        + "/" + documentResponse.folderId + "/" + documentResponse.fileName + "/" +documentResponse.uuid + "?t=" +documentResponse.modifiedDate;
+
+    const cdata = xmlBuilder.createCDATASection(filePath);
+    dynamicContent.appendChild(cdata);
+
+    dynamicElement.appendChild(dynamicContent);
+
+    return dynamicElement;
+}
+
+ function createDynamicElementForGMBFile(documentResponse) {
+    const dynamicElement = xmlBuilder.createElement('dynamic-element');
+
+    dynamicElement.setAttribute('name', 'File');
+    dynamicElement.setAttribute('instance-id', documentResponse.uuid);
+    dynamicElement.setAttribute('type', 'document_library');
+    dynamicElement.setAttribute('index-type', 'keyword');
+
+    const dynamicContent = xmlBuilder.createElement('dynamic-content');
+   //dynamicContent.setAttribute('language-id', themeDisplay.getLanguageId);
+   dynamicContent.setAttribute('language-id', "" + coutryLanguageId + "");
+
+    var filePath = "/documents/" + documentResponse.groupId
+        + "/" + documentResponse.folderId + "/" + documentResponse.fileName + "/" +documentResponse.uuid + "?t=" +documentResponse.modifiedDate;
+
+    const cdata = xmlBuilder.createCDATASection(filePath);
+    dynamicContent.appendChild(cdata);
+
+    dynamicElement.appendChild(dynamicContent);
+
+    return dynamicElement;
+}
+
+// Add File in Dynamic CTA
+function uploadFile(callback) {
+    var fileInput = document.getElementById('file');
+    var file = fileInput.files[0];
+
+    if (file) {
+        var formData = new FormData();
+        formData.append('repositoryId', themeDisplay.getScopeGroupId());
+        formData.append('folderId', documentMediaFolderId);
+        formData.append('sourceFileName', file.name);
+        formData.append('mimeType', file.type);
+        formData.append('title', file.name);
+        formData.append('description', '');
+        formData.append('changeLog', '');
+        formData.append('file', file);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api/jsonws/dlapp/add-file-entry', true);
+        xhr.setRequestHeader('Authorization', 'Basic bWFub2ouZ29oZWxAZXh0LmNlbWV4LmNvbTpDZW1leDEyMzQ1Ng==');
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var uploadedFile = JSON.parse(xhr.responseText);
+                    $("#file-error").text('');
+                    callback(null, uploadedFile);
+                } else if (xhr.status === 500) {
+                    Toast.danger('This file already exists');
+                    callback('File already exists', null);
+                } else {
+                    console.error('Error uploading file:', xhr.status, xhr.statusText);
+                    callback('Error uploading file', null);
+                }
+            }
+        };
+        xhr.send(formData);
+    } else {
+        Toast.danger('Please select a file.');
+        callback('No file selected', null);
+    }
+}
+
+
+function uploadGMBFile(callback) {
+    var fileInput = document.getElementById('GMBfile');
+    var file = fileInput.files[0];
+
+    if (file) {
+        var formData = new FormData();
+        formData.append('repositoryId', themeDisplay.getScopeGroupId());
+        formData.append('folderId', documentMediaFolderId);
+        formData.append('sourceFileName', file.name);
+        formData.append('mimeType', file.type);
+        formData.append('title', file.name);
+        formData.append('description', '');
+        formData.append('changeLog', '');
+        formData.append('file', file);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api/jsonws/dlapp/add-file-entry', true);
+        xhr.setRequestHeader('Authorization', 'Basic bWFub2ouZ29oZWxAZXh0LmNlbWV4LmNvbTpDZW1leDEyMzQ1Ng==');
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var uploadedGMBFile = JSON.parse(xhr.responseText);
+                    $("#file-error").text('');
+                    callback(null, uploadedGMBFile);
+                } else if (xhr.status === 500) {
+                    Toast.danger('This file already exists');
+                    callback('File already exists', null);
+                } else {
+                    console.error('Error uploading file:', xhr.status, xhr.statusText);
+                    callback('Error uploading file', null);
+                }
+            }
+        };
+        xhr.send(formData);
+    } else {
+        Toast.danger('Please select a file.');
+        callback('No file selected', null);
+    }
+}
+
+
+ function uploadImage() {
+     var fileInput = document.getElementById('fileInput');
+     var file = fileInput.files[0];
+
+     if (file) {
+         var formData = new FormData();
+         formData.append('repositoryId', themeDisplay.getScopeGroupId());
+         formData.append('folderId', documentMediaFolderId);
+         formData.append('sourceFileName', file.name);
+         formData.append('mimeType', file.type);
+         formData.append('title', file.name);
+         formData.append('description', '');
+         formData.append('changeLog', '');
+         formData.append('file', file);
+
+         var xhr = new XMLHttpRequest();
+         xhr.open('POST', '/api/jsonws/dlapp/add-file-entry', true);
+         xhr.setRequestHeader('Authorization', 'Basic bWFub2ouZ29oZWxAZXh0LmNlbWV4LmNvbTpDZW1leDEyMzQ1Ng==');
+
+         xhr.onreadystatechange = function () {
+             if (xhr.readyState === 4) {
+                 if (xhr.status === 200) {
+                     uploadedImage = JSON.parse(xhr.responseText);
+                     $("#image-error").text('');
+                     return JSON.parse(xhr.responseText);
+                 } else if (xhr.status === 500) {
+                    // $("#image-error").text('This image is already exist');
+               Toast.danger('This image is already exist')
+                 } else {
+                     console.error('Error uploading file:', xhr.status, xhr.statusText);
+                 }
+             }
+         };
+         xhr.send(formData);
+     } else {
+         Toast.danger('Please select an image.')
+     }
+     return null;
+ }
+
+ function addArticle(xmlData) {
+     const currentDate = new Date();
+     var locationTitle = $(".LocationTitle").val();
+     Liferay.Service(    
+         '/journal.journalarticle/add-article',
+         {
+             groupId: countryGroupId,
+             folderId: countryFolderId,
+             classNameId: 0,
+             classPK: 0,
+             articleId: '',
+             autoArticleId: true,
+             titleMap: { ["" + coutryLanguageId + ""]: locationTitle },
+             descriptionMap: { ["" + coutryLanguageId + ""]: "" },
+             content: xmlData,
+             ddmStructureKey: articleStructureId,
+             ddmTemplateKey: articleTemplateId,
+             layoutUuid: layoutUUID,
+             displayDateMonth: currentDate.getMonth(),
+             displayDateDay: currentDate.getDate(),
+             displayDateYear: currentDate.getFullYear(),
+             displayDateHour: 00,
+             displayDateMinute: 00,
+             expirationDateMonth: currentDate.getMonth(),
+             expirationDateDay: currentDate.getDate(),
+             expirationDateYear: currentDate.getFullYear() + 1,
+             expirationDateHour: currentDate.getHours(),
+             expirationDateMinute: currentDate.getMinutes(),
+             neverExpire: true,
+             reviewDateMonth: currentDate.getMonth(),
+             reviewDateDay: currentDate.getDate(),
+             reviewDateYear: currentDate.getFullYear(),
+             reviewDateHour: currentDate.getHours(),
+             reviewDateMinute: currentDate.getMinutes(),
+             neverReview: true,
+             indexable: true,
+             articleURL: '',
+             serviceContext: {assetCategoryIds: selectedCategoryIds}
+
+         },
+         function (obj) {
+             if (obj) {
+                 addResourcesToArticle(obj);
+                 Toast.success('Requested location is created successfully.');
+                 window.location.href = thankYouPageURL;
+             } else {
+                 Toast.danger('Requested location is not created.');
+             }
+         },
+         function (error) {
+             Toast.danger('Requested location is not created.');
+         }
+     );
+ }
+
+ function updateArticle(locationformData){
+     Liferay.Service(
+         '/journal.journalarticle/update-article',
+         {
+
+             userId: webData.getUserId,
+             groupId: webData.groupId,
+             folderId: webData.folderId,
+             articleId: articleIdFromUrl,
+             version: webData.version,
+             titleMap: "{ "+coutryLanguageId+": \"" + webData.titleCurrentValue + "\" }",
+             descriptionMap: "{ "+coutryLanguageId+": \"" + webData.descriptionCurrentValue + "\" }",
+             content: locationformData, 
+             layoutUuid: webData.layoutUuid,
+             serviceContext: {assetCategoryIds: selectedCategoryIds}
+         },
+         function (obj) {
+             Toast.success('Location is updated successfully.');
+             window.location.href = thankYouPageURL;
+         }
+     );  
+ }
+
+ function addResourcesToArticle(article) {
+     Liferay.Service(
+         '/resourcepermission/set-individual-resource-permissions',
+         {
+             groupId: countryGroupId,
+             companyId: countryCompanyId,
+             name: 'com.liferay.journal.model.JournalArticle',
+             primKey: article.resourcePrimKey,
+             roleId: guestRoleId,
+             actionIds: ["VIEW"]
+         },
+         function (obj) {
+             console.log("Permission added on the WCM");
+         }
+     );
+ }
+
+ var webData = null;
+     
+ $(document).ready(function() {
+   $('#locationForm').submit(function() {
+     if(!genericValidations()) {
+         Toast.danger('Please fill required and valid information in this form.');
+         return false;
+     }
+
+     var locationformData = formDataTOXMLString();
+     const urlParams = new URLSearchParams(window.location.search);
+     const articleIdFromUrl = urlParams.get('articleId');
+
+     if (articleIdFromUrl == null) {
+         addArticle(locationformData);
+     } else {
+        updateArticle(locationformData)
+     }
+     
+     return true;
+   });
+ });
+
+<!-------------------Phone Number field related script------------------->
+ const preferredCountries = ['GB', 'PL', 'CZ', 'FR', 'DE', 'HR', 'ES'];
+ const defaultCountryCode = currentCountry.code;
+
+ document.addEventListener("DOMContentLoaded", function () {
+   setFlagCountryInAllPhone(defaultCountryCode);
+ });
+  
+function setFlagCountryInAllPhone(dynamicCountryCode) {
+   initializeIntlTelInput(preferredCountries, dynamicCountryCode, "phonenumber", "phoneNumber-error");
+   initializeIntlTelInput(preferredCountries, dynamicCountryCode, "phonenumbermodal", "phonenumbermodal-error");
+}
+
+ const selectedCountryCodes = {};
+
+ $(document).ready(function () {
+     function populateDropdown() {
+         const select = $("#country");
+         const currentCountryCode = currentCountry.code; 
+         $.each(countries, function (index, country) {
+             const option = $("<option></option>").attr("value", country.name).text(country.name);
+             if (country.code === currentCountryCode) {
+                 option.attr("selected", "selected"); // Set the option as selected if its code matches the currentCountry.code
+             }
+             select.append(option);
+         });
+     }
+     populateDropdown();
+ });
+  
+ function initializeIntlTelInput(preferredCountries, defaultCountryCode, inputId, errorId) {
+   const phoneInputField = document.querySelector("#" + inputId);
+   const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      preferredCountries: preferredCountries
+   });
+
+   phoneInput.setCountry(defaultCountryCode);
+
+   selectedCountryCodes[inputId] = defaultCountryCode;
+
+   updateSelectedCountryCode(inputId, phoneInput.getSelectedCountryData().iso2);
+
+   phoneInputField.addEventListener("countrychange", function () {
+      const countryCode = phoneInput.getSelectedCountryData().iso2;
+  
+      selectedCountryCodes[inputId] = countryCode; // Update selected country code
+      updateSelectedCountryCode(inputId, countryCode);
+   });
+  
+   phoneInputField.addEventListener("blur", function () {
+      validatePhoneNumber(phoneInput, errorId);
+   });
+  
+   return phoneInput;
+ }
+  
+ let countryCodeValue;
+ let countryCodeValueModal;
+
+ function updateSelectedCountryCode(inputId, countryCode) {
+   if (inputId === "phonenumber") {
+      countryCodeValue = countryCode;
+   } else if (inputId === "phonenumbermodal") {
+      countryCodeValueModal = countryCode;
+   }
+ }
+  
+ function validatePhoneNumber(itiPhone, errorId) {
+     try {
+      var isValid = itiPhone.isValidNumber();
+      if (!isValid) {
+         var err = itiPhone.getValidationError();
+         switch (err) {
+              case window.intlTelInputUtils.validationError.INVALID_COUNTRY_CODE:
+              $("#" + errorId).text("Invalid country code. Please try again.");
+              break;
+
+            case window.intlTelInputUtils.validationError.TOO_SHORT:
+              $("#" + errorId).text("The phone number is too short. Please enter a longer number.");
+              break;
+
+            case window.intlTelInputUtils.validationError.TOO_LONG:
+              $("#" + errorId).text("The phone number is too long. Please enter a shorter number.");
+              break;
+
+            case window.intlTelInputUtils.validationError.NOT_A_NUMBER:
+              $("#" + errorId).text("Please enter a valid phone number using only digits.");
+              break;
+
+            default:
+              $("#" + errorId).text("The phone number is not valid. Please check and try again.");
+              break;
+         }
+         return false;
+      } else {
+         $("#" + errorId).text("");
+         return true;
+      }
+   } catch (error) {
+      console.error("An error occurred during phone number validation:", error);
+      $("#" + errorId).text("An error occurred during validation. Please try again.");
+      return false;
+   }
+ }
+
+ function validateEmailAddress(email) {        
+     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+     if (!emailPattern.test(email)) {
+         return false;
+     }
+
+     return true;
+ }
+
+ function validateLocationDescription() {
+     var value = $("#locationDescription").val().trim();
+     
+     if (value == "") {
+         $("#locationDescription-error").text("");
+         return true;
+     }
+     else if (value.length < 10) {
+         $("#locationDescription-error").text("Please enter at least 10 characters");
+         return false;
+     }
+     else {
+         $("#locationDescription-error").text("");
+         return true;
+     }
+ }
+<!-------------------Opening Hours------------------->
+ function resetTimer() {
+      $(".week-list-main li input").prop('checked', false)
+    $('#close').prop('checked', false);
+   $("#opening-hours-type").val("Open");
+   $("#close-time-row").hide();
+    $("#type-time-container").html("");
+   addStartEndRowElement("");
+   $("#new-splitting-row").hide(); }
+
+ days.forEach((day, index) => {
+     var dayElement = "<li> <span class='row'> <span class='col-md-6'> <span data-day='" + day.toLowerCase() + "'>" + day + ":</span> </span>" +
+         "<span class='col-md-4'><span id='" + day.toLowerCase() + "-time-container'><input type='text' placeholder='—:— - —:—'></span> </span>"+
+         "<span class='col-md-2'><a class='edit-time " + day.toLowerCase() + "-edit' data-toggle='modal' data-target='.bs-hours-modal' >" +
+         "<cwc-icon name='edit' color='true-black'></cwc-icon></a></span> </span></li>";
+
+     var weekElement = $("ul.week-list");
+     weekElement.append(dayElement);
+ });
+
+
+ $(function () {
+     $(".edit-all-hours").on("click", function () {
+         $(".sat-sun").prop("checked", false);
+         $(".mon-fri").prop("checked", false);
+         $(".common-chekbox").prop("checked", true);
+     });
+
+     $(".mon-to-fri").on("click", function () {
+
+         $(".common-chekbox").prop("checked", false);
+         $(".sat-sun").prop("checked", false);
+         $(".mon-fri").prop("checked", true);
+     });
+
+     $(".sat-to-sun").on("click", function () {
+         $(".mon-fri").prop("checked", false);
+         $(".common-chekbox").prop("checked", false);
+         $(".sat-sun").prop("checked", true);
+     });
+
+     $(".edit-time").on("click", function () {
+         $(".bs-hours-modal").find(".common-chekbox").prop("checked", false);
+         let dayname = $(this).parent("li").find("span").data("day");
+         $(".bs-hours-modal")
+             .find("input[value=" + dayname + "]")
+             .prop("checked", true);
+
+         var timeInputs = $(this).parent().parent().find(".col-md-4 input");
+         if(timeInputs.length === 1) {
+            console.log("1")
+            setValueInTimeModel(timeInputs, false)
+         } else {
+            console.log("Many")
+            $("#opening-hours-type").val("Splitting")
+            timeInputs.each(function () {
+               
+               setValueInTimeModel(this, true)
+            })
+         }
+
+     });
+
+     function setValueInTimeModel(timeElement, isSplit) {
+         var timeValue = timeElement.val();
+            $("#"+timeElement.parent().attr('id').replace("-time-container","")).prop('checked', true)
+         
+         
+            if(timeValue === "Closed") {
+               $("#opening-hours-type").val("Closed")
+               $("#close-time-row").hide();
+               $('#close').prop('checked', true);
+            } else {
+               if(!isSplit) {
+                  $("#opening-hours-type").val("Open")
+               }
+               addStartEndRowElement(timeValue)
+            }
+         
+
+         $(".week-list-main li input").prop('checked', false)
+          $('#close').prop('checked', false);
+         $("#opening-hours-type").val("Open");
+         $("#close-time-row").hide();
+          $("#type-time-container").html("");
+         
+         $("#new-splitting-row").hide();
+     }
+
+     $(".submit-hours").on("click", function () {
+         var dayClosed = $("#close").is(':checked');
+         var hoursType = $("#opening-hours-type").val();
+         
+          $('.week-list-main li').each(function () {
+             if ($(this).find('input[type="checkbox"]').is(':checked')) {
+                 var dayVal = $(this).find('input[type="checkbox"]').val();
+                 $("#" + dayVal + "-time-container").html("")
+                if("Open" === hoursType) {
+                    $("#" + dayVal + "-time-container").append("<input type='text' placeholder='—:— - —:—' value='"+ $("#start-time").val() + " - " + $("#close-time").val() +"'> ")
+                } else if("Splitting" === hoursType) {
+                    $("#type-time-container").find(".row").each(function() {
+                        $("#" + dayVal + "-time-container").append("<input type='text' placeholder='—:— - —:—' value='"+ $(this).find(".start-time input").val() + " - " + $(this).find(".close-time input").val() +"'> ")
+                    })
+        
+                } else if("Closed" === hoursType) {
+                    $("#" + dayVal + "-time-container").append("<input type='text' placeholder='—:— - —:—' value='Closed'> ")
+                     var isClosed = $("#close").val();
+                }
+        
+             }
+         });
+         resetTimer();
+         
+        //  $('.week-list-main li').each(function () {
+        //      if ($(this).find('input[type="checkbox"]').is(':checked')) {
+        //          var dayVal = $(this).find('input[type="checkbox"]').val();
+
+        //          if (dayClosed) {
+        //              $("#" + dayVal + "-input").val("Closed");
+        //          } else {
+        //              $("#" + dayVal + "-input").val(starttime + " - " + closetime);
+        //          }
+        //          resetTimer()
+        //      }
+        //  });
+     });
+ });   
+
+
+  $(".popup-close").on("click", function () {
+   $('.bs-hours-modal').modal('hide');
+   $('.modal-backdrop').remove();
+    $('.bs-contact-modal').modal('hide');
+ });
+
+function addStartEndRowElement(timeValue) {
+   var startTimeValue = "";
+   var closeTimeValue = "";
+   var times = timeValue.split(" - ");
+
+   if(timeValue) {
+      startTimeValue = times[0];
+      closeTimeValue = times[1];
+   }
+
+   var startEndRow = '<div class="row">' +
+      '<div class="col-md-6">' +
+         '<div class="form-group">' +
+            '<div class="form-item start-time">' +
+               '<input type="time" class="timepicker-24-hr" id="start-time" value="+ startTimeValue + " />' +
+               '<label for="start-time"> Open time </label>' +
+            '</div>' +
+         '</div>' +
+      '</div>' +
+      '<div class="col-md-6">' +
+         '<div class="form-item close-time">' +
+            '<input type="time" id="close-time" name="timepicker-24-hr" class="timepicker-24S-hr" value="+ closeTimeValue + " />' +
+            '<label for="close-time"> Close time </label>' +
+         '</div>' +
+      '</div>' +
+   '</div>';
+
+   $("#type-time-container").append(startEndRow);
+}
+
+addStartEndRowElement("");
+
+$("#new-splitting-row").on("click", function(){
+   addStartEndRowElement("")
+})
+
+ $('#opening-hours-type').on('change', function() {
+  var selectedValue = $(this).val();
+
+  if(selectedValue === 'Open') {
+    $("#new-splitting-row").hide();
+    $("#type-time-container").html("");
+    addStartEndRowElement("");
+  } else if(selectedValue === 'Splitting') {
+    $("#new-splitting-row").show();
+    $("#type-time-container").html("");
+      $("#close-time-row").hide();
+    addStartEndRowElement("");
+  } else if(selectedValue === 'Closed') {
+    $("#new-splitting-row").hide();
+    $("#type-time-container").html("");
+    $("#close-time-row").show();
+  }
+});
+
+<!-------------------Products------------------->
+$(".dropdown-menu li").on("click", function () {
+      $(".dropdown-select").text($(this).text());
+  });
+
+  // add new product in UI when user click on add button
+  const input = document.getElementById("tags-input");
+  const container = document.getElementById("tags-container");
+  var isNewAdded=false;
+
+  input.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" && input.value) {
+          addProductDynamic("");
+      }
+  });
+
+   function addProductDynamic(value) {
+      const tag = document.createElement("div");
+      tag.className = "product" + (tagId++);
+      if (value === "") {
+          tag.textContent = input.value;
+      } else {
+          tag.textContent = value;
+      }
+
+      container.appendChild(tag);
+      input.value = "";
+
+      const closeBtn = document.createElement("button");
+      closeBtn.textContent = "x";
+      closeBtn.className = "close-btn";
+      tag.appendChild(document.createTextNode(input.value));
+      tag.appendChild(closeBtn);
+      container.appendChild(tag);
+      input.value = "";
+      isNewAdded = true;
+      setTimeout(() => {
+          isNewAdded = false;
+      }, 1000);
+      closeBtn?.addEventListener("click", function () {
+          if(isNewAdded) {
+              $('html,body').animate({
+              scrollTop: $("#tags-container").offset().top},
+              'slow');
+              return;
+          }
+          event.target.parentElement.remove();
+      });
+  } 
+
+<!-------------------Contact Cards------------------->
+ $(".add-contact").on("click", function () {
+         resetContactModel();
+ });
+
+ function resetContactModel() {
+     $("#contactname").val("");
+     $("#emailaddress").val("");
+     $("#phonenumbermodal").val("");
+     $("#job-position").val("")
+     $("#save-contact").text("Save");
+ }
+
+ resetContactModel();
+ 
+ function setDataInContactModel(name, email, phone, job, update, updateId) {
+     resetContactModel();
+     
+     
+     if(name && name != '-') {
+        $("#contactname").val(name); 
+        $("#contactname").parent().addClass("focused");
+     }
+     if (email && email != '-') {
+        $("#emailaddress").val(email); 
+        $("#emailaddress").parent().addClass("focused");
+     }
+
+     if (job && job != '-') {
+        $("#job-position").val(job); 
+        $("#job-position").parent().addClass("focused");
+     }
+     
+     $("#phonenumbermodal").val(phone);
+
+     
+     if (update) {
+         $("#save-contact").text("Update");
+         $(".update-id").val(updateId);
+     }
+ }
+
+ $(document.body).on("click", ".contact-card-remove", function () {
+     var contactCard = $(this).closest(".col-md-3");
+     contactCard.remove();
+     Toast.success('Contact removed successfully');
+ });
+
+ $(document.body).on("click", ".card-edit", function () {
+     var contactCard = $(this).closest(".contact-card");
+     var contactname = contactCard
+         .find(".contact-name")
+         .contents()
+         .filter(function () {
+             return this.nodeType === Node.TEXT_NODE;
+         })
+         .text()
+         .trim();
+
+     var contactjob = contactCard.find(".contact-job").text().trim();
+     var contactemail = contactCard.find(".contact-email a").text().trim();
+     var contactphone = contactCard.find(".contact-phone").text().trim();
+     var updateId = contactCard.attr('id');
+
+     setDataInContactModel(
+         contactname,
+         contactemail,
+         contactphone,
+         contactjob,
+         true,
+         updateId
+     );
+     $("#bs-contact-modal").addClass("open");
+ });
+
+// rendor contact card on click of add buttton
+ $("#save-contact").on("click", function (e) {
+     var operationType = $("#save-contact").text();
+
+    var contactName = $("#contactname").val() || "-";
+     var jobPosition = $("#job-position").val() || "-";
+     var emailAddress = $("#emailaddress").val() || "-";
+     var phoneNumber = $("#phonenumbermodal").val();
+
+
+
+     var phoneInputtt = initializeIntlTelInput(preferredCountries, countryCodeValueModal, 'phonenumbermodal', "phonenumbermodal-error");
+
+      if (phoneNumber === '' || !validatePhoneNumber(phoneInputtt, "phonenumbermodal-error")) {
+         Toast.danger('All fields must be filled out with valid data in the contact form');
+         return;
+     }
+    
+
+
+     if (operationType === "Save") {
+         let contactDiv = "<div class='col-md-3'>" +
+             "<div class='contact-card' id='contact-card-id-" + (contactCardId++) + "'>" +
+             "<h2 class='contact-name'>" + contactName +
+             "</h2>" +
+             "<a class='card-edit'>" +
+             "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+             "</a>" +
+             "<a class='contact-card-remove'>" +
+             "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+             "</a>" +
+             "<p class='contact-job'>" + jobPosition + "</p>" +
+             "<p class='contact-email'><a href='mailto:" + emailAddress + "'>" + emailAddress + "</a></p>" +
+             "<p class='contact-phone'>" + phoneNumber + "</p>" +
+             "</div>" +
+             "</div>";
+         $('#contact-card-container').append(contactDiv);
+         Toast.success('Contact data added successfully');
+       $("#bs-contact-modal").removeClass("open");
+
+     } else {
+         var contactCard = $('#' + $(".update-id").val());
+         contactCard.find(".contact-name").text(contactName);
+         contactCard.find(".contact-job").text(jobPosition);
+         contactCard.find(".contact-email a").text(emailAddress);
+         contactCard.find(".contact-phone").text(phoneNumber);
+         Toast.success('Contact form data updated successfully');
+
+         $("#bs-contact-modal").removeClass("open");
+     }
+     resetContactModel();
+
+ });
+
+ <!--------------------------File Modal Card----------------------------->
+// Reset the file modal on adding a new file card
+$(".add-file").on("click", function () {
+    resetFileModal();
+});
+
+// Reset the file modal inputs and set default operation text to "Save"
+
+ function resetFileModal() {
+
+    $("#filename").val("");
+      
+    var fileInputt = document.getElementById('file');
+    var label = document.querySelector('label[for="file"]');
+
+    fileInputt.value = '';
+    label.textContent = 'File : ';
+
+    $("#save-file").text("Save");
+
+}
+resetFileModal();
+
+var updateFileId = null;
+
+function setDataInFileModal(name, value, update) {
+    resetFileModal();
+   
+    if (name && name !== '-') {
+        $("#filename").val(name); 
+        $("#filename").parent().addClass("focused");
+    }
+   
+    
+    if (value && value !== '-') {
+         var fileInput = document.getElementById('file');
+         var label = document.querySelector('label[for="file"]');
+
+         fileInput.value = '';
+         label.textContent = 'File : ' + value; 
+    }
+
+    if (update) {
+        $("#save-file").text("Update");
+    }
+}
+
+
+ $(document.body).on("click", ".file-card-remove", function () {
+     var fileCard = $(this).closest(".col-md-3");
+     fileCard.remove();
+     Toast.success('Contact removed successfully');
+ });
+
+
+$(document.body).on("click", ".file-card-edit", function () {
+
+    var fileCard = $(this).closest(".file-card");
+
+    var fileName = fileCard.find(".file-name").text().trim();
+
+    var fileValue = fileCard.find(".file-value").text().trim();
+
+    var updateId = fileCard.attr('id');
+
+    updateIndexId = updateId;
+
+    updateFileId = updateId;
+
+    setDataInFileModal(
+        fileName,
+        fileValue,
+        true
+    );
+
+    $("#bs-file-modal").addClass("open");
+});
+
+$("#save-file").on("click", function (e) {
+
+    var operationType = $("#save-file").text();
+
+    var fileName = $("#filename").val() || "-";
+
+    var fileValue = $("#filevalue").val() || "-";
+
+    var label = document.querySelector('label[for="file"]');
+
+   // Get the file name from the label text
+   var fileNameData = label.textContent.split(' : ')[1].trim();
+
+
+
+    if (operationType === "Save") {
+        let fileDiv = "<div class='col-md-3'>" +
+            "<div class='file-card' id='file-card-id-" + (fileCardId++) + "'>" +
+            "<h2 class='file-name'>" + fileName +
+            "</h2>" +
+            "<a class='file-card-edit'>" +
+            "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+            "</a>" +
+            "<a class='file-card-remove'>" +
+            "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+            "</a>" +
+            "<p class='file-value'>" + fileNameData + "</p>" +
+            "</div>" +
+            "</div>";
+        $('#file-card-container').append(fileDiv);
+        $("#bs-file-modal").removeClass("open");
+    } else {
+         if(updateFileId) {
+           var fileCard = $('#' + updateFileId);
+          
+           //$("#file-card-id-"++" h2").text("Test");
+            
+            $("#"+updateFileId+" p:last-child").text(fileNameData);
+
+            fileCard.find(".file-name").text(fileName);
+
+            var fileInput = document.getElementById('file');
+            var label = document.querySelector('label[for="file"]');
+
+            fileInput.value = '';
+            label.textContent = 'File : ' + fileNameData; // Update label text with fileNameData
+
+
+           Toast.success('File data updated successfully');
+           $("#bs-file-modal").removeClass("open");      
+        } else {
+         // error accured while saving a file.
+        }
+    }
+    resetFileModal();
+});
+
+
+
+
+//Page Modal Function
+
+$(".add-page").on("click", function () {
+    resetPageModal();
+});
+
+
+ function resetPageModal() {
+    $("#pagename").val("");
+    $("#fileUrl").val("");
+    $("#save-page").text("Save");
+}
+
+
+resetPageModal();
+var updatePageId = null;
+function setDataInPageModal(name, value, update) {
+   
+    resetPageModal();
+   
+    if (name && name !== '-') {
+        $("#pagename").val(name); 
+        $("#pagename").parent().addClass("focused");
+    }
+ 
+    if (value && value !== '-') {
+        $("#fileUrl").val(value); 
+        $("#fileUrl").parent().addClass("focused");
+    }
+
+    if (update) {
+        $("#save-page").text("Update");
+    }
+}
+
+
+
+ $(document.body).on("click", ".page-card-remove", function () {
+     var pageCard = $(this).closest(".col-md-3");
+     pageCard.remove();
+     Toast.success('Contact removed successfully');
+ });
+
+$(document.body).on("click", ".page-card-edit", function () {
+
+    var pageCard = $(this).closest(".page-card");
+
+    var pageName = pageCard.find(".page-name").text().trim();
+
+    var pageValue = pageCard.find(".page-url").text().trim();
+
+    var updateIdd = pageCard.attr('id');
+
+    updatePageId = updateIdd;
+    
+    setDataInPageModal(
+        pageName,
+        pageValue,
+        true
+    );
+
+    $("#bs-page-modal").addClass("open");
+});
+
+
+$("#save-page").on("click", function (e) {
+    
+    e.preventDefault(); // Prevent the default form submission
+
+    var operationType = $("#save-page").text();
+
+    // Get the values from the input fields
+    var pagename = $("#pagename").val() || "-";
+    var fileUrl = $("#fileUrl").val() || "-";
+
+    // Construct the HTML for the file card
+    
+    if (operationType === "Save") {
+    var pageCard = "<div class='col-md-3'>" +
+                       "<div class='page-card' id='page-card-id-" + (pageCardId++) + "'>" +
+                           "<h2 class='page-name'>" + pagename + "</h2>" +
+                           "<a class='page-card-edit'>" +
+                            "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+                            "</a>" +
+                            "<a class='page-card-remove'>" +
+                            "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+                            "</a>" +
+                           "<p class='page-url'>" + fileUrl + "</p>" +
+                       "</div>" +
+                   "</div>";
+
+    // Append the file card HTML to the file-card-container
+    $('#page-card-container').append(pageCard);
+    $("#bs-page-modal").removeClass("open");      
+
+   }else {
+        
+         if(updatePageId) {
+           var pageCard = $('#' + updatePageId);   
+           pageCard.find(".page-name").text(pagename);
+           pageCard.find(".page-url").text(fileUrl);
+           Toast.success('Page data updated successfully');
+           $("#bs-page-modal").removeClass("open");      
+        
+        } else {
+         // error accured while saving a file.
+        }
+   }
+   resetPageModal();
+}); 
+
+    
+// GMB Modal Data 
+
+// Reset the file modal on adding a new file card
+$(".add-GMB").on("click", function () {
+    resetGMBModal();
+});
+
+// Reset the file modal inputs and set default operation text to "Save"
+
+ function resetGMBModal() {
+
+    $("#filePublisher").val("");
+    $("#fileDescription").val("");
+
+    //$("#filename").val("");
+   
+    var fileInputtDemo = document.getElementById('GMBfile');
+    var labelD = document.querySelector('label[for="fileGMB"]');
+
+    fileInputtDemo.value = '';
+    labelD.textContent = 'Image : ';
+
+    $("#save-GMB-data").text("Save");
+
+}
+
+resetGMBModal();
+
+var updateGMBId = null;
+
+function setDataInGMBModal(filePublisher, fileDescription,GMBfileData,update) {
+    
+    resetGMBModal();
+   
+    if (filePublisher && filePublisher !== '-') {
+        $("#filePublisher").val(filePublisher); 
+        $("#filePublisher").parent().addClass("focused");
+    }
+   
+    
+    if (fileDescription && fileDescription !== '-') {
+        $("#fileDescription").val(fileDescription); 
+        $("#fileDescription").parent().addClass("focused");
+    }
+   
+
+    if (GMBfileData && GMBfileData !== '-') {
+
+         var fileInput = document.getElementById('GMBfile');
+         var label = document.querySelector('label[for="fileGMB"]');
+         fileInput.value = '';
+         label.textContent = 'Image : ' + GMBfileData; 
+    }
+
+    if (update) {
+        $("#save-GMB-data").text("Update");
+    }
+}
+
+ $(document.body).on("click", ".GMB-card-remove", function () {
+     var GMBCard = $(this).closest(".col-md-3");
+     GMBCard.remove();
+     Toast.success('GMB removed successfully');
+ });
+
+
+
+$(document.body).on("click", ".GMB-card-edit", function () {
+
+    var GMBCard = $(this).closest(".GMB-card");
+
+    var filePublisher = GMBCard.find(".file-Publisher").text().trim();
+
+    var fileDescription = GMBCard.find(".file-Description").text().trim();
+
+    
+    var GMBfileData = GMBCard.find(".file-Description").text().trim();
+
+    
+    var updateId = GMBCard.attr('id');
+
+    GMBupdateIndexId = updateId;
+
+    updateGMBId = updateId;
+
+    setDataInGMBModal(
+        filePublisher,
+        fileDescription,
+        GMBfileData,
+        true
+    );
+
+    $("#bs-GMB-modal").addClass("open");
+});
+
+
+
+$("#save-GMB-data").on("click", function (e) {
+
+   var operationType = $("#save-GMB-data").text();
+  
+   var filePublisher = $("#filePublisher").val() || "-";
+  
+   var fileDescription = $("#fileDescription").val() || "-";
+ 
+   
+   var labelDemo = document.querySelector('label[for="fileGMB"]');
+
+   var fileNameGMB = labelDemo.textContent.split(' : ')[1].trim();
+
+   if (operationType === "Save"){
+      let GMBDIV = "<div class='col-md-3'>" +
+            "<div class='GMB-card' id='GMB-card-id-" + (GMBCardId++) + "'>" +
+
+            "<h2 class='file-Publisher'>" + filePublisher +
+            "</h2><br>" +
+            "<a class='GMB-card-edit'>" +
+            "<cwc-icon name='edit' color='true-blue'></cwc-icon>" +
+            "</a>" +
+            "<a class='GMB-card-remove'>" +
+            "<cwc-icon name='close' color='true-blue'></cwc-icon>" +
+            "</a>" +
+            "<h2 class='file-Description'>" + fileDescription +
+            "</h2>" +
+            "<p class='file-value'>" + fileNameGMB + "</p>" +
+            "</div>" +
+            "</div>";
+
+     $('#GMB-card-container').append(GMBDIV);
+
+     Toast.success('GMB data added successfully');
+     $("#bs-GMB-modal").removeClass("open");
+      
+   }else {
+         if(updateGMBId) {
+
+           var GMBCard = $('#' + updateGMBId);
+          
+           //$("#file-card-id-"++" h2").text("Test");
+            
+           $("#"+updateGMBId+" p:last-child").text(fileNameGMB);
+
+            GMBCard.find(".file-Publisher").text(filePublisher);
+
+            GMBCard.find(".file-Description").text(fileDescription);
+  
+            var fileInput = document.getElementById('GMBfile');
+         
+            var labelData = document.querySelector('label[for="fileGMB"]');
+
+            fileInput.value = '';
+           
+            labelData.textContent = 'Image : ' + fileNameGMB; // Update label text with fileNameData
+
+           Toast.success('GMB data updated successfully');
+
+           $("#bs-GMB-modal").removeClass("open");      
+
+        } else {
+         // error accured while saving a file.
+        }
+      }
+      resetGMBModal();
+});
+
+    
+ $(".popup-close").on("click", function () {
+   $('.bs-hours-modal').modal('hide');
+   $('.modal-backdrop').remove();
+   $('.bs-contact-modal').modal('hide');
+   $('.bs-data-modal').modal('hide');
+   $('.bs-page-modal').modal('hide');
+   $('.bs-file-modal').modal('hide');
+   $('.bs-GMB-modal').modal('hide');
+
+
+ });
+
+$('#country').on('change', function() {
+  var selectedValue = $(this).val();
+  const selectedCountryObj = countries.find(country => country.name === selectedValue);
+
+  if(selectedCountryObj) {
+   setFlagCountryInAllPhone(selectedCountryObj.code)
+  }
+});
+
+
+
+$(function() {
+
+  $('.control-fileupload input[type=file]').change(function(){
+    var t = $(this).val();
+    var labelText = 'File : ' + t.substr(12, t.length);
+    $(this).prev('label').text(labelText);
+  })
+
+});
+
+
+//GMB file Upload
+$(function() {
+  $('.GMB-fileupload input[type=file]').change(function(){
+    var t = $(this).val();
+    var labelText = 'Image : ' + t.substr(12, t.length);
+    $(this).prev('label').text(labelText);
+  })
+});
+
+
+
+
+</script>

@@ -1,0 +1,847 @@
+<?xml version="1.0"?>
+<workflow-definition
+	xmlns="urn:liferay.com:liferay-workflow_7.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:liferay.com:liferay-workflow_7.0.0 http://www.liferay.com/dtd/liferay-workflow-definition_7_0_0.xsd">
+	<name>Location Application Workflow Test - United Kingdom</name>
+	<description></description>
+	<version>1</version>
+	<state>
+		<name>created</name>
+		<metadata>
+			<![CDATA[{"xy":[32,51]}]]>
+		</metadata>
+		<actions>
+			<action>
+				<name>CSV Locaiton Bypass</name>
+				<description></description>
+				<script>
+					<![CDATA[import com.liferay.journal.model.JournalArticle
+import com.liferay.journal.service.JournalArticleLocalServiceUtil
+import org.dom4j.Document
+import org.dom4j.Element
+import org.dom4j.io.SAXReader
+import java.util.List
+import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
+import com.liferay.portal.kernel.workflow.WorkflowConstants;
+import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
+import org.json.JSONObject
+import org.json.JSONArray
+import com.liferay.expando.kernel.model.ExpandoBridge;
+import com.liferay.portal.kernel.service.GroupLocalServiceUtil;
+import javax.json.JsonReader
+import java.io.InputStream
+import java.io.OutputStream
+import java.util.Scanner
+
+UBERALL_ENDPOINT_KEYNAME = "Uberall Endpoint"
+UBERALL_BUSINESS_ID_KEYNAME = "Uberall Business Id"
+UBERALL_PRIVATE_KEYNAME = "Uberall Private Key"
+UBERALL_DUPLICATE_UPDATE_KEYNAME = "Uberall Update Workflow"
+
+
+CEMEX_LIFERAY_DOMAIN = "https://www.cemex.co.uk"
+
+String className = (String)workflowContext.get("entryClassName");
+long classPK = Long.parseLong(workflowContext.get("entryClassPK"));
+long groupId = Long.parseLong(workflowContext.get("groupId"));
+
+ExpandoBridge expandoBridge = GroupLocalServiceUtil.getGroup(groupId).getExpandoBridge();
+
+
+UBERALL_ENDPOINT = (String) expandoBridge.getAttribute(UBERALL_ENDPOINT_KEYNAME, false);
+UBERALL_BUSINESS_ID = (String) expandoBridge.getAttribute(UBERALL_BUSINESS_ID_KEYNAME, false);
+UBERALL_PRIVATE_KEY = (String) expandoBridge.getAttribute(UBERALL_PRIVATE_KEYNAME, false);
+UBERALL_DUPLICATE_UPDATE = (Boolean) expandoBridge.getAttribute(UBERALL_DUPLICATE_UPDATE_KEYNAME, false);
+
+
+if (UBERALL_ENDPOINT == null || UBERALL_BUSINESS_ID == null || UBERALL_PRIVATE_KEY == null) {
+    System.out.println("Missing Uberall configuration. Skipping execution.")
+    return
+}
+
+UBERALL_API_ENDPOINT = UBERALL_ENDPOINT + "?businessIds=" + UBERALL_BUSINESS_ID;
+
+String yextSync = null;
+String addressNew = null;
+String addressNew2 = null;
+
+def openingdays = ["Monday": 1, "Tuesday": 2, "Wednesday": 3,"Thursday": 4, "Friday": 5, "Saturday": 6, "Sunday": 7]
+def openingLabels = ["Open": "from","Close": "to","isClosed": "closed"]
+def csvUberallCall = false;
+
+if (className.equals("com.liferay.journal.model.JournalArticle")) {
+    try {
+        JournalArticle article = JournalArticleLocalServiceUtil.getArticle(classPK);
+
+            if (article != null) {
+                List<Element> dynamicElements = new SAXReader().read(new StringReader(article.getContent())).getRootElement().elements("dynamic-element");
+
+                if (dynamicElements.size() != 0) {
+
+                    for(Element dynamicElement : dynamicElements) {
+                        String key= dynamicElement.attributeValue("name");
+                        if(key == "isCSVLocation") {
+                            Element valueContent= dynamicElement.element("dynamic-content");
+                            if(valueContent != null) {
+                                String value = valueContent.getTextTrim();
+                                if(value == "true") {
+                                    WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("approved"), workflowContext);
+                                    csvUberallCall = true;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                    if(csvUberallCall) {
+
+                        String jsonString = "{" + "\"businessId\": \"" + UBERALL_BUSINESS_ID + "\","+ "\"status\": \"ACTIVE\"," + "\"province\": \"" + article.getArticleId() + "\",";
+                        def openingString = "\"openingHours\":["
+
+                        for(int i=0; i
+
+
+
+					
+					< dynamicElements.size(); i++) {
+                            def dynamicElement = dynamicElements[i]
+                            String key = dynamicElement.attributeValue("name")
+                            Element valueContent = dynamicElement.element("dynamic-content")
+
+                            if (valueContent != null) {
+                                String value = valueContent.getTextTrim()
+
+                                if (key.equals("GeolocationData")) {
+                                    try {
+                                        jsonString += "\"lng\": \"" + value.substring(value.indexOf("longitude\":\"") + 12, value.indexOf("\"}")) + "\","
+                                        jsonString += "\"lat\": \"" + value.substring(value.indexOf("latitude\":\"") + 11, value.indexOf(",\"longitude") - 1) + "\","
+                                    } catch (Exception e) {
+                                        System.out.println("Error while processing GeolocationData: " + e.getMessage())
+                                    }
+                                } else if (key.equals("LocationTitle")) {
+                                    jsonString += "\"name\": \"" + value + "\","
+                                } else if (key.equals("Country")) {
+                                    String extractedCountryCode = value
+                                    String[] parts = value.split(" - ")
+                                    if (parts.length == 2) extractedCountryCode = parts[1].trim()
+                                    jsonString += "\"country\": \"UK\","
+                                } else if (key.contains("Address2")) {
+                                    jsonString += "\"street\": \"" + valueContent.getTextTrim() + "\","
+                                } else if (key.contains("Address")) {
+                                    jsonString += "\"streetNo\": \"" + valueContent.getTextTrim() + "\","
+                                } else if (key.contains("Postcode")) {
+                                    jsonString += "\"zip\": \"" + valueContent.getTextTrim() + "\","
+                                }  else if (key.contains("TownCity")) {
+                                    jsonString += "\"city\": \"" + valueContent.getTextTrim() + "\","
+                                }  else if (key.contains("PhoneNumber")) {
+                                   jsonString += "\"phone\": \"+44" + valueContent.getTextTrim() + "\","
+                                } else if (key.contains("isClosed")) {
+                                    jsonString += "\"status\": \"" + ((valueContent.getTextTrim() == "true" ? "CLOSED" : "ACTIVE")) + "\","
+                                } else if (key.contains("isYextRestrict")) {
+                                   yextSync = valueContent.getTextTrim();
+                                }
+                            } else if (key.contains("_Separator")) {
+                                    String dayName = key.replace("_Separator", "")
+                                    List<Element> nestedElements = dynamicElement.elements("dynamic-element")
+
+                                    if (nestedElements.size() == 2) {
+                                            if (nestedElements[1].element("dynamic-content").getTextTrim() == 'true') {
+                                                openingString += "{\"dayOfWeek\":" + openingdays[dayName] + ",\"closed\": true}";
+                                            } else {
+                                                String singleStart = nestedElements[0]?.elements("dynamic-element")[0]?.element("dynamic-content")?.getTextTrim()
+                                                String singleClose = nestedElements[0]?.elements("dynamic-element")[1]?.element("dynamic-content")?.getTextTrim()
+                                                if (singleStart && singleClose) {
+                                                    openingString += "{\"dayOfWeek\":" + openingdays[dayName] + ",\"${openingLabels['Open']}1\":\"" + singleStart + "\",\"${openingLabels['Close']}1\":\"" + singleClose + "\"}"
+                                                }
+                                            }
+                                    } else {
+                                        def targetIndex = 1
+                                        nestedElements.eachWithIndex { nestedElement, index ->
+
+                                        if (nestedElement.attributeValue("name").contains("isClosed")) return;
+
+                                            def openCloseElements = nestedElement.elements("dynamic-element");
+                                            String multiStart = openCloseElements[0].element("dynamic-content").getTextTrim()
+                                            String multiClose = openCloseElements[1].element("dynamic-content").getTextTrim()
+
+                                            if (targetIndex == 1) openingString += "{\"dayOfWeek\":" + openingdays[dayName] + ","
+
+                                            if (multiStart && multiClose) {
+                                                openingString += "\"${openingLabels['Open']}${targetIndex}\":\"" + multiStart + "\",\"${openingLabels['Close']}${targetIndex}\":\"" + multiClose + "\""
+                                            }
+                                            if ((nestedElements.size() - 1) == targetIndex) {
+                                                openingString += "}"
+                                            } else {
+                                                openingString += ","
+                                            }
+                                            targetIndex++
+                                        }
+                                    }
+                                    openingString += openingdays[dayName] == 7 ? "" : ","
+                                }
+                        }
+
+                        jsonString += ((openingString+  "]" ) + ", \"photos\":[" )
+
+                        for(int i = 0; i
+
+					
+					< dynamicElements.size(); i++) {
+                            def dynamicElement = dynamicElements[i]
+                            String key = dynamicElement.attributeValue("name")
+
+                            if (key.equals("PublisherImages")) {
+                                List<Element> nestedElements = dynamicElement.elements("dynamic-element")
+                                String publisherType = "PHOTO" // Default type
+
+                                nestedElements.each { nestedElement ->
+                                    if (nestedElement.attributeValue("name").equals("Publisher")) {
+
+                                        String publisherValue = nestedElement.elementTextTrim("dynamic-content")
+                                        if (publisherValue.contains("Facebook")) publisherType = "FACEBOOK_LANDSCAPE"
+                                        else if (publisherValue.contains("Google")) publisherType = "LANDSCAPE"
+                                        else publisherType = "MAIN"
+                                    }
+                                }
+
+                                nestedElements.each { nestedElement ->
+                                    if (nestedElement.attributeValue("name").equals("File")) {
+                                    jsonString += "{\"main\": false,\"logo\": false,\"type\": \"" + publisherType + "\",\"url\": \"" + CEMEX_LIFERAY_DOMAIN + nestedElement.elementTextTrim("dynamic-content") + "\"},";
+                                    }
+                                }
+                            }
+                        }
+
+                        if (jsonString.endsWith(",")) jsonString = jsonString[0..-2]
+
+                        jsonString += ("]}" + jsonString[0..-2] + "}");
+                        if (yextSync != null && yextSync.equals("true")) {
+
+                            if(article.getVersion() != 1) {
+                             callUberallAPI(jsonString,"PATCH",article.getArticleId(), article.titleCurrentValue, null)
+                            }else{
+                             callUberallAPI(jsonString,"POST",article.getArticleId(), article.titleCurrentValue, null)
+                            }
+
+                        }
+                    }
+                } else {
+                    System.out.println("Warning: Data might not be present in the XML");
+                }
+            }
+
+    } catch (Exception e) {
+        System.out.println(e);
+    }
+}
+
+def callUberallAPI(String jsonString, String methodType, String articleId, String articleName, String uberallLocationId) {
+
+    def uberallEndpoint = UBERALL_ENDPOINT
+    def callAPI = true
+
+    if (methodType.equals("PATCH")) {
+        if(uberallLocationId) {
+            UBERALL_ENDPOINT += "/" + uberallLocationId;
+            System.out.println("duplication call "+UBERALL_ENDPOINT);
+        } else {
+            def uberallExistingLocationId = getUberallLocationByArticleId(articleId, articleName, false);
+
+            if (uberallExistingLocationId == null) uberallExistingLocationId = getUberallLocationByArticleId(articleId, articleName, true);
+
+            if (uberallExistingLocationId != null) UBERALL_ENDPOINT += "/" + uberallExistingLocationId;
+
+            else methodType = "POST"
+        }
+    }
+
+    HttpURLConnection connection = (HttpURLConnection) new URL(UBERALL_ENDPOINT).openConnection()
+
+    System.out.println("Uberall location for UBERALL_ENDPOINT :"+UBERALL_ENDPOINT);
+
+
+    connection.setRequestMethod("POST")
+    connection.setRequestProperty("Content-Type", "application/json")
+    connection.setRequestProperty("privateKey", UBERALL_PRIVATE_KEY)
+    connection.setRequestProperty("Cache-Control", "no-cache")
+    connection.setDoOutput(true)
+
+    if (methodType.equals("PATCH")) {
+        connection.setRequestProperty("X-HTTP-Method-Override", "PATCH")
+    }
+
+    OutputStream os = connection.getOutputStream()
+    os.write(jsonString.getBytes("UTF-8"))
+    os.flush()
+    os.close()
+
+    int responseCode = connection.responseCode
+    InputStream responseStream = responseCode == HttpURLConnection.HTTP_OK ? connection.inputStream : connection.errorStream
+
+    String responseBody = new Scanner(responseStream, "UTF-8").useDelimiter("\\A").next()
+    connection.disconnect()
+
+    JSONObject jsonResponse = new JSONObject(responseBody)
+
+    if (responseCode == HttpURLConnection.HTTP_OK) {
+        System.out.println("API Response: " + jsonResponse.toString())
+    } else if (responseCode == HttpURLConnection.HTTP_CONFLICT) {
+        if(!UBERALL_DUPLICATE_UPDATE){
+            return false;
+        }
+        JSONArray duplicates = jsonResponse.optJSONObject("response")?.optJSONArray("duplicates")
+        if (duplicates != null && duplicates.length() > 0) {
+
+            String duplicateIdString = String.valueOf(duplicates.getInt(0));
+            callUberallAPI(jsonString, "PATCH", articleId, articleName, duplicateIdString);
+        } else {
+            System.out.println("Error: HTTP request failed with code: " + responseCode);
+            System.out.println("Response: " + jsonResponse.optString("message"));
+        }
+    } else {
+        System.out.println("Error: HTTP request failed with code: " + responseCode)
+        System.out.println("Response: " + jsonResponse.optString("message"))
+    }
+}
+
+
+
+def getUberallLocationByArticleId(articleId, articleName, isAll) {
+
+    String baseApiEndpoint = UBERALL_API_ENDPOINT
+
+    if(isAll) baseApiEndpoint = UBERALL_ENDPOINT
+
+    String urlString = "${baseApiEndpoint}${baseApiEndpoint.contains("?") ? "&" : "?"}fieldMask=province&fieldMask=name&max=100000&selectAll=true"
+    URL uberallUrl = new URL(urlString)
+    HttpURLConnection connection = (HttpURLConnection) uberallUrl.openConnection()
+
+    connection.setRequestMethod('GET')
+    connection.setRequestProperty('Content-Type', 'application/json')
+    connection.setRequestProperty('privateKey', UBERALL_PRIVATE_KEY)
+
+    def responseCode = connection.responseCode
+
+    if (connection.responseCode == HttpURLConnection.HTTP_OK) {
+        def jsonResponse = new JSONObject(connection.inputStream.text)
+        if (jsonResponse.has("response") && jsonResponse.getJSONObject("response").has("locations")) {
+            JSONArray locations = jsonResponse.getJSONObject("response").getJSONArray("locations")
+            for (int i = 0; i < locations.length(); i++) {
+                def location = locations.getJSONObject(i)
+
+                def uberallProvince = location.has("province") ? location.get("province") : ""
+                def uberallLocationName = location.has("name") ? location.get("name") : ""
+
+                if(articleId == uberallProvince) return location.get("id");
+
+                if(articleName == uberallLocationName) return location.get("id");
+
+
+            }
+        }
+    }
+    connection.disconnect()
+    return null;
+}]]>
+				</script>
+				<script-language>groovy</script-language>
+				<execution-type>onEntry</execution-type>
+			</action>
+		</actions>
+		<initial>true</initial>
+		<transitions>
+			<transition>
+				<name>review</name>
+				<target>review</target>
+				<default>true</default>
+			</transition>
+		</transitions>
+	</state>
+	<state>
+		<name>approved</name>
+		<metadata>
+			<![CDATA[{"xy":[370,44]}]]>
+		</metadata>
+		<actions>
+			<action>
+				<name>approve</name>
+				<description></description>
+				<script>
+					<![CDATA[import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
+                        import com.liferay.portal.kernel.workflow.WorkflowConstants;
+
+                        WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("approved"), workflowContext);]]>
+				</script>
+				<script-language>groovy</script-language>
+				<execution-type>onEntry</execution-type>
+			</action>
+			<action>
+				<name>Sync data with uberall plateform</name>
+				<description>web content data add in the yext plateform</description>
+				<script>
+					<![CDATA[import com.liferay.journal.model.JournalArticle
+import com.liferay.journal.service.JournalArticleLocalServiceUtil
+import org.dom4j.Document
+import org.dom4j.Element
+import org.dom4j.io.SAXReader
+import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
+import org.json.JSONObject
+import org.json.JSONArray
+import java.util.List
+import com.liferay.expando.kernel.model.ExpandoBridge;
+import com.liferay.portal.kernel.service.GroupLocalServiceUtil;
+import javax.json.JsonReader
+import java.io.InputStream
+import java.io.OutputStream
+import java.util.Scanner
+
+
+UBERALL_ENDPOINT_KEYNAME = "Uberall Endpoint"
+UBERALL_BUSINESS_ID_KEYNAME = "Uberall Business Id"
+UBERALL_PRIVATE_KEYNAME = "Uberall Private Key"
+UBERALL_DUPLICATE_UPDATE_KEYNAME = "Uberall Update Workflow"
+
+CEMEX_LIFERAY_DOMAIN = "https://www.cemex.co.uk"
+
+String className = (String)workflowContext.get("entryClassName");
+long classPK = Long.parseLong(workflowContext.get("entryClassPK"));
+long groupId = Long.parseLong(workflowContext.get("groupId"));
+
+ExpandoBridge expandoBridge = GroupLocalServiceUtil.getGroup(groupId).getExpandoBridge();
+
+UBERALL_ENDPOINT = (String) expandoBridge.getAttribute(UBERALL_ENDPOINT_KEYNAME, false);
+UBERALL_BUSINESS_ID = (String) expandoBridge.getAttribute(UBERALL_BUSINESS_ID_KEYNAME, false);
+UBERALL_PRIVATE_KEY = (String) expandoBridge.getAttribute(UBERALL_PRIVATE_KEYNAME, false);
+UBERALL_DUPLICATE_UPDATE = (Boolean) expandoBridge.getAttribute(UBERALL_DUPLICATE_UPDATE_KEYNAME, false);
+
+
+if (UBERALL_ENDPOINT == null || UBERALL_BUSINESS_ID == null || UBERALL_PRIVATE_KEY == null) {
+    System.out.println("Missing Uberall configuration. Skipping execution.")
+    return
+}
+
+UBERALL_API_ENDPOINT = UBERALL_ENDPOINT + "?businessIds=" + UBERALL_BUSINESS_ID;
+
+String yextSync = null;
+String addressNew = null;
+String addressNew2 = null;
+
+def openingdays = ["Monday": 1, "Tuesday": 2, "Wednesday": 3,"Thursday": 4, "Friday": 5, "Saturday": 6, "Sunday": 7]
+def openingLabels = ["Open": "from","Close": "to","isClosed": "closed"]
+
+
+if (className.equals("com.liferay.journal.model.JournalArticle")) {
+    try {
+        JournalArticle article = JournalArticleLocalServiceUtil.getArticle(classPK);
+        if (article != null) {
+                List<Element> dynamicElements = new SAXReader().read(new StringReader(article.getContent())).getRootElement().elements("dynamic-element");
+
+                if (dynamicElements.size() != 0) {
+                    String jsonString = "{" + "\"businessId\": \"" + UBERALL_BUSINESS_ID + "\","+ "\"status\": \"ACTIVE\"," + "\"province\": \"" + article.getArticleId() + "\",";
+                    def openingString = "\"openingHours\":["
+
+                    for(int i=0; i
+
+
+
+					
+					< dynamicElements.size(); i++) {
+                        def dynamicElement = dynamicElements[i]
+                        String key = dynamicElement.attributeValue("name")
+                        Element valueContent = dynamicElement.element("dynamic-content")
+
+                        if (valueContent != null) {
+                            String value = valueContent.getTextTrim()
+
+                            if (key.equals("GeolocationData")) {
+                                try {
+                                    jsonString += "\"lng\": \"" + value.substring(value.indexOf("longitude\":\"") + 12, value.indexOf("\"}")) + "\","
+                                    jsonString += "\"lat\": \"" + value.substring(value.indexOf("latitude\":\"") + 11, value.indexOf(",\"longitude") - 1) + "\","
+                                } catch (Exception e) {
+                                    System.out.println("Error while processing GeolocationData: " + e.getMessage())
+                                }
+                            } else if (key.equals("LocationTitle")) {
+                                jsonString += "\"name\": \"" + value + "\","
+                            } else if (key.equals("Country")) {
+                                String extractedCountryCode = value
+                                String[] parts = value.split(" - ")
+
+                                if (parts.length == 2) extractedCountryCode = parts[1].trim()
+                                jsonString += "\"country\": \"UK\","
+                            } else if (key.contains("Address2")) {
+                                jsonString += "\"street\": \"" + valueContent.getTextTrim() + "\","
+                            } else if (key.contains("Address")) {
+                                jsonString += "\"streetNo\": \"" + valueContent.getTextTrim() + "\","
+                            } else if (key.contains("Postcode")) {
+                                jsonString += "\"zip\": \"" + valueContent.getTextTrim() + "\","
+                            }  else if (key.contains("TownCity")) {
+                                jsonString += "\"city\": \"" + valueContent.getTextTrim() + "\","
+                            }  else if (key.contains("PhoneNumber")) {
+                               jsonString += "\"phone\": \"+44" + valueContent.getTextTrim() + "\","
+                            } else if (key.contains("isClosed")) {
+                                    jsonString += "\"status\": \"" + ((valueContent.getTextTrim() == "true" ? "CLOSED" : "ACTIVE")) + "\","
+                            } else if (key.contains("isYextRestrict")) {
+                                yextSync = valueContent.getTextTrim();
+                            }
+                        } else if (key.contains("_Separator")) {
+                            String dayName = key.replace("_Separator", "")
+                            List<Element> nestedElements = dynamicElement.elements("dynamic-element")
+
+                            if (nestedElements.size() == 2) {
+                                    if (nestedElements[1].element("dynamic-content").getTextTrim() == 'true') {
+                                        openingString += "{\"dayOfWeek\":" + openingdays[dayName] + ",\"closed\": true}";
+                                    } else {
+                                        String singleStart = nestedElements[0]?.elements("dynamic-element")[0]?.element("dynamic-content")?.getTextTrim()
+                                        String singleClose = nestedElements[0]?.elements("dynamic-element")[1]?.element("dynamic-content")?.getTextTrim()
+                                        if (singleStart && singleClose) {
+                                            openingString += "{\"dayOfWeek\":" + openingdays[dayName] + ",\"${openingLabels['Open']}1\":\"" + singleStart + "\",\"${openingLabels['Close']}1\":\"" + singleClose + "\"}"
+                                        }
+                                    }
+                            } else {
+                                def targetIndex = 1
+                                nestedElements.eachWithIndex { nestedElement, index ->
+
+                                if (nestedElement.attributeValue("name").contains("isClosed")) return;
+
+                                    def openCloseElements = nestedElement.elements("dynamic-element");
+                                    String multiStart = openCloseElements[0].element("dynamic-content").getTextTrim()
+                                    String multiClose = openCloseElements[1].element("dynamic-content").getTextTrim()
+
+                                    if (targetIndex == 1) openingString += "{\"dayOfWeek\":" + openingdays[dayName] + ","
+
+                                    if (multiStart && multiClose) {
+                                        openingString += "\"${openingLabels['Open']}${targetIndex}\":\"" + multiStart + "\",\"${openingLabels['Close']}${targetIndex}\":\"" + multiClose + "\""
+                                    }
+                                    if ((nestedElements.size() - 1) == targetIndex) {
+                                        openingString += "}"
+                                    } else {
+                                        openingString += ","
+                                    }
+                                    targetIndex++
+                                }
+                            }
+                            openingString += openingdays[dayName] == 7 ? "" : ","
+                        }
+                    }
+
+                    jsonString += ((openingString+  "]" ) + ", \"photos\":[" )
+
+                    for(int i = 0; i
+
+					
+					< dynamicElements.size(); i++) {
+                        def dynamicElement = dynamicElements[i]
+                        String key = dynamicElement.attributeValue("name")
+
+                        if (key.equals("PublisherImages")) {
+                            List<Element> nestedElements = dynamicElement.elements("dynamic-element")
+                            String publisherType = "PHOTO" // Default type
+
+                            nestedElements.each { nestedElement ->
+                                if (nestedElement.attributeValue("name").equals("Publisher")) {
+
+                                    String publisherValue = nestedElement.elementTextTrim("dynamic-content")
+                                    if (publisherValue.contains("Facebook")) publisherType = "FACEBOOK_LANDSCAPE"
+                                    else if (publisherValue.contains("Google")) publisherType = "LANDSCAPE"
+                                    else publisherType = "MAIN"
+                                }
+                            }
+
+                            nestedElements.each { nestedElement ->
+                                if (nestedElement.attributeValue("name").equals("File")) {
+
+                                jsonString += "{\"main\": false,\"logo\": false,\"type\": \"" + publisherType + "\",\"url\": \"" + CEMEX_LIFERAY_DOMAIN + nestedElement.elementTextTrim("dynamic-content") + "\"},";
+                                }
+                            }
+                        }
+                    }
+
+                    if (jsonString.endsWith(",")) jsonString = jsonString[0..-2]
+
+                    jsonString += ("]}" + jsonString[0..-2] + "}");
+
+                    if (yextSync != null && yextSync.equals("true")) {
+                       if(article.getVersion() != 1) {
+
+                         System.out.println("Uberall location for PATCH API CALL :");
+
+                         callUberallAPI(jsonString,"PATCH",article.getArticleId(), article.titleCurrentValue, null)
+                        }else{
+                        System.out.println("Uberall location for POST API CALL :");
+                         callUberallAPI(jsonString,"POST",article.getArticleId(), article.titleCurrentValue, null)
+
+                        }
+                    }
+                } else {
+                    System.out.println("Warning: Data might not be present in the XML");
+                }
+
+        }
+    } catch (Exception e) {
+        System.out.println(e);
+    }
+}
+
+
+def callUberallAPI(String jsonString, String methodType, String articleId, String articleName, String uberallLocationId) {
+
+    def uberallEndpoint = UBERALL_ENDPOINT
+    def callAPI = true
+
+    if (methodType.equals("PATCH")) {
+        if(uberallLocationId) {
+            UBERALL_ENDPOINT += "/" + uberallLocationId;
+        } else {
+            def uberallExistingLocationId = getUberallLocationByArticleId(articleId, articleName, false);
+
+            if (uberallExistingLocationId == null) uberallExistingLocationId = getUberallLocationByArticleId(articleId, articleName, true);
+
+            if (uberallExistingLocationId != null) UBERALL_ENDPOINT += "/" + uberallExistingLocationId;
+
+            else methodType = "POST"
+        }
+    }
+
+    HttpURLConnection connection = (HttpURLConnection) new URL(UBERALL_ENDPOINT).openConnection()
+
+    System.out.println("Uberall location for UBERALL_ENDPOINT :"+UBERALL_ENDPOINT);
+
+
+    connection.setRequestMethod("POST")
+    connection.setRequestProperty("Content-Type", "application/json")
+    connection.setRequestProperty("privateKey", UBERALL_PRIVATE_KEY)
+    connection.setRequestProperty("Cache-Control", "no-cache")
+    connection.setDoOutput(true)
+
+    if (methodType.equals("PATCH")) {
+        connection.setRequestProperty("X-HTTP-Method-Override", "PATCH")
+    }
+
+    OutputStream os = connection.getOutputStream()
+    os.write(jsonString.getBytes("UTF-8"))
+    os.flush()
+    os.close()
+
+    int responseCode = connection.responseCode
+    InputStream responseStream = responseCode == HttpURLConnection.HTTP_OK ? connection.inputStream : connection.errorStream
+
+    String responseBody = new Scanner(responseStream, "UTF-8").useDelimiter("\\A").next()
+    connection.disconnect()
+
+    JSONObject jsonResponse = new JSONObject(responseBody)
+
+    if (responseCode == HttpURLConnection.HTTP_OK) {
+        System.out.println("API Response: " + jsonResponse.toString())
+    } else if (responseCode == HttpURLConnection.HTTP_CONFLICT) {
+        if(!UBERALL_DUPLICATE_UPDATE){
+            return false;
+        }
+        JSONArray duplicates = jsonResponse.optJSONObject("response")?.optJSONArray("duplicates")
+        if (duplicates != null && duplicates.length() > 0) {
+
+            String duplicateIdString = String.valueOf(duplicates.getInt(0));
+
+            callUberallAPI(jsonString, "PATCH", articleId, articleName, duplicateIdString);
+        } else {
+            System.out.println("Error: HTTP request failed with code: " + responseCode);
+            System.out.println("Response: " + jsonResponse.optString("message"));
+        }
+    } else {
+        System.out.println("Error: HTTP request failed with code: " + responseCode)
+        System.out.println("Response: " + jsonResponse.optString("message"))
+    }
+}
+
+
+
+def getUberallLocationByArticleId(articleId, articleName, isAll) {
+
+    String baseApiEndpoint = UBERALL_API_ENDPOINT
+
+    if(isAll) baseApiEndpoint = UBERALL_ENDPOINT
+
+    String urlString = "${baseApiEndpoint}${baseApiEndpoint.contains("?") ? "&" : "?"}fieldMask=province&fieldMask=name&max=100000&selectAll=true"
+    URL uberallUrl = new URL(urlString)
+    HttpURLConnection connection = (HttpURLConnection) uberallUrl.openConnection()
+
+    connection.setRequestMethod('GET')
+    connection.setRequestProperty('Content-Type', 'application/json')
+    connection.setRequestProperty('privateKey', UBERALL_PRIVATE_KEY)
+
+    def responseCode = connection.responseCode
+
+    if (connection.responseCode == HttpURLConnection.HTTP_OK) {
+        def jsonResponse = new JSONObject(connection.inputStream.text)
+        if (jsonResponse.has("response") && jsonResponse.getJSONObject("response").has("locations")) {
+            JSONArray locations = jsonResponse.getJSONObject("response").getJSONArray("locations")
+            for (int i = 0; i < locations.length(); i++) {
+                def location = locations.getJSONObject(i)
+
+                def uberallProvince = location.has("province") ? location.get("province") : ""
+                def uberallLocationName = location.has("name") ? location.get("name") : ""
+
+                if(articleId == uberallProvince) return location.get("id");
+
+                if(articleName == uberallLocationName) return location.get("id");
+
+
+            }
+        }
+    }
+    connection.disconnect()
+    return null;
+}]]>
+				</script>
+				<script-language>groovy</script-language>
+				<execution-type>onEntry</execution-type>
+			</action>
+		</actions>
+	</state>
+	<task>
+		<name>update</name>
+		<metadata>
+			<![CDATA[{"transitions":{"resubmit":{"bendpoints":[[303,140]]}},"xy":[183.97723388671875,189.99996948242188]}]]>
+		</metadata>
+		<actions>
+			<action>
+				<name>reject</name>
+				<description></description>
+				<script>
+					<![CDATA[import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
+import com.liferay.portal.kernel.workflow.WorkflowConstants;
+
+WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("denied"), workflowContext);]]>
+				</script>
+				<script-language>groovy</script-language>
+				<execution-type>onAssignment</execution-type>
+			</action>
+			<notification>
+				<name>Creator Modification Notification</name>
+				<description>
+					<![CDATA[]]>
+				</description>
+				<template>
+					<![CDATA[Your submission was rejected by ${userName}, please modify and resubmit.]]>
+				</template>
+				<template-language>freemarker</template-language>
+				<notification-type>user-notification</notification-type>
+				<recipients receptionType="to">
+					<user/>
+				</recipients>
+				<execution-type>onAssignment</execution-type>
+			</notification>
+		</actions>
+		<assignments>
+			<user/>
+		</assignments>
+		<transitions>
+			<transition>
+				<name>resubmit</name>
+				<target>review</target>
+				<default>true</default>
+			</transition>
+		</transitions>
+	</task>
+	<task>
+		<name>review</name>
+		<metadata>
+			<![CDATA[{"xy":[168,36]}]]>
+		</metadata>
+		<actions>
+			<action>
+				<name></name>
+				<description></description>
+				<script>
+					<![CDATA[]]>
+				</script>
+				<script-language>groovy</script-language>
+				<execution-type>onAssignment</execution-type>
+			</action>
+			<notification>
+				<name>Review Notification</name>
+				<description>
+					<![CDATA[]]>
+				</description>
+				<template>
+					<![CDATA[${userName} sent you a ${entryType} for review in the workflow.]]>
+				</template>
+				<template-language>freemarker</template-language>
+				<notification-type>user-notification</notification-type>
+				<recipients receptionType="to">
+					<roles>
+						<role>
+							<role-type>regular</role-type>
+							<name>European Admin</name>
+							<auto-create>false</auto-create>
+						</role>
+						<role>
+							<role-type>regular</role-type>
+							<name>Content Approver - United Kingdom</name>
+							<auto-create>false</auto-create>
+						</role>
+					</roles>
+				</recipients>
+				<execution-type>onAssignment</execution-type>
+			</notification>
+		</actions>
+		<assignments>
+			<roles>
+				<role>
+					<role-type>organization</role-type>
+					<name>Organization Administrator</name>
+					<auto-create>false</auto-create>
+				</role>
+				<role>
+					<role-type>organization</role-type>
+					<name>Organization Content Reviewer</name>
+					<auto-create>false</auto-create>
+				</role>
+				<role>
+					<role-type>organization</role-type>
+					<name>Organization Owner</name>
+					<auto-create>false</auto-create>
+				</role>
+				<role>
+					<role-type>regular</role-type>
+					<name>Administrator</name>
+					<auto-create>false</auto-create>
+				</role>
+				<role>
+					<role-type>regular</role-type>
+					<name>Portal Content Reviewer</name>
+					<auto-create>false</auto-create>
+				</role>
+				<role>
+					<role-type>site</role-type>
+					<name>Site Administrator</name>
+					<auto-create>false</auto-create>
+				</role>
+				<role>
+					<role-type>site</role-type>
+					<name>Site Content Reviewer</name>
+					<auto-create>false</auto-create>
+				</role>
+				<role>
+					<role-type>site</role-type>
+					<name>Site Owner</name>
+					<auto-create>false</auto-create>
+				</role>
+			</roles>
+		</assignments>
+		<transitions>
+			<transition>
+				<name>approve</name>
+				<target>approved</target>
+				<default>true</default>
+			</transition>
+			<transition>
+				<name>reject</name>
+				<target>update</target>
+				<default>false</default>
+			</transition>
+		</transitions>
+	</task>
+</workflow-definition>

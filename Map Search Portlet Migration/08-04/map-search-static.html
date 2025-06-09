@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Plant | CEMEX</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        /* Reset and Global styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #023185;
+            line-height: 2;
+            font-size: 32px;
+        }
+        
+        .d-flex {
+            display: flex;
+        }
+        
+        .d-none {
+            display: none;
+        }
+
+        /* Material Icons */
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        /* Header section */
+        .block-full-width {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .txtContainer {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .txtContainer p {
+            margin-top: 5px !important;
+            margin-bottom: 5px !important;
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        /* Main container */
+        .fragment_2966 {
+            display: flex;
+            position: relative;
+            font-size: 14px;
+            scrollbar-gutter: stable;
+        }
+
+        /* Map wrapper */
+        #map {
+            min-height: 90vh;
+            width: 100%;
+        }
+
+        /* Location list panel */
+        #locations-list {
+            padding: 20px;
+            width: 100%;
+            max-height: 731px;
+            background-color: rgba(255, 255, 255, 0.75);
+            display: flex;
+            flex-flow: column;
+            border-radius: 8px;
+        }
+
+        @media(min-width: 991px) {
+            #locations-list {
+                max-height: 100%;
+                position: absolute;
+                z-index: 6;
+                max-width: 540px;
+                top: 30px;
+                left: 30px;
+                bottom: 30px;
+            }
+            
+            #map {
+                flex-grow: 1;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        /* Search input */
+        .map-search__input {
+            flex: none;
+            margin-bottom: 20px;
+        }
+
+        .map-search__input .input-group {
+            width: 100%;
+            position: relative;
+        }
+
+        .map-search__input .form-control {
+            padding: 24px;
+            border: 1px solid rgba(51, 51, 51, 0.1);
+            background-color: #ffffff;
+            border-right: 0;
+            box-shadow: none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
+            width: 74%;
+        }
+
+        .form-control:focus {
+            z-index: 4;
+        }
+
+        .map-search__input .input-group .input-group-btn {
+            display: flex;
+            width: 26%;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .map-search__input .input-group-btn {
+            background: white;
+            border-top: 1px solid rgba(51, 51, 51, 0.1);
+            border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+            position: relative;
+            font-size: 0;
+            white-space: nowrap;
+        }
+
+        .map-search__input .input-group-btn .btn.btn-default {
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border: 0;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-left: 0;
+            color: #1697f3;
+            font-size: 16px;
+            cursor: pointer;
+            background: transparent;
+        }
+
+        /* Filters container */
+        .map-filters-container {
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .map-filters-container .map-search__filter {
+            flex-grow: 1;
+        }
+        
+        .map-search__filter,
+        .map-search__input {
+            flex: none;
+            margin-bottom: 20px;
+        }
+        
+        .map-search__input + .map-search__filter {
+            max-height: 50vh;
+        }
+        
+        .map-search__filter {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Accordion styles */
+        .accordion {
+            background-color: transparent;
+        }
+        
+        .accordion > div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        
+        #state-filter-container .accordion,
+        #product-filter-container .accordion {
+            background-color: #0003B1;
+        }
+        
+        .map-search__filter .accordion {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            max-height: 100%;
+            height: 100%;
+            border-radius: 24px;
+            height: 48px;
+        }
+        
+        .map-search__filter .accordion__item {
+            display: flex;
+            flex-direction: column;
+            max-height: 100%;
+            height: 100%;
+        }
+        
+        .map-search__filter .accordion__title {
+            flex: none;
+            color: white;
+        }
+        
+        .accordion__title {
+            cursor: pointer;
+            padding: 12px 21px 0px;
+            width: 100%;
+            text-align: left;
+            border: 0;
+            border-radius: 24px;
+        }
+        
+        .u-position-relative {
+            position: relative;
+        }
+        
+        .map-search__filter .map-search__filter_selected-product {
+            margin-left: 5px;
+        }
+        
+        .accordion__arrow {
+            display: inline-block;
+            position: relative;
+            width: 24px;
+            height: 12px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -6px;
+            color: white;
+        }
+        
+        .accordion__arrow::after,
+        .accordion__arrow::before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 10px;
+            height: 2px;
+            background-color: currentColor;
+            content: '';
+        }
+        
+        .d-none .accordion__arrow::before,
+        .accordion__arrow::before {
+            transform: rotate(-45deg);
+        }
+        
+        .accordion__arrow::before,
+        .accordion__arrow::after {
+            transition: transform .25s ease, -webkit-transform .25s ease;
+        }
+        
+        .accordion__arrow::before {
+            left: 4px;
+            transform: rotate(45deg);
+        }
+        
+        .accordion__arrow::after {
+            right: 4px;
+            transform: rotate(-45deg);
+        }
+
+        /* Filter options */
+        .search-filter-form {
+            z-index: 1101;
+            background-color: #0003B1;
+            max-height: 500px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            border-radius: 24px;
+            color: white;
+        }
+        
+        .search-filter-form > .radio {
+            margin: 0;
+            padding: 12px 22px;
+            cursor: pointer;
+        }
+        
+        .search-filter-form > .radio:first-child {
+            border-radius: 24px 24px 0px 0px;
+        }
+        
+        .search-filter-form > .radio.selected {
+            background-color: #1697f3;
+        }
+        
+        .map-search__filter .accordion__body {
+            flex: 1 1 auto;
+            overflow-y: hidden;
+            z-index: 7;
+        }
+        
+        .accordion__body {
+            padding: 0 21px 21px;
+            display: block;
+            animation: fadein .35s ease-in;
+        }
+        
+        .accordion-overlay {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            min-height: 100vh;
+            z-index: 1100;
+            background-color: #333;
+            opacity: .8;
+        }
+        
+        .accordion__body .close-btn {
+            z-index: 1101;
+            align-self: flex-end;
+            margin-bottom: 25px;
+            margin-right: 21px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Results section */
+        .map-search__results {
+            flex: 1 1 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .map-search__results .accordion {
+            min-height: 100%;
+        }
+        
+        @media(min-width: 991px) {
+            .map-search__results .accordion {
+                height: 100%;
+                overflow: auto;
+            }
+        }
+        
+        .map-search__results .accordion::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        
+        .map-search__results .accordion::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+        
+        .map-search__results .accordion::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .map-search__results .accordion::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        /* Location items */
+        .accordion__item.accordion__item_collapsed {
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 12px;
+        }
+        
+        .accordion__item.accordion__item_collapsed:last-child {
+            margin-bottom: 24px;
+        }
+        
+        .location__header {
+            display: flex;
+            padding: 15px;
+        }
+        
+        .location__excerpt {
+            flex-grow: 1;
+        }
+        
+        .location__excerpt h4 {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-right: 30px;
+            color: #0003B1;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: .1px;
+            line-height: 32px;
+        }
+        
+        .location__excerpt .accordion__arrow,
+        .region-locations .accordion__arrow {
+            color: #666;
+        }
+        
+        .location__excerpt .location__address {
+            color: black;
+            font-size: 16px;
+            letter-spacing: .1px;
+            line-height: 28px;
+            margin-bottom: 3px;
+        }
+        
+        .location__excerpt .product-tags {
+            display: flex;
+            margin-top: 8px;
+        }
+        
+        .location__excerpt .product-tags-item {
+            position: relative;
+            display: inline-block;
+            color: #666;
+            font-size: 16px;
+            line-height: 20px;
+            margin-right: 8px;
+            margin-bottom: 3px;
+        }
+        
+        .location__excerpt .product-tags-item:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 2px;
+            background-color: #1697f3;
+            border-radius: 50%;
+            margin-left: 5px;
+            margin-bottom: 4px;
+            vertical-align: middle;
+        }
+        
+        /* Location body */
+        .map-search__results .accordion__item .accordion__body {
+            margin-top: -10px;
+        }
+        
+        .location__body {
+            padding: 0 21px 21px;
+        }
+        
+        .map-search__results .opening-hours {
+            color: #333;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .map-search__results .location-opening-items {
+            display: flex;
+            column-gap: 5px;
+        }
+        
+        .map-search__results .location-opening-items .opening-label-open {
+            color: #11993c;
+        }
+        
+        .map-search__results .location-opening-items .opening-label-closed {
+            color: #D8000E;
+        }
+        
+        .map-search__results .location-opening-items .opening-info {
+            color: #666;
+        }
+        
+        .map-search__results .location-opening-items .opening-dot {
+            color: #666;
+            margin-bottom: 5px;
+            position: relative;
+            top: -4px;
+        }
+        
+        .map-search__results .location-opening-items li {
+            list-style: none;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        
+        /* CTA buttons */
+        .map-search__results .location-cta-wrapper {
+            display: flex;
+            column-gap: 20px;
+            flex-wrap: nowrap;
+            margin-top: 15px;
+        }
+        
+        .map-search__results .location-cta-wrapper .cta-primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 20px;
+            color: white;
+            background-color: #1697f3;
+            border: 1px solid #1697f3;
+            border-radius: 28px;
+            transition: all 250ms ease;
+            cursor: pointer;
+            margin: 0;
+            text-decoration: none !important;
+            column-gap: 5px;
+            flex-wrap: nowrap;
+            font-size: 14px;
+        }
+        
+        .map-search__results .location-cta-wrapper .cta-primary .material-symbols-outlined {
+            font-size: 20px;
+        }
+        
+        /* No results message */
+        .map-search__results .accordion .no-results {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 160px;
+        }
+        
+        .map-search__results .accordion .no-results .no-result-icon {
+            background: #f4f6f9;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .map-search__results .accordion .no-results h4 {
+            color: #333;
+            font-size: 20px;
+            letter-spacing: .1px;
+            line-height: 36px;
+            font-weight: 400;
+        }
+        
+        .map-search__results .accordion .no-results p {
+            text-align: center;
+            margin: 8px 28px;
+            color: #666;
+            font-size: 16px;
+            letter-spacing: .1px;
+            line-height: 28px;
+        }
+        
+        .map-search__results .accordion .no-results .location-icon {
+            top: calc(50% - 11px);
+            font-size: 16px;
+            height: max-content;
+        }
+        
+        /* Animations */
+        @keyframes fadein {
+            0% { opacity: 0 }
+            100% { opacity: 1 }
+        }
+        
+        /* Responsive styles */
+        @media(max-width:991px) {
+            .fragment_2966 {
+                flex-direction: column;
+                height: max-content;
+                min-height: max-content;
+            }
+            
+            .map-search__results .accordion {
+                min-height: 100%;
+                position: relative;
+                height: 203px;
+                width: 100%;
+                overflow: auto;
+                will-change: transform;
+                direction: ltr;
+                padding-bottom: 30px;
+            }
+            
+            .map-search__filter .accordion__body {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1100;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                z-index: 1300;
+            }
+        }
+        
+        @media(min-width:991px) {
+            .search-filter-form {
+                position: relative;
+                z-index: 1101;
+                width: 100%;
+            }
+            
+            .map-search__filter .accordion__body {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                max-height: 456px;
+                padding: 0 0 20px;
+                border-radius: 12px;
+            }
+            
+            .map-search__input + .map-search__filter {
+                max-height: calc(100% - 54px);
+            }
+            
+            .accordion__item {
+                position: relative;
+            }
+            
+            .accordion-overlay,
+            .accordion__body .close-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="block-full-width">
+        <div class="content-wrapper">
+            <div class="txtContainer">
+                <h1>Find a Plant</h1>
+                <div>
+                    <p>Find your nearest Concrete, Aggregate, Mortar or Asphalt plant using our Map search, or choose the product you need and see which plant is closest to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="fragment_2966">
+        <!-- Locations List Panel -->
+        <div id="locations-list">
+            <!-- Search Input -->
+            <div class="map-search__input">
+                <div class="input-group">
+                    <input id="search-input" type="text" class="form-control" placeholder="Find a location" value="">
+                    <span class="input-group-btn">
+                        <button aria-label="Search" class="btn btn-default" id="btn-search">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Filters Container -->
+            <div class="map-filters-container d-flex">
+                <!-- Product Filter -->
+                <div class="map-search__filter" id="product-filter-container">
+                    <div class="accordion" aria-label="Filter search">
+                        <div class="accordion__item">
+                            <div class="accordion__title" aria-selected="true">
+                                <div class="u-position-relative">
+                                    <strong>Select Product</strong>
+                                    <span class="map-search__filter_selected-product">All</span>
+                                    <div class="accordion__arrow" role="presentation"></div>
+                                </div>
+                            </div>
+                            <div class="accordion__body d-none">
+                                <span class="accordion-overlay"></span>
+                                <span class="close-btn material-symbols-outlined">
+                                    close
+                                </span>
+                                <div class="search-filter-form">
+                                    <div class="radio selected" aria-label="All">All</div>
+                                    <div class="radio" aria-label="Concrete">Concrete</div>
+                                    <div class="radio" aria-label="Aggregates">Aggregates</div>
+                                    <div class="radio" aria-label="Asphalt">Asphalt</div>
+                                    <div class="radio" aria-label="Mortar">Mortar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Region Filter -->
+                <div class="map-search__filter" id="state-filter-container">
+                    <div class="accordion" aria-label="Filter search">
+                        <div class="accordion__item">
+                            <div class="accordion__title" aria-selected="true">
+                                <div class="u-position-relative">
+                                    <strong>Select Region</strong>
+                                    <span class="map-search__filter_selected-product">All</span>
+                                    <div class="accordion__arrow" role="presentation"></div>
+                                </div>
+                            </div>
+                            <div class="accordion__body d-none">
+                                <span class="accordion-overlay"></span>
+                                <span class="close-btn material-symbols-outlined">
+                                    close
+                                </span>
+                                <div class="search-filter-form">
+                                    <div class="radio selected" aria-label="All">All</div>
+                                    <div class="radio" aria-label="North East">North East</div>
+                                    <div class="radio" aria-label="North West">North West</div>
+                                    <div class="radio" aria-label="Yorkshire / Humber">Yorkshire / Humber</div>
+                                    <div class="radio" aria-label="East Midlands">East Midlands</div>
+                                    <div class="radio" aria-label="West Midlands">West Midlands</div>
+                                    <div class="radio" aria-label="East of England">East of England</div>
+                                    <div class="radio" aria-label="London">London</div>
+                                    <div class="radio" aria-label="South East">South East</div>
+                                    <div class="radio" aria-label="South West">South West</div>
+                                    <div class="radio" aria-label="Wales">Wales</div>
+                                    <div class="radio" aria-label="Scotland">Scotland</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Container -->
+            <div class="map-search__results" id="map-search__results">
+                <div class="accordion">
+                    <div id="locations-container">
+                        <!-- Location items will be added here dynamically -->
+                    </div>
+                    <div class="no-results d-none" id="no-results">
+                        <div class="no-result-icon">
+                            <span class="location-icon glyphicon glyphicon-map-marker">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                        <h4>No locations were found.</h4>
+                        <p>We couldn't find any information that matches your search, please try again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Container -->
+        <div id="map"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places,geometry" defer></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    
+    <script>
+        // Mock data for demonstration purposes
+        const mockLocations = [
+            {
+                id: 1,
+                name: "Cemex Jarrow Aggregates Wharf",
+                address: "North East, Jarrow, United Kingdom - GB, NE32 3DX",
+                region: "North East",
+                latitude: 54.9783,
+                longitude: -1.4858,
+                keywords: ["Aggregates"],
+                openingHours: [
+                    "Monday - Friday: 7:00 AM - 5:00 PM",
+                    "Saturday: 7:00 AM - 12:00 PM",
+                    "Sunday: Closed"
+                ]
+            },
+            {
+                id: 2,
+                name: "Cemex Durham Concrete Plant",
+                address: "North East, Durham, United Kingdom - GB, DH7 8HH",
+                region: "North East",
+                latitude: 54.7761,
+                longitude: -1.5733,
+                keywords: ["Concrete"],
+                openingHours: [
+                    "Monday - Friday: 7:00 AM - 5:00 PM",
+                    "Saturday: 7:00 AM - 12:00 PM",
+                    "Sunday: Closed"
+                ]
+            },
+            {
+                id: 3,
+                name: "Cemex Peterlee Mortar Plant",
+                address: "North East, Peterlee, United Kingdom - GB, DH6 2QA",
+                region: "North East",
+                latitude: 54.7667,
+                longitude: -1.3333,
+                keywords: ["Mortar"],
+                openingHours: [
+                    "Monday - Friday: 7:00 AM - 5:00 PM",
+                    "Saturday: 7:00 AM - 12:00 PM",
+                    "Sunday: Closed"
+                ]
+            },
+            {
+                id: 4,
+                name: "Cemex Preston Asphalt Plant",
+                address: "North West, Preston, United Kingdom - GB, PR2 5NQ",
+                region: "North West",
+                latitude: 53.7632,
+                longitude: -2.7044,
+                keywords: ["Asphalt"],
+                openingHours: [
+                    "Monday - Friday: 7:00 AM - 5:00 PM",
+                    "Saturday: 7:00 AM - 12:00 PM",
+                    "Sunday: Closed"
+                ]
+            },
+            {
+                id: 5,
+                name: "Cemex Burnley Concrete Plant",
+                address: "North West, Burnley, United Kingdom - GB, BB12 0DQ",
+                region: "North West",
+                latitude: 53.7856,
+                longitude: -2.2381,
+                keywords: ["Concrete"],
+                openingHours: [
+                    "Monday - Friday: 7:00 AM - 5:00 PM",
+                    "Saturday: 7:00 AM - 12:00 PM",
+                    "Sunday: Closed"
+                ]
+            },
+            {
+                id: 6,
+                name: "Cemex Blackburn Concrete Plant",
+                address: "North West, Blackburn, United Kingdom - GB, BB1 3BW",
+                region: "North West",
+                latitude: 53.7478,
+                longitude: -2.4828,
+                keywords: ["Concrete"],
+                openingHours: [
+                    "Monday - Friday: 7:00 AM - 5:00 PM",
+                    "Saturday: 7:00 AM - 12:00 PM",
+                    "Sunday: Closed"
+                ]
+            },
+            {
+                id: 7,
+                name: "Cemex Spaunton Quarry",
+                address: "Yorkshire / Humber, York, United Kingdom - GB, YO6 6NF",
+                region: "Yorkshire / Humber",
+                latitude: 54.2702,
+                longitude: -0.9535,
+                keywords: ["Aggregates"],
+                openingHours: [
+                    "Monday - Friday: 7:00 AM - 5:00 PM",
+                    "Saturday: 7:00 AM - 12:00 PM",
+                    "Sunday: Closed"
+                ]
+            }
+        ];
+
+        // State variables
+        let map;
+        let markers = [];
+        let bounds;
+        let clusterer;
+        let currentSearchTerm = "";
+        let selectedProduct = "";
+        let selectedRegion = "";
+
+        // DOM elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const locationsContainer = document.getElementById('locations-container');
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('btn-search');
+            const noResultsElement = document.getElementById('no-results');
+            const productFilterBtn = document.querySelector('#product-filter-container .accordion__title');
+            const stateFilterBtn = document.querySelector('#state-filter-container .accordion__title');
+            const productFilterOptions = document.querySelector('#product-filter-container .accordion__body');
+            const stateFilterOptions = document.querySelector('#state-filter-container .accordion__body');
+            const productFilterContainer = document.querySelector('#product-filter-container .search-filter-form');
+            const stateFilterContainer = document.querySelector('#state-filter-container .search-filter-form');
+
+            // Initialize map
+            function initMap() {
+                // Create map
+                bounds = new google.maps.LatLngBounds();
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 5,
+                    center: { lat: 54.7, lng: -2.0 }, // Center of UK
+                    mapId: "LOCATIONS_MAP",
+                    streetViewControl: false,
+                    mapTypeControl: false
+                });
+
+                // Initialize search
+                initSearch();
+                
+                // Load the initial locations
+                loadLocations();
+            }
+
+            // Search functionality
+            function initSearch() {
+                searchButton.addEventListener("click", function() {
+                    currentSearchTerm = searchInput.value.trim();
+                    loadLocations();
+                });
+                
+                searchInput.addEventListener("keypress", function(e) {
+                    if (e.key === "Enter") {
+                        currentSearchTerm = searchInput.value.trim();
+                        loadLocations();
+                    }
+                });
+
+                // Initialize product filter
+                initProductFilter();
+                
+                // Initialize region filter
+                initRegionFilter();
+            }
+
+            // Filter functionality for products
+            function initProductFilter() {
+                // Set up filter toggle
+                productFilterBtn.addEventListener('click', function() {
+                    productFilterOptions.classList.toggle('d-none');
+                });
+                
+                // Set up each filter option
+                const productOptions = productFilterContainer.querySelectorAll('.radio');
+                productOptions.forEach(option => {
+                    option.addEventListener('click', function() {
+                        const label = option.getAttribute('aria-label');
+                        
+                        // Update selected product
+                        selectedProduct = label === 'All' ? '' : label;
+                        
+                        // Update filter label
+                        const filterLabel = productFilterBtn.querySelector('.map-search__filter_selected-product');
+                        filterLabel.textContent = label;
+                        
+                        // Hide filter options
+                        productFilterOptions.classList.add('d-none');
+                        
+                        // Update selected class
+                        productOptions.forEach(el => {
+                            el.classList.remove('selected');
+                        });
+                        option.classList.add('selected');
+                        
+                        // Reload locations with new filter
+                        loadLocations();
+                    });
+                });
+                
+                // Set up close button
+                const closeBtn = productFilterOptions.querySelector('.close-btn');
+                closeBtn.addEventListener('click', function() {
+                    productFilterOptions.classList.add('d-none');
+                });
+                
+                // Close on outside click
+                document.addEventListener('click', function(event) {
+                    if (!productFilterBtn.contains(event.target) && !productFilterOptions.contains(event.target)) {
+                        productFilterOptions.classList.add('d-none');
+                    }
+                });
+            }
+
+            // Filter functionality for regions
+            function initRegionFilter() {
+                // Set up filter toggle
+                stateFilterBtn.addEventListener('click', function() {
+                    stateFilterOptions.classList.toggle('d-none');
+                });
+                
+                // Set up each filter option
+                const regionOptions = stateFilterContainer.querySelectorAll('.radio');
+                regionOptions.forEach(option => {
+                    option.addEventListener('click', function() {
+                        const label = option.getAttribute('aria-label');
+                        
+                        // Update selected region
+                        selectedRegion = label === 'All' ? '' : label;
+                        
+                        // Update filter label
+                        const filterLabel = stateFilterBtn.querySelector('.map-search__filter_selected-product');
+                        filterLabel.textContent = label;
+                        
+                        // Hide filter options
+                        stateFilterOptions.classList.add('d-none');
+                        
+                        // Update selected class
+                        regionOptions.forEach(el => {
+                            el.classList.remove('selected');
+                        });
+                        option.classList.add('selected');
+                        
+                        // Reload locations with new filter
+                        loadLocations();
+                    });
+                });
+                
+                // Set up close button
+                const closeBtn = stateFilterOptions.querySelector('.close-btn');
+                closeBtn.addEventListener('click', function() {
+                    stateFilterOptions.classList.add('d-none');
+                });
+                
+                // Close on outside click
+                document.addEventListener('click', function(event) {
+                    if (!stateFilterBtn.contains(event.target) && !stateFilterOptions.contains(event.target)) {
+                        stateFilterOptions.classList.add('d-none');
+                    }
+                });
+            }
+
+            // Function to load and filter locations
+            function loadLocations() {
+                clearResults();
+                
+                // Get filtered locations based on search term and filters
+                const filteredLocations = mockLocations.filter(location => {
+                    const searchMatch = !currentSearchTerm || 
+                        location.name.toLowerCase().includes(currentSearchTerm.toLowerCase()) ||
+                        location.address.toLowerCase().includes(currentSearchTerm.toLowerCase());
+                    
+                    const productMatch = !selectedProduct || 
+                        location.keywords.some(k => k.toLowerCase() === selectedProduct.toLowerCase());
+                    
+                    const regionMatch = !selectedRegion ||
+                        location.region === selectedRegion;
+                    
+                    return searchMatch && productMatch && regionMatch;
+                });
+                
+                if (filteredLocations.length === 0) {
+                    showNoResultsMessage(true);
+                    return;
+                }
+                
+                showNoResultsMessage(false);
+                
+                // Add locations to map and list
+                filteredLocations.forEach(location => {
+                    const marker = addMarker(location);
+                    createLocationItem(location, marker);
+                });
+                
+                // Fit map to markers
+                if (markers.length > 0) {
+                    map.fitBounds(bounds);
+                    if (markers.length === 1) {
+                        map.setZoom(15); // Closer zoom for single location
+                    }
+                }
+                
+                // Apply clustering if we have multiple markers
+                if (markers.length > 1) {
+                    applyClustering();
+                }
+            }
+
+            // Add a marker to the map
+            function addMarker(location) {
+                if (!location.latitude || !location.longitude) return null;
+                
+                const pos = { lat: location.latitude, lng: location.longitude };
+                
+                const marker = new google.maps.Marker({
+                    position: pos,
+                    map: map,
+                    title: location.name,
+                    icon: {
+                        url: 'https://www.cemex.co.uk/documents/46856846/46897364/cemex-pin.png',
+                        scaledSize: new google.maps.Size(25, 33)
+                    }
+                });
+                
+                markers.push(marker);
+                bounds.extend(pos);
+                
+                // Click event
+                marker.addListener("click", function() {
+                    map.panTo(pos);
+                    map.setZoom(15);
+                    
+                    // Find and highlight the corresponding item in the list
+                    const items = locationsContainer.querySelectorAll('.accordion__item');
+                    items.forEach(item => {
+                        if (item.querySelector('h4').textContent === location.name) {
+                            item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            const body = item.querySelector('.accordion__body');
+                            if (body.classList.contains('d-none')) {
+                                body.classList.remove('d-none');
+                            }
+                        }
+                    });
+                });
+                
+                return marker;
+            }
+
+            // Create a location item in the list
+            function createLocationItem(location, marker) {
+                const item = document.createElement("div");
+                item.className = "accordion__item accordion__item_collapsed";
+                
+                const title = document.createElement("div");
+                title.className = "accordion__title";
+                title.innerHTML = `
+                    <div class='location__header'>
+                        <div class='location__excerpt'>
+                            <div class='u-position-relative'>
+                                <h4>${location.name}</h4>
+                                <div class="accordion__arrow" role="presentation"></div>
+                            </div>
+                            <div class='location__address'>${location.address}</div>
+                            ${location.keywords?.length ? `<div class="product-tags">${location.keywords.map(k => `<div class="product-tags-item">${k}</div>`).join('')}</div>` : ''}
+                        </div>
+                    </div>`;
+                
+                const body = document.createElement("div");
+                body.className = "accordion__body d-none";
+                
+                const innerBody = document.createElement("div");
+                innerBody.className = "location__body";
+                
+                // Opening hours section
+                const openingHours = document.createElement("div");
+                openingHours.className = "opening-hours";
+                openingHours.innerHTML = `
+                    <div class='location-opening-items'>
+                        <div class='opening-label-open'>Open</div>
+                        <div class='opening-dot'>.</div>
+                        <div class='opening-info'>Closes 5:00 PM today</div>
+                    </div>
+                    <ul>
+                        ${location.openingHours.map(hours => `<li>${hours}</li>`).join('')}
+                    </ul>
+                `;
+                innerBody.appendChild(openingHours);
+                
+                // CTA buttons
+                const ctaWrapper = document.createElement("div");
+                ctaWrapper.className = "location-cta-wrapper";
+                
+                const direction = document.createElement("a");
+                direction.className = "cta-primary";
+                direction.href = `https://google.com/maps/dir//${location.latitude},${location.longitude}`;
+                direction.target = "_blank";
+                direction.innerHTML = `
+                    <span class="material-symbols-outlined">directions</span>
+                    <span>Navigate</span>
+                `;
+                ctaWrapper.appendChild(direction);
+                
+                const details = document.createElement("a");
+                details.className = "cta-primary";
+                details.href = `#location-${location.id}`;
+                details.innerHTML = `
+                    <span class="material-symbols-outlined">info</span>
+                    <span>View Details</span>
+                `;
+                ctaWrapper.appendChild(details);
+                
+                innerBody.appendChild(ctaWrapper);
+                body.appendChild(innerBody);
+                item.appendChild(title);
+                item.appendChild(body);
+                
+                // Toggle body on title click
+                title.addEventListener('click', function() {
+                    body.classList.toggle('d-none');
+                    if (marker) {
+                        map.panTo(marker.getPosition());
+                        map.setZoom(15);
+                    }
+                });
+                
+                locationsContainer.appendChild(item);
+                return item;
+            }
+
+            // Apply marker clustering
+            function applyClustering() {
+                if (clusterer) {
+                    clusterer.clearMarkers();
+                }
+                clusterer = new MarkerClusterer({
+                    map: map,
+                    markers: markers,
+                    renderer: {
+                        render: ({ count, position }) => {
+                            return new google.maps.Marker({
+                                position,
+                                label: { text: String(count), color: "white" },
+                                icon: {
+                                    url: count > 10 
+                                        ? "https://www.cemex.co.uk/documents/46856846/46897364/m3.png" 
+                                        : count > 5 
+                                            ? "https://www.cemex.co.uk/documents/46856846/46897364/m2.png" 
+                                            : "https://www.cemex.co.uk/documents/46856846/46897364/m1.png",
+                                    scaledSize: new google.maps.Size(56, 56),
+                                    labelOrigin: new google.maps.Point(28, 28)
+                                }
+                            });
+                        }
+                    }
+                });
+            }
+
+            // Clear results
+            function clearResults() {
+                locationsContainer.innerHTML = "";
+                markers.forEach(marker => marker.setMap(null));
+                markers = [];
+                bounds = new google.maps.LatLngBounds();
+                if (clusterer) {
+                    clusterer.clearMarkers();
+                }
+            }
+
+            // Show/hide no results message
+            function showNoResultsMessage(show) {
+                noResultsElement.classList.toggle("d-none", !show);
+            }
+
+            // Initialize map once Google Maps API is loaded
+            if (typeof google !== 'undefined') {
+                initMap();
+            } else {
+                // If Google Maps isn't loaded yet, wait for it
+                window.addEventListener('load', function() {
+                    if (typeof google !== 'undefined') {
+                        initMap();
+                    } else {
+                        console.error('Google Maps API failed to load');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,879 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "subscribe": {
+      "method": "PUT",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428/subscribe"
+    },
+    "unsubscribe": {
+      "method": "PUT",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428/unsubscribe"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428"
+    },
+    "replace": {
+      "method": "PUT",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428"
+    },
+    "update": {
+      "method": "PATCH",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428"
+    },
+    "delete": {
+      "method": "DELETE",
+      "href": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428"
+    }
+  },
+  "availableLanguages": [
+    "en-GB"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "Cemex CEMEX Marine - Southampton"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Location Name",
+      "name": "LocationName",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Product Card",
+      "name": "ProductCard",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Name",
+          "name": "Name",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Link",
+          "name": "Link",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "PublisherImages",
+      "name": "PublisherImages",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Publisher",
+          "name": "Publisher",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "document",
+          "label": "File",
+          "name": "File",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Description",
+          "name": "Description",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "FileCard",
+      "name": "FileCard",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "PriceName",
+          "name": "PriceName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "document",
+          "label": "LocationPriceList",
+          "name": "LocationPriceList",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Add Page",
+      "name": "AddPage",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "CEMEX Marine Southampton"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Page Name",
+          "name": "PageName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": "https://cemex.co.uk/cemex-marine-southampton"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Page Url",
+          "name": "PageUrl",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {
+        "data": "Marine Parade"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Address",
+      "name": "Address",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "South East"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Address 2",
+      "name": "Address2",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": ""
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Company Name",
+      "name": "CompanyName",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "Southampton"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Town/City",
+      "name": "TownCity",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "United Kingdom"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Country",
+      "name": "Country",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "SO14 5JF"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Postcode",
+      "name": "Postcode",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "geo": {
+          "latitude": 50.901986,
+          "longitude": -1.390765
+        }
+      },
+      "dataType": "geolocation",
+      "label": "Geolocation",
+      "name": "Geolocation",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "023 8072 0200"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Phone Number",
+      "name": "PhoneNumber",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Opening Hours",
+      "name": "OpeningHours",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Monday"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Day Name",
+          "name": "DayName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "",
+          "label": "Day Times",
+          "name": "Fieldset54865370",
+          "nestedContentFields": [
+            {
+              "contentFieldValue": {
+                "data": "07:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Open",
+              "name": "Open",
+              "nestedContentFields": [],
+              "repeatable": false
+            },
+            {
+              "contentFieldValue": {
+                "data": "19:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Close",
+              "name": "Close",
+              "nestedContentFields": [],
+              "repeatable": false
+            }
+          ],
+          "repeatable": true
+        },
+        {
+          "contentFieldValue": {
+            "data": "false"
+          },
+          "dataType": "boolean",
+          "inputControl": "checkbox",
+          "label": "isClosed",
+          "name": "isClosed",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Opening Hours",
+      "name": "OpeningHours",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Tuesday"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Day Name",
+          "name": "DayName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "",
+          "label": "Day Times",
+          "name": "Fieldset54865370",
+          "nestedContentFields": [
+            {
+              "contentFieldValue": {
+                "data": "07:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Open",
+              "name": "Open",
+              "nestedContentFields": [],
+              "repeatable": false
+            },
+            {
+              "contentFieldValue": {
+                "data": "19:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Close",
+              "name": "Close",
+              "nestedContentFields": [],
+              "repeatable": false
+            }
+          ],
+          "repeatable": true
+        },
+        {
+          "contentFieldValue": {
+            "data": "false"
+          },
+          "dataType": "boolean",
+          "inputControl": "checkbox",
+          "label": "isClosed",
+          "name": "isClosed",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Opening Hours",
+      "name": "OpeningHours",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Wednesday"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Day Name",
+          "name": "DayName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "",
+          "label": "Day Times",
+          "name": "Fieldset54865370",
+          "nestedContentFields": [
+            {
+              "contentFieldValue": {
+                "data": "07:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Open",
+              "name": "Open",
+              "nestedContentFields": [],
+              "repeatable": false
+            },
+            {
+              "contentFieldValue": {
+                "data": "19:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Close",
+              "name": "Close",
+              "nestedContentFields": [],
+              "repeatable": false
+            }
+          ],
+          "repeatable": true
+        },
+        {
+          "contentFieldValue": {
+            "data": "false"
+          },
+          "dataType": "boolean",
+          "inputControl": "checkbox",
+          "label": "isClosed",
+          "name": "isClosed",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Opening Hours",
+      "name": "OpeningHours",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Thursday"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Day Name",
+          "name": "DayName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "",
+          "label": "Day Times",
+          "name": "Fieldset54865370",
+          "nestedContentFields": [
+            {
+              "contentFieldValue": {
+                "data": "07:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Open",
+              "name": "Open",
+              "nestedContentFields": [],
+              "repeatable": false
+            },
+            {
+              "contentFieldValue": {
+                "data": "19:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Close",
+              "name": "Close",
+              "nestedContentFields": [],
+              "repeatable": false
+            }
+          ],
+          "repeatable": true
+        },
+        {
+          "contentFieldValue": {
+            "data": "false"
+          },
+          "dataType": "boolean",
+          "inputControl": "checkbox",
+          "label": "isClosed",
+          "name": "isClosed",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Opening Hours",
+      "name": "OpeningHours",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Friday"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Day Name",
+          "name": "DayName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "",
+          "label": "Day Times",
+          "name": "Fieldset54865370",
+          "nestedContentFields": [
+            {
+              "contentFieldValue": {
+                "data": "07:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Open",
+              "name": "Open",
+              "nestedContentFields": [],
+              "repeatable": false
+            },
+            {
+              "contentFieldValue": {
+                "data": "19:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Close",
+              "name": "Close",
+              "nestedContentFields": [],
+              "repeatable": false
+            }
+          ],
+          "repeatable": true
+        },
+        {
+          "contentFieldValue": {
+            "data": "false"
+          },
+          "dataType": "boolean",
+          "inputControl": "checkbox",
+          "label": "isClosed",
+          "name": "isClosed",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Opening Hours",
+      "name": "OpeningHours",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Saturday"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Day Name",
+          "name": "DayName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "",
+          "label": "Day Times",
+          "name": "Fieldset54865370",
+          "nestedContentFields": [
+            {
+              "contentFieldValue": {
+                "data": "07:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Open",
+              "name": "Open",
+              "nestedContentFields": [],
+              "repeatable": false
+            },
+            {
+              "contentFieldValue": {
+                "data": "12:00"
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Close",
+              "name": "Close",
+              "nestedContentFields": [],
+              "repeatable": false
+            }
+          ],
+          "repeatable": true
+        },
+        {
+          "contentFieldValue": {
+            "data": "false"
+          },
+          "dataType": "boolean",
+          "inputControl": "checkbox",
+          "label": "isClosed",
+          "name": "isClosed",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Opening Hours",
+      "name": "OpeningHours",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Sunday"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Day Name",
+          "name": "DayName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {},
+          "dataType": "",
+          "label": "Day Times",
+          "name": "Fieldset54865370",
+          "nestedContentFields": [
+            {
+              "contentFieldValue": {
+                "data": ""
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Open",
+              "name": "Open",
+              "nestedContentFields": [],
+              "repeatable": false
+            },
+            {
+              "contentFieldValue": {
+                "data": ""
+              },
+              "dataType": "string",
+              "inputControl": "text",
+              "label": "Close",
+              "name": "Close",
+              "nestedContentFields": [],
+              "repeatable": false
+            }
+          ],
+          "repeatable": true
+        },
+        {
+          "contentFieldValue": {
+            "data": "true"
+          },
+          "dataType": "boolean",
+          "inputControl": "checkbox",
+          "label": "isClosed",
+          "name": "isClosed",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "label": "Contact Detail",
+      "name": "ContactDetail",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": "Tel"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Contact Name",
+          "name": "ContactName",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": "-"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Job Position",
+          "name": "JobPosition",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": "-"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Email Address",
+          "name": "EmailAddress",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": "023 8072 0200"
+          },
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Phone Number",
+          "name": "PhoneNumber1",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "contentFieldValue": {
+        "data": "false"
+      },
+      "dataType": "boolean",
+      "inputControl": "checkbox",
+      "label": "isLocationClosed",
+      "name": "isLocationClosed",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "image",
+      "label": "Location Image",
+      "name": "LocationImage",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "true"
+      },
+      "dataType": "boolean",
+      "inputControl": "checkbox",
+      "label": "isYextRestrict",
+      "name": "isYextRestrict",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "The CEMEX UK head office for our marine aggregates and wharves."
+      },
+      "dataType": "string",
+      "label": "Location Description",
+      "name": "RichText",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "true"
+      },
+      "dataType": "boolean",
+      "inputControl": "checkbox",
+      "label": "isCSVLocation",
+      "name": "isCSVLocation",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": ""
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "State",
+      "name": "State",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "Hampshire"
+      },
+      "dataType": "string",
+      "inputControl": "text",
+      "label": "Region",
+      "name": "Region",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 2566751,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "familyName": "Gohel",
+    "givenName": "Manoj",
+    "id": 2633034,
+    "name": "Manoj Gohel"
+  },
+  "customFields": [],
+  "dateCreated": "2025-03-25T09:26:48Z",
+  "dateModified": "2025-03-25T09:26:49Z",
+  "datePublished": "2025-03-25T09:26:00Z",
+  "description": "",
+  "externalReferenceCode": "1af954a7-d8c3-f119-38a5-31f30a55a6bd",
+  "friendlyUrlPath": "cemex-cemex-marine-southampton",
+  "id": 2790428,
+  "key": "2790426",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "2566786",
+      "contentTemplateName": "Locations",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428/rendered-content/2566786"
+    },
+    {
+      "contentTemplateId": "location",
+      "contentTemplateName": "Location",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://cxprod-web.cemex.com/o/headless-delivery/v1.0/structured-contents/2790428/rendered-content-by-display-page/location"
+    }
+  ],
+  "siteId": 1863241,
+  "structuredContentFolderId": 2567104,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 2567039,
+      "taxonomyCategoryName": "Concrete"
+    }
+  ],
+  "title": "Cemex CEMEX Marine - Southampton",
+  "uuid": "1af954a7-d8c3-f119-38a5-31f30a55a6bd"
+}

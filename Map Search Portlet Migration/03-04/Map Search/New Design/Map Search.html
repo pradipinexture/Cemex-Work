@@ -1,0 +1,57 @@
+<div class="map-search-container">
+    <div id="locations-panel">
+        <div class="search-box">
+            <input id="search-input" type="text" placeholder="Find a location" />
+            <button id="search-button" aria-label="Search">
+                <i class="search-icon"></i>
+            </button>
+        </div>
+        
+        <div class="filters-row">
+            <div class="filter-dropdown" id="product-filter">
+                <button class="filter-button">
+                    <span class="filter-label">Product</span>
+                    <span class="selected-filter" id="selected-product">All</span>
+                    <i class="dropdown-arrow"></i>
+                </button>
+                <div class="filter-options">
+                    <div class="filter-option selected" data-value="">All</div>
+                    <!-- Product options will be added dynamically -->
+                </div>
+            </div>
+            
+            <div class="filter-dropdown" id="region-filter">
+                <button class="filter-button">
+                    <span class="filter-label">Region</span>
+                    <span class="selected-filter" id="selected-region">All</span>
+                    <i class="dropdown-arrow"></i>
+                </button>
+                <div class="filter-options">
+                    <div class="filter-option selected" data-value="">All</div>
+                    <!-- Region options will be added dynamically -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-container">
+            <div id="location-results">
+                <!-- Location results will be added here -->
+            </div>
+            <div id="no-results" class="hidden">
+                <div class="no-results-icon">
+                    <i class="location-pin-icon"></i>
+                </div>
+                <h3>No locations found</h3>
+                <p>We couldn't find any locations matching your search. Please try different criteria.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="map-container">
+        <!-- Map will be rendered here -->
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places,geometry&callback=initMap" defer></script>
+<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>

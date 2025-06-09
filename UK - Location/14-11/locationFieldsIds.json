@@ -1,0 +1,169 @@
+var locationFieldsIds = {
+    'LocationName': {
+        elementId: 'locationname',
+        xmlFieldName: 'Text55119005'
+    },
+    'Address': {
+        elementId: 'address',
+        xmlFieldName: 'Text67160900'
+    },
+    'Address2': {
+        elementId: 'addressone',
+        xmlFieldName: 'Field90325339'
+    },
+    'CompanyName': {
+        elementId: 'company',
+        xmlFieldName: 'Field35228776'
+    },
+    'TownCity': {
+        elementId: 'city',
+        xmlFieldName: 'Field53582290'
+    },
+    'Country': {
+        elementId: 'country',
+        xmlFieldName: 'Field84466895'
+    },
+    'Postcode': {
+        elementId: 'postcode',
+        xmlFieldName: 'Field84400079'
+    },
+    'PhoneNumber': {
+        elementId: 'phonenumber',
+        xmlFieldName: 'Text84739096'
+    },
+    'Geolocation': {
+        mapAddress: {
+            elementId: 'map-address',
+            xmlFieldName: 'MapAddress'
+        },
+        latitude: {
+            elementId: 'latitude',
+            xmlFieldName: 'Latitude'
+        },
+        longitude: {
+            elementId: 'longitude',
+            xmlFieldName: 'Longitude'
+        }
+    },
+    'OpeningHours': {
+        elementId: '-time-container',
+        xmlFieldName: 'Fieldset22331654',
+        nestedFields: {
+            dayName: 'Text14522579',
+            open: 'Text72354453',
+            close: 'Field82067117',
+            isClosed: 'Checkbox90733914'
+        }
+    },
+    'ContactDetail': {
+        elementId: 'contact-card-container',
+        xmlFieldName: 'Field82242200',
+        nestedFields: {
+            contactName: 'Field25164775',
+            jobPosition: 'Text93041485',
+            emailAddress: 'Field33848867',
+            phoneNumber: 'Field00538252'
+        }
+    },
+    'LocationImage': {
+        elementId: 'imagePreview',
+        xmlFieldName: 'Image39238044'
+    },
+    'RichText': {
+        elementId: 'div_editor1',
+        xmlFieldName: 'RichText49050010'
+    },
+    'isYextRestrict': {
+        elementId: 'yextSy',
+        xmlFieldName: 'Checkbox87026811'
+    },
+    'AddPage': {
+        elementId: 'page-card-container',
+        xmlFieldName: 'Field04667800',
+        nestedFields: {
+            pageName: 'Field96200945',
+            pageUrl: 'Field29236574'
+        }
+    },
+    'ProductCard': {
+        elementId: 'pro-card-container',
+        xmlFieldName: 'Fieldset30777848',
+        nestedFields: {
+            name: 'Text35595774',
+            link: 'Field10244315'
+        }
+    },
+    'FileCard': {
+        elementId: 'file-card-container',
+        xmlFieldName: 'Field97097822',
+        nestedFields: {
+            priceName: 'Field62496690',
+            locationPriceList: 'DocumentLibrary67644054'
+        }
+    },
+    'PublisherImages': {
+        elementId: 'GMB-card-container',
+        xmlFieldName: 'Field92906873',
+        nestedFields: {
+            publisher: 'Field75567888',
+            file: 'DocumentLibrary64462292',
+            description: 'Field29703218'
+        }
+    },
+    'State': {
+        elementId: 'state',
+        xmlFieldName: ''
+    },
+    'Region': {
+        elementId: 'region',
+        xmlFieldName: 'Field37057184'
+    }
+};
+// 1. Simple field access
+locationFieldsIds["LocationName"].elementId        // returns 'locationname'
+locationFieldsIds["LocationName"].xmlFieldName     // returns 'Text55119005'
+
+// 2. Nested Geolocation fields
+locationFieldsIds["Geolocation"]["latitude"].elementId     // returns 'latitude'
+locationFieldsIds["Geolocation"]["longitude"].elementId    // returns 'longitude'
+locationFieldsIds["Geolocation"]["mapAddress"].elementId   // returns 'map-address'
+
+// 3. Fields with nested XML fields
+locationFieldsIds["OpeningHours"]["nestedFields"]["dayName"]     // returns 'Text14522579'
+locationFieldsIds["OpeningHours"]["nestedFields"]["open"]        // returns 'Text72354453'
+locationFieldsIds["OpeningHours"]["nestedFields"]["close"]       // returns 'Field82067117'
+
+// 4. Contact Detail nested fields
+locationFieldsIds["ContactDetail"]["nestedFields"]["contactName"]   // returns 'Field25164775'
+locationFieldsIds["ContactDetail"]["nestedFields"]["jobPosition"]   // returns 'Text93041485'
+locationFieldsIds["ContactDetail"]["nestedFields"]["emailAddress"]  // returns 'Field33848867'
+
+// 5. Publisher Images nested fields
+locationFieldsIds["PublisherImages"]["nestedFields"]["publisher"]    // returns 'Field75567888'
+locationFieldsIds["PublisherImages"]["nestedFields"]["file"]         // returns 'DocumentLibrary64462292'
+locationFieldsIds["PublisherImages"]["nestedFields"]["description"]  // returns 'Field29703218'
+
+// 6. Product Card nested fields
+locationFieldsIds["ProductCard"]["nestedFields"]["name"]  // returns 'Text35595774'
+locationFieldsIds["ProductCard"]["nestedFields"]["link"]  // returns 'Field10244315'
+
+// 7. FileCard nested fields
+locationFieldsIds["FileCard"]["nestedFields"]["priceName"]          // returns 'Field62496690'
+locationFieldsIds["FileCard"]["nestedFields"]["locationPriceList"]  // returns 'DocumentLibrary67644054'
+
+// 8. AddPage nested fields
+locationFieldsIds["AddPage"]["nestedFields"]["pageName"]  // returns 'Field96200945'
+locationFieldsIds["AddPage"]["nestedFields"]["pageUrl"]   // returns 'Field29236574'
+
+// 9. Combined with querySelector
+document.querySelector(locationFieldsIds["LocationName"].elementId)
+document.querySelector(locationFieldsIds["Geolocation"]["latitude"].elementId)
+
+// 10. Checking existence before access
+const fieldKey = "LocationName";
+const nestedKey = "latitude";
+
+// Safe access patterns
+const elementId = locationFieldsIds[fieldKey]?.elementId;
+const nestedElementId = locationFieldsIds["Geolocation"]?.[nestedKey]?.elementId;
+const nestedXmlField = locationFieldsIds["ContactDetail"]?.["nestedFields"]?.["contactName"];

@@ -1,0 +1,93 @@
+<section class="find-a-plant-header">
+  <div class="content-wrapper" data-component="content-wrapper">
+    <h1>Find a Plant</h1>
+    <p>
+      Find your nearest Concrete, Aggregate, Mortar or Asphalt plant using our Map search,
+      or choose the product you need and see which plant is closest to you.
+    </p>
+  </div>
+</section>
+<div class="map-search-section">
+    <div id="locations-list">
+        <div class="map-search__input">
+            <div class="input-group">
+                <input id="search-${fragmentEntryLinkNamespace}" type="text" class="form-control"
+                       placeholder="Find a location" value="">
+                <button aria-label="Search" class="btn btn-default search-btn" id="btn-search-${fragmentEntryLinkNamespace}">
+                    <svg aria-hidden="true" class="lexicon-icon lexicon-icon-search">
+                        <use xlink:href="/o/classic-theme/images/clay/icons.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="map-filters-container d-flex">
+            <div class="map-search__filter" id="product-filter-container">
+                <div class="accordion" aria-label="Filter search">
+                    <div class="accordion__item">
+                        <div class="accordion__title" aria-selected="true">
+                            <div class="u-position-relative">
+                                <strong>Select Product</strong>
+                                <span class="map-search__filter_selected-product">All</span>
+                                <div class="accordion__arrow" role="presentation"></div>
+                            </div>
+                        </div>
+                        <div class="accordion__body d-none">
+                            <span class="accordion-overlay"></span>
+                            <span class="close-btn material-symbols-outlined">
+                                close
+                            </span>
+                            <div class="search-filter-form">
+                                <div class="radio selected" aria-label="All">All</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-search__filter" id="state-filter-container">
+                <div class="accordion" aria-label="Filter search">
+                    <div class="accordion__item">
+                        <div class="accordion__title" aria-selected="true">
+                            <div class="u-position-relative">
+                                <strong>Select State</strong>
+                                <span class="map-search__filter_selected-product">All</span>
+                                <div class="accordion__arrow" role="presentation"></div>
+                            </div>
+                        </div>
+                        <div class="accordion__body d-none">
+                            <span class="accordion-overlay"></span>
+                            <span class="close-btn material-symbols-outlined">
+                                close
+                            </span>
+                            <div class="search-filter-form">
+                                <div class="radio selected" aria-label="All">All</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="map-search__results" id="map-search__results">
+            <div class="accordion">
+                <div>
+                    <!-- elements container  -->
+                </div>
+                <div class="no-results d-none" id="no-results">
+                    <div class="no-result-icon">
+                        <span class="location-icon glyphicon glyphicon-map-marker"></span>
+                    </div>
+                    <h4>No locations were found.</h4>
+                    <p>We couldn't find any information that matches your search, please try again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+    </div>
+</div>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=${configuration.googleMapsApiKey}&v=beta">
+</script>
+<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>

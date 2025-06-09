@@ -1,0 +1,50 @@
+
+
+
+
+Object Name : Position (Global)
+=====================
+Object Def ID: 1854803
+
+
+
+GBL - Location Strcutre & Template (Global)
+==============================
+Structure Id: 1854942
+Tempalte Id: 1854972
+
+
+
+Product Category import (UK)
+=======================
+Topic voc ID : 1854872
+Product cat id : 1854873
+
+
+Location Application Content (UK)
+==============================
+Folder ID: 1854975
+
+
+
+
+Location Uploaded Files (UK)
+==============================
+Folder ID: 1854996
+
+
+
+
+
+Location CSV Folders  (UK)
+==============================
+Folder ID: 1854994
+
+
+
+Company ID (UK)
+==============================
+ID = 20105
+
+
+

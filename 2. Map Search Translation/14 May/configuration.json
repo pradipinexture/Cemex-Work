@@ -1,0 +1,84 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "33884",
+          "label": "Structure ID",
+          "name": "structureId",
+          "type": "text"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "United Kingdom",
+          "label": "Country",
+          "name": "country",
+          "type": "text"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "AIzaSyApQBbbRAYLq-sdCJBrmoiuFYblbxjs--0",
+          "label": "Google Maps API Key",
+          "name": "googleMapsApiKey",
+          "type": "text"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "50",
+          "label": "Page Size",
+          "name": "pageSize",
+          "type": "text"
+        },
+        {
+          "defaultValue": false,
+          "label": "Enable Client-Side Filtering",
+          "name": "enableClientSideFiltering",
+          "type": "checkbox"
+        }
+      ],
+      "label": "Data Settings"
+    },
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "5",
+          "label": "Default Zoom Level",
+          "name": "defaultZoom",
+          "type": "text"
+        },
+        {
+          "dataType": "object",
+          "defaultValue": {
+            "lat": 54.5,
+            "lng": -3.0
+          },
+          "label": "Default Center Cordinates",
+          "name": "defaultCenterCordinates",
+          "type": "text"
+        },
+        {
+          "dataType": "object",
+          "defaultValue": {
+            "north": 59.478568831926395,
+            "south": 49.82380908513249,
+            "west": -10.8544921875,
+            "east": 2.021484375
+          },
+          "label": "Default Bounds",
+          "name": "defaultBounds",
+          "type": "text"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "4",
+          "label": "Minimum Cluster Size",
+          "name": "minimumClusterSize",
+          "type": "text"
+        }
+      ],
+      "label": "Map Settings"
+    }
+  ]
+}

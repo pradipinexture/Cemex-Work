@@ -1,0 +1,87 @@
+<div class="fragment_2966">
+    <div id="locations-list">
+        <div class="map-search__input">
+            <div class="input-group">
+                <input id="search-${fragmentEntryLinkNamespace}" type="text" class="form-control"
+                    placeholder="Find a location" value="">
+                <span class="input-group-btn">
+                    <button aria-label="Search" class="btn btn-default" id="btn-search-${fragmentEntryLinkNamespace}">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                        </span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="map-filters-container d-flex">
+            <div class="map-search__filter" id="product-filter-container">
+                <div class="accordion" aria-label="Filter search">
+                    <div class="accordion__item">
+                        <div class="accordion__title" aria-selected="true">
+                            <div class="u-position-relative">
+                                <strong>Select Product</strong>
+                                <span class="map-search__filter_selected-product">All</span>
+                                <div class="accordion__arrow" role="presentation"></div>
+                            </div>
+                        </div>
+                        <div class="accordion__body d-none">
+                            <span class="accordion-overlay"></span>
+                            <span class="close-btn material-symbols-outlined">
+                                close
+                            </span>
+                            <div class="search-filter-form">
+                                <div class="radio selected" aria-label="All">All</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-search__filter" id="state-filter-container">
+                <div class="accordion" aria-label="Filter search">
+                    <div class="accordion__item">
+                        <div class="accordion__title" aria-selected="true">
+                            <div class="u-position-relative">
+                                <strong>Select State</strong>
+                                <span class="map-search__filter_selected-product">All</span>
+                                <div class="accordion__arrow" role="presentation"></div>
+                            </div>
+                        </div>
+                        <div class="accordion__body d-none">
+                            <span class="accordion-overlay"></span>
+                            <span class="close-btn material-symbols-outlined">
+                                close
+                            </span>
+                            <div class="search-filter-form">
+                                <div class="radio selected" aria-label="All">All</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="map-search__results" id="map-search__results">
+            <div class="accordion">
+                <div>
+                    <!-- elements container  -->
+                </div>
+                <div class="no-results d-none" id="no-results">
+                    <div class="no-result-icon">
+                        <span class="location-icon glyphicon glyphicon-map-marker"></span>
+                    </div>
+                    <h4>No locations were found.</h4>
+                    <p>We couldn't find any information that matches your search, please try again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+    </div>
+	
+<!-- Add these script tags in your fragment header -->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=${configuration.googleMapsApiKey}&libraries=places,geometry&loading=async">
+</script>
+
+<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+</div>

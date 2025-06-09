@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US" version="1.0">
+	<dynamic-element field-reference="LocationName" index-type="keyword" instance-id="o5SaPPbL" name="Text55119005" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[Cemex York Concrete Plant]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="ProductCard" index-type="" instance-id="3jCq5R0g" name="Fieldset30777848" type="fieldset">
+		<dynamic-element field-reference="Name" index-type="keyword" instance-id="8YGgDuDX" name="Text35595774" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Link" index-type="keyword" instance-id="zxaPBL7I" name="Field10244315" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="PublisherImages" index-type="" instance-id="s0Aha6jo" name="Field92906873" type="fieldset">
+		<dynamic-element field-reference="Publisher" index-type="keyword" instance-id="YSSJqTVO" name="Field75567888" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Facebook]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="File" index-type="keyword" instance-id="UZ50900d" name="DocumentLibrary64462292" type="document_library">
+			<dynamic-content language-id="en_US"><![CDATA[{"extension":"png","size":"1625","groupId":"39184","classNameId":32081,"title":"cemex-logo.png","type":"document","uuid":"b317f556-eaab-911c-0a28-0694f0f85117","fileEntryId":"41477","url":"/documents/d/location-application-uk/cemex-logo-png?imagePreview=1"}]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Description" index-type="keyword" instance-id="54NuRhC2" name="Field29703218" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Facebook]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="FileCard" index-type="" instance-id="FYMMdFuo" name="Field97097822" type="fieldset">
+		<dynamic-element field-reference="PriceName" index-type="keyword" instance-id="8fhqhj3P" name="Field62496690" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Price Lsit]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="LocationPriceList" index-type="keyword" instance-id="xABlPQt8" name="DocumentLibrary67644054" type="document_library">
+			<dynamic-content language-id="en_US"><![CDATA[{"extension":"pdf","size":"13264","groupId":"39184","classNameId":32081,"title":"PriceListNew.pdf","type":"document","uuid":"243fc68f-fc2b-3dfa-04cd-5f76e77e7445","fileEntryId":"41489","url":"/documents/d/location-application-uk/pricelistnew-pdf?previewFileIndex=1"}]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="AddPage" index-type="" instance-id="qmxIY0L9" name="Field04667800" type="fieldset">
+		<dynamic-element field-reference="PageName" index-type="keyword" instance-id="U5wHDnvp" name="Field96200945" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Location]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="PageUrl" index-type="keyword" instance-id="LeN3eVp7" name="Field29236574" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[https://cemexeu.uk/web/location-application-uk]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="Address" index-type="keyword" instance-id="pnEIktuu" name="Text67160900" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[Hazel Court, James Street]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="Address2" index-type="keyword" instance-id="XZ5CP1jt" name="Field90325339" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[Yorkshire / Humber]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="CompanyName" index-type="keyword" instance-id="74Nu5SWh" name="Field35228776" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[York]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="TownCity" index-type="keyword" instance-id="L2ZUOlqm" name="Field53582290" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[York]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="Country" index-type="keyword" instance-id="bRVfJ7Mi" name="Field84466895" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[United Kingdom]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="Postcode" index-type="keyword" instance-id="tKVrEgOR" name="Field84400079" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[SW1A]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="Geolocation" index-type="keyword" instance-id="4n8iholf" name="Geolocation02236727" type="geolocation">
+		<dynamic-content language-id="en_US"><![CDATA[{"lng":-164.6236414,"lat":65.2200243}]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="PhoneNumber" index-type="keyword" instance-id="YjrrHg6C" name="Text84739096" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[01904 301 985]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="OpeningHours" index-type="" instance-id="7QQQXltq" name="Fieldset22331654" type="fieldset">
+		<dynamic-element field-reference="DayName" index-type="keyword" instance-id="vgbSbLkZ" name="Text14522579" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Monday]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Open" index-type="keyword" instance-id="I7U7IshL" name="Text72354453" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[07:00]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Close" index-type="keyword" instance-id="stQE52Hx" name="Field82067117" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[17:00]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="isClosed" index-type="keyword" instance-id="QeenJcjw" name="Checkbox90733914" type="checkbox">
+			<dynamic-content language-id="en_US"><![CDATA[false]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="OpeningHours" index-type="" instance-id="psg8tomx" name="Fieldset22331654" type="fieldset">
+		<dynamic-element field-reference="DayName" index-type="keyword" instance-id="febqhq2v" name="Text14522579" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Tuesday]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Open" index-type="keyword" instance-id="ou2y8hmp" name="Text72354453" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[10:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Close" index-type="keyword" instance-id="c6kqmrbn" name="Field82067117" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[17:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="isClosed" index-type="keyword" instance-id="ywm0ngei" name="Checkbox90733914" type="checkbox">
+			<dynamic-content language-id="en_US"><![CDATA[false]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="OpeningHours" index-type="" instance-id="l4ycb6vy" name="Fieldset22331654" type="fieldset">
+		<dynamic-element field-reference="DayName" index-type="keyword" instance-id="wwz49t3n" name="Text14522579" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Wednesday]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Open" index-type="keyword" instance-id="sw2bw7gr" name="Text72354453" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[10:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Close" index-type="keyword" instance-id="46ix97s9" name="Field82067117" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[17:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="isClosed" index-type="keyword" instance-id="tt5u0b7v" name="Checkbox90733914" type="checkbox">
+			<dynamic-content language-id="en_US"><![CDATA[false]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="OpeningHours" index-type="" instance-id="vip9vu89" name="Fieldset22331654" type="fieldset">
+		<dynamic-element field-reference="DayName" index-type="keyword" instance-id="8gx9cofu" name="Text14522579" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Thursday]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Open" index-type="keyword" instance-id="ouko1hqh" name="Text72354453" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[10:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Close" index-type="keyword" instance-id="58tabavi" name="Field82067117" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[17:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="isClosed" index-type="keyword" instance-id="i0m6km2q" name="Checkbox90733914" type="checkbox">
+			<dynamic-content language-id="en_US"><![CDATA[false]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="OpeningHours" index-type="" instance-id="bikqmq1g" name="Fieldset22331654" type="fieldset">
+		<dynamic-element field-reference="DayName" index-type="keyword" instance-id="qbik1gq6" name="Text14522579" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Friday]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Open" index-type="keyword" instance-id="wt9ri6p3" name="Text72354453" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[10:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Close" index-type="keyword" instance-id="tmi2eole" name="Field82067117" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[11:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="isClosed" index-type="keyword" instance-id="73b2cxn2" name="Checkbox90733914" type="checkbox">
+			<dynamic-content language-id="en_US"><![CDATA[false]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="OpeningHours" index-type="" instance-id="ecx56m3g" name="Fieldset22331654" type="fieldset">
+		<dynamic-element field-reference="DayName" index-type="keyword" instance-id="x7bwwaub" name="Text14522579" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Saturday]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Open" index-type="keyword" instance-id="sq0jw044" name="Text72354453" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[07:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Close" index-type="keyword" instance-id="prhvd1cc" name="Field82067117" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[12:15]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="isClosed" index-type="keyword" instance-id="abj5ty6n" name="Checkbox90733914" type="checkbox">
+			<dynamic-content language-id="en_US"><![CDATA[false]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="OpeningHours" index-type="" instance-id="5f018p0d" name="Fieldset22331654" type="fieldset">
+		<dynamic-element field-reference="DayName" index-type="keyword" instance-id="qwl5kxvs" name="Text14522579" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Sunday]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Open" index-type="keyword" instance-id="pt7kaejy" name="Text72354453" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="Close" index-type="keyword" instance-id="8y5kbz10" name="Field82067117" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="isClosed" index-type="keyword" instance-id="nempjp2p" name="Checkbox90733914" type="checkbox">
+			<dynamic-content language-id="en_US"><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="ContactDetail" index-type="" instance-id="m3fzrlxo" name="Field82242200" type="fieldset">
+		<dynamic-element field-reference="ContactName" index-type="keyword" instance-id="dk3frXIL" name="Field25164775" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Nipun Jain]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="JobPosition" index-type="keyword" instance-id="R5EwHFJk" name="Text93041485" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[Tedt]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="EmailAddress" index-type="keyword" instance-id="idHjFVfF" name="Field33848867" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[jigunolapi-9600@yopmail.com]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element field-reference="PhoneNumber1" index-type="keyword" instance-id="g6bpA7uS" name="Field00538252" type="text">
+			<dynamic-content language-id="en_US"><![CDATA[01904 301 985]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element field-reference="Field17378673" index-type="keyword" instance-id="ppGRhI4h" name="Field53243791" type="checkbox"/>
+	<dynamic-element field-reference="LocationImage" index-type="text" instance-id="I1f3S84J" name="Image39238044" type="image">
+		<dynamic-content language-id="en_US"><![CDATA[{"groupId":"39184","alt":"","name":"durham-concrete-plant.jpg","width":"665","description":"","title":"durham-concrete-plant.jpg","type":"document","uuid":"e93bfe1f-b293-58d5-97c3-f63a5d43a368","fileEntryId":"42385","resourcePrimKey":"40523","url":"/documents/d/location-application-uk/durham-concrete-plant-jpg","height":"390"}]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="isYextRestrict" index-type="keyword" instance-id="4qjAXJBo" name="Checkbox87026811" type="checkbox"/>
+	<dynamic-element field-reference="RichText" index-type="text" instance-id="kGpEaDYx" name="RichText49050010" type="rich_text">
+		<dynamic-content language-id="en_US"><![CDATA[<p>The CEMEX York Concrete plant can supply Readymix concrete to builders and businesses around York and the wider North Yorkshire region. Available for small, medium and large construction projects - to find out more give us a call or request a quote and we will be happy to talk through our product range and solutions.</p>
+
+<p>&nbsp;</p>]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="isCSVLocation" index-type="keyword" instance-id="h18zJbEL" name="Checkbox17358206" type="checkbox"/>
+	<dynamic-element field-reference="State" index-type="keyword" instance-id="YyCFGKOF" name="Text87594312" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element field-reference="Region" index-type="keyword" instance-id="UrvDFKcz" name="Field37057184" type="text">
+		<dynamic-content language-id="en_US"><![CDATA[North Yorkshire]]></dynamic-content>
+	</dynamic-element>
+</root>

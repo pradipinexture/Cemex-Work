@@ -1,0 +1,637 @@
+Reference Buildings Template
+
+
+<#assign sUsedProduct = "Využitý produkt">
+<#assign sUsedProducts = "Využití produktů">
+<#assign sBasicInfoAbout = "Základní informace o stavbě">
+<#assign sGallery = "Galerie">
+<#assign thumbnailWidth = 200>
+<#assign thumbnailHeight = (thumbnailWidth / 4 * 3)?round >
+
+<style>
+    .b-hero-placeholder {
+        background-image: url(${MainImageURL.getData()});
+    }
+    /* END of the style for image holder on top */
+
+    .refdetail-h2 {
+        font-weight: normal;
+        padding-bottom: 1em;
+    }
+
+    .refdetail {
+        padding-top: 40px;
+    }
+
+    .refdetail-section {
+        padding-bottom: 40px
+    }
+
+    .refdetail-h1 {
+        padding-bottom: 1em;
+    }
+
+    .refdetail-table {
+        max-width: 100%;
+    }
+
+    table.refdetail-table td {
+        width: 50%;
+        border: 0;
+    }
+
+    .refproduct-item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        /* margin-bottom: 0; */
+        border: 1px solid lightgray;
+        /* border: none; */
+        /* padding: 0.5em 1.5em; */
+        padding: 1.2em 1.5em;
+        align-items: center;
+        min-height: calc(60px + 1em);
+    }
+
+    .refproduct-item .refdetail-h3 {
+        flex-grow: 4;
+        padding-left: 1em;
+    }
+
+    a.refproduct-btn {
+        display: inline-block;
+        border: 1px solid #000;
+        color: #000;
+        padding: 15px 36px;
+        line-height: 1px;
+        font-size:10px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .refproduct-img {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .refproduct-img img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+        @media (max-width: 767px) {
+            .refproduct-item {
+                flex-direction: column;
+                margin-bottom: 1em;
+                max-height: auto;
+            }
+            .refproduct-img {
+                width: auto;
+            }
+            .refproduct-img img {
+                max-width: 250px!important;
+            }
+            .refproduct-img,
+            .refproduct-btn,
+            .refproduct-item .refdetail-h3 {
+                margin-bottom: 0.5em;
+            }
+        }
+
+    .refdetail-section.refdetail-gallery:focus-visible {
+        outline: 0;
+    }
+
+    .refgal-bigimage {
+        height: calc(50vw);
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        min-height: 350px;
+        max-height: 700px;
+        margin-bottom: 4px;
+        cursor: zoom-in;
+    }
+
+    .refgal-stripeframe {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .refgal-stripeframe::-webkit-scrollbar {
+        display: none;
+    }
+    .refgal-backimg {
+        position: relative;
+        background: no-repeat 50%/cover;
+    }
+
+    .refgal-thumbstripe {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+        transition: .5s;
+        left: 0px;
+    }
+
+    .refgal-thumbitem {
+        height: ${thumbnailHeight}px;
+        width: ${thumbnailWidth - 4}px;
+        margin-right: 4px;
+        cursor: pointer;
+    }
+
+    .refgal-thumbitem.active {
+        height: ${thumbnailHeight}px;
+        width: ${thumbnailWidth - 4}px;
+        border: 5px solid darkgray;
+    }
+
+    .refgal-thumbitem:last-child {
+        width: ${thumbnailWidth}px;
+        margin-right: 0px;
+    }
+
+    .refgal-thumbitem:hover {
+        opacity: 0.5;
+    }
+
+    span.refgal-bigimage-caption {
+        background-color: rgba(255,255,255,.7);
+        padding: 0.5em 1em;
+        width: 100%;
+        }
+
+    .refgal-controls,
+    .refgal-controls-big {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 0;
+        align-items: center;
+    }
+
+    .galcontrol {
+        top: -${thumbnailHeight / 2}px;
+        padding: .4em;
+        font-size: 28px;
+        color: white;
+        background-color: rgba(0,0,0,0.1);
+        cursor: pointer;
+        position: relative;
+    }
+
+    .galcontrol-big {
+        padding: .4em;
+        font-size: 28px;
+        color: white;
+        background-color: rgba(0,0,0,0.1);
+        cursor: pointer;
+        position: relative;
+    }
+
+
+    .fullscreen.refgal-bigimage {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background-color: rgba(0,0,0,1);
+        display: block;
+        min-height: 100%;
+        max-height: 100%;
+        margin-bottom: 0;
+        cursor: default;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-position: center;
+        background-size: contain;
+        z-index: 10001;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+
+    .refgal-bigimage-close.fas {
+        display: none;
+    }
+
+    .fullscreen .refgal-bigimage-close {
+        display: block;
+        color: white;
+        padding: 1.2em;
+        cursor: pointer;
+        position: relative;
+        align-self: end;
+        }
+
+    .fullscreen span.refgal-bigimage-caption {
+        background-color: rgba(0,0,0,0.8);
+        padding: .5em 2em;
+        width: auto;
+        margin-left: auto;
+        color: white;
+        margin-bottom: calc(5vh);
+        margin-right: auto;
+    }
+
+    .fullscreen.refgal-controls-big {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 0;
+        align-items: center;
+        position: fixed;
+        top: calc(50vh);
+        left: 0;
+        width: 100%;
+        z-index: 10002;
+    }
+
+    .fullscreen .galcontrol-big {
+        top: 0!important;
+    }
+
+    .refgal-controls .galcontrol-left,
+    .refgal-controls-big .galcontrol-big-left,
+    .refgal-controls .galcontrol-right,
+    .refgal-controls-big .galcontrol-big-right {
+        opacity: 0.3;
+        cursor: auto;
+    }
+
+    .refgal-controls.left .galcontrol-left,
+    .refgal-controls-big.left .galcontrol-big-left,
+    .refgal-controls.right .galcontrol-right,
+    .refgal-controls-big.right .galcontrol-big-right {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+        /*end styles*/
+</style>
+
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet" />
+
+<#-- setting urlHelper -->
+<#assign curUrl = themeDisplay.getURLCurrent()?string>
+<#if curUrl?contains(themeDisplay.getSiteGroup().friendlyURL)>
+    <#assign urlHelper = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().friendlyURL>
+<#else>
+    <#assign urlHelper = "">
+</#if>
+<!-- urlHelper: ${urlHelper} -->
+<#-- end setting -->
+<#setting locale=locale.toString()>
+<#assign layoutLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService")>
+
+<div class="container refdetail">
+    <#-- heading -->
+    <div class="refdetail-section refdetail-heading">
+        <h1 class="refdetail-h1">${Title.getData()}</h1>
+        <p class="refdetail-p">${Description.getData()?replace("\n", "<br>")}</p>
+    </div>
+
+    <#-- used products -->
+    <#if Product.getSiblings()?has_content>
+        <div class="refdetail-section refdetail-prudcts">
+            <h2 class="refdetail-h2">
+              <#if Product.getSiblings()?size &gt; 1>
+                ${sUsedProducts}
+              </#if>
+              <#if Product.getSiblings()?size == 1>
+                ${sUsedProduct}
+              </#if>
+            </h2>
+            <#list Product.getSiblings() as cur_Product>
+                <@printProductRange cur_Product/>
+            </#list>
+        </div>
+    </#if>
+
+    <#-- table -->
+    <#if Oddlovaj442.getSiblings()?has_content>
+        <div class="refdetail-section refdetail-infotable">
+            <h2 class="refdetail-h2">${sBasicInfoAbout}</h2>
+            <table class="refdetail-table">
+            <#list Oddlovaj442.getSiblings() as cur_row>
+                <tr>
+                    <td>${cur_row.Label.getData()}</td>
+                    <td>${cur_row.Value.getData()}</td>
+                </tr>
+            </#list>
+            </table>
+        </div>
+    </#if>
+
+    <#-- gallery -->
+    <#if ImageGalleryItemURL.getSiblings()?has_content>
+        <#assign galItems = ImageGalleryItemURL.getSiblings()?size?number>
+        <div class="refdetail-section refdetail-gallery" id="js-gallery" tabindex="-1">
+            <h2 class="refdetail-h2">${sGallery}</h2>
+                <#assign iImg = ImageGalleryItemURL.getData()>
+                <#if ImageGalleryItemURL.getAttribute("alt")??>
+                    <#assign iCaption = ImageGalleryItemURL.getAttribute("alt")>
+                <#else>
+                    <#assign iCaption = "">
+                </#if>
+            <#-- big images -->
+            <div class="refgal-bigimage refgal-backimg" style="" id="js-bigimage">
+                <i class="fas fa-close refgal-bigimage-close" id="js-bigimage-close"></i>
+                <span id="js-bigimage-caption" class="refgal-bigimage-caption" style="display:none"></span>
+            </div>
+            <div class="refgal-controls-big" id="js-galcontrols-big">
+                <div>
+                    <i class="fas fa-chevron-left galcontrol-big galcontrol-big-left" data-direction="left"></i>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-right galcontrol-big galcontrol-big-right" data-direction="right"></i>
+                </div>
+            </div>
+            <#-- -->
+            <#-- small images -->
+            <div class="refgal-stripeframe" id="js-galstripe-frame">
+                <div class="refgal-thumbstripe" id="js-galstripe" style="width:${galItems*thumbnailWidth}px">
+                    <#list ImageGalleryItemURL.getSiblings() as cur_ImageGalleryItemURL>
+                        <#assign iIndex = cur_ImageGalleryItemURL?index>
+                        <#assign iImg = cur_ImageGalleryItemURL.getData()>
+                        <#if cur_ImageGalleryItemURL.getAttribute("alt")??>
+                            <#assign iCaption = cur_ImageGalleryItemURL.getAttribute("alt")>
+                        <#else>
+                            <#assign iCaption = "">
+                        </#if>
+                        <div class="refgal-thumbitem refgal-backimg" style="background-image:URL('${iImg}');" id="js-galitem-${iIndex}" data-image="${iImg}" data-caption="${iCaption}">
+                        </div>
+                    </#list>
+                </div>
+            </div>
+            <div class="refgal-controls" id="js-galcontrols">
+                <div>
+                    <i class="fas fa-chevron-left galcontrol galcontrol-left" data-direction="left"></i>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-right galcontrol galcontrol-right" data-direction="right"></i>
+                </div>
+            </div>
+            <#-- -->
+        </div>
+
+        <script>
+        AUI().ready(
+            function() {
+
+                var galShift = 0;
+                var galPcs = ${galItems};
+                var galStep = ${thumbnailWidth};
+                var galStripeWidth = galPcs * galStep;
+                var galFirst = "js-galitem-0";
+                var galLast = "js-galitem-"+(galPcs-1);
+
+                var id = function(selector) {
+                    return "#"+selector;
+                }
+
+                function checkShift() {
+                    let frameWidth = getFrameWidth();
+                    if (galStripeWidth + galShift < frameWidth ) {
+                        galShift = -1 * (galStripeWidth - frameWidth);
+                    }
+                    if (galShift > 0) {
+                        galShift = 0;
+                    }
+                    $("#js-galstripe").css("left", galShift + "px");
+                }
+
+                function getFrameWidth() {
+                    return $("#js-galstripe-frame").width();
+                }
+
+                function getBigImageHeight() {
+                    return $("#js-bigimage").height();
+                }
+
+                function showControls() {
+                    setControls();
+                    setBigControls();
+                    // chceck thumbnail controls
+                    let frameWidth = getFrameWidth();
+                    if (frameWidth < galStripeWidth) {
+                        var showIt = "flex";
+                    }
+                    else {
+                        var showIt = "none";
+                    }
+                    checkShift();
+                    $("#js-galcontrols").css("display",showIt);
+
+                    //check big controls
+                    var bigImageHeight = getBigImageHeight();
+                    $(".galcontrol-big").css("top", -1 * bigImageHeight / 2);
+                }
+
+                function makeActive(element) {
+                    $(".refgal-thumbitem").removeClass("active");
+                    $(element).addClass("active");
+                }
+
+                function changePhoto(e) {
+
+                    var newImage = e.target.dataset.image;
+                    $("#js-bigimage").css("background-image", "URL('" + newImage + "')");
+
+                    var newCaption = e.target.dataset.caption;
+                    if (newCaption !== "") {
+                        $("#js-bigimage-caption").text(newCaption);
+                        $("#js-bigimage-caption").css("display", "block");
+                    } else {
+                        $("#js-bigimage-caption").css("display", "none");
+                    };
+
+                    makeActive(e.target);
+                    showControls();
+                }
+
+                function scroll(e) {
+                    var direction = e.target.dataset.direction;
+
+                    if (direction === "right") {
+                        galShift = galShift - galStep;
+                    }
+                    else if (direction === "left") {
+                        galShift = galShift + galStep;
+                    }
+                    checkShift();
+                    setControls();
+                }
+
+                function switchBig(e) {
+                    var direction = e.target.dataset.direction;
+
+                    if (direction === "right") {
+                        switchNext();
+                    }
+                    else if (direction === "left") {
+                        switchPrev();
+                    }
+                }
+
+                function switchNext() {
+                    let curr = $(".refgal-thumbitem.active");
+                    let next = curr.next();
+                    if (curr.attr('id') !== galLast) {
+                        next.click();
+                    }
+                }
+
+                function switchPrev() {
+                    let curr = $(".refgal-thumbitem.active");
+                    let prev = curr.prev();
+                    if (curr.attr('id') !== galFirst) {
+                        prev.click();
+                    }
+                }
+
+                function setBigControls() {
+                    // big controls
+                    let curr = $(".refgal-thumbitem.active");
+                    if (curr.attr('id') === galLast) {
+                        $("#js-galcontrols-big").removeClass("right");
+                    }
+                    else {
+                        $("#js-galcontrols-big").addClass("right");
+                    }
+                    if (curr.attr('id') === galFirst) {
+                        $("#js-galcontrols-big").removeClass("left");
+                    }
+                    else {
+                        $("#js-galcontrols-big").addClass("left");
+                    }
+                }
+
+                function setControls() {
+                    // stripe controls
+                    let frameWidth = getFrameWidth();
+                    // console.log(galStripeWidth, galShift, frameWidth);
+                    if (galStripeWidth + galShift === frameWidth) {
+                        $("#js-galcontrols").removeClass("right");
+                    }
+                    else {
+                        $("#js-galcontrols").addClass("right");
+                    }
+                    if (galShift === 0) {
+                        $("#js-galcontrols").removeClass("left");
+                    }
+                    else {
+                        $("#js-galcontrols").addClass("left");
+                    }
+                }
+
+                function goFullScreen () {
+                    event.stopPropagation();
+                    $("#js-bigimage").addClass("fullscreen");
+                    $("#js-galcontrols-big").addClass("fullscreen");
+                }
+
+                function exitFullScreen () {
+                    event.stopPropagation();
+                    $("#js-bigimage").removeClass("fullscreen");
+                    $("#js-galcontrols-big").removeClass("fullscreen");
+                }
+
+                function checkKey(e) {
+                    var key = e.keyCode;
+                    // console.log(key);
+                    event.stopPropagation();
+                    if (key == 37) {
+                        switchPrev();
+                    }
+                    else if (key == 39) {
+                        switchNext();
+                    }
+                }
+
+
+
+
+                showControls();
+
+                $("#js-galstripe").click(changePhoto);
+
+                $(id(galFirst)).click();
+
+                $("#js-galcontrols").click(scroll);
+
+                $("#js-galcontrols-big").click(switchBig);
+
+                $("#js-bigimage").click(goFullScreen);
+
+                $("#js-bigimage-close").click(exitFullScreen);
+
+                $("#js-gallery").keydown(checkKey);
+
+                $(window).resize(showControls);
+
+            });
+        </script>
+
+    </#if>
+
+</div>
+
+<#macro printProductRange product>
+    <#assign journalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
+    <#local webContentData = jsonFactoryUtil.createJSONObject(product.getData())/>
+
+    <#local classPK = webContentData.classPK?number!"" />
+    <#local journalArticle = journalArticleLocalService.getLatestArticle(classPK)!"none">
+    <#local journalArticleId = journalArticle.getId() />
+    <#local urlTitle=journalArticle.urlTitle />
+    <#local document=saxReaderUtil.read(journalArticle.getContent()) />
+
+    <#local availableLocale=document.getRootElement().attributeValue('available-locales') />
+    <#local defaultLocale=document.getRootElement().attributeValue('default-locale') />
+    <#if availableLocale?contains(locale)>
+        <#local displayLocale=locale>
+    <#else>
+        <#local displayLocale=defaultLocale>
+    </#if>
+
+    <#local productHeading=document.valueOf("//dynamic-element[@name='ProductHeading']//dynamic-content[@language-id='${displayLocale}']") />
+    <#local productLogoColor=document.valueOf("//dynamic-element[@name='ProductLogoColor']//dynamic-content[@language-id='${displayLocale}']") />
+    <#local pageLink=document.valueOf("//dynamic-element[@name='LinkToPage']//dynamic-content[@language-id='${displayLocale}']") />
+    <#local extLink=document.valueOf("//dynamic-element[@name='AlternateURLUseOnlyForLinksOutOfTheSite']//dynamic-content[@language-id='${displayLocale}']") />
+
+    <#if pageLink !="">
+        <#if pageLink?keep_after('@')?keep_before('@')?string = "public">
+            <#assign boolean = false>
+        <#else>
+            <#assign boolean = true>
+        </#if>
+        <#assign layoutId = getterUtil.getLong(pageLink?keep_before('@'))/>
+        <#assign  groupId = getterUtil.getLong(pageLink?keep_after_last('@'))/>
+        <#assign layout = layoutLocalService.getLayout(groupId,boolean,layoutId)/>
+        <#assign linkUrl = urlHelper + layout.getFriendlyURL()>
+    <#elseif extLink != "">
+        <#assign linkUrl = extLink>
+    <#else>
+        <#assign linkUrl = "#">
+    </#if>
+
+
+    <#if journalArticle.isApproved() && !journalArticle.isExpired()>
+    <div class="refproduct-item">
+        <div class="refproduct-img">
+            <img class="" src="${productLogoColor}">
+        </div>
+        <h3 class="refdetail-h3">${productHeading}</h3>
+        <a class="refproduct-btn" href="${linkUrl}">Více</a>
+    </div>
+    </#if>
+</#macro>
