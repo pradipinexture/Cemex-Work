@@ -1,0 +1,326 @@
+<div class="import-container">
+  <h2>Import Web Content (Liferay 7.4)</h2>
+
+  <label for="jsonInput">Paste JSON Data:</label>
+  <textarea id="jsonInput" class="json-input" placeholder="Paste exported JSON from Liferay 7.0 here..."></textarea>
+
+  <label for="jsonFile">Or Upload JSON File:</label>
+  <input type="file" id="jsonFile" accept="application/json" />
+
+  <button onclick="importWebContent()">Import Data</button>
+</div>
+
+<style>
+  .import-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  .import-container label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+  }
+
+  .import-container .json-input {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+  }
+
+  .import-container input[type="file"] {
+    margin-top: 6px;
+  }
+
+  .import-container button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .import-container button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+  // Global configuration
+  let toastDurationSeconds = 1;
+  let staticImageId = 33586;
+
+  let tags = {};
+  let categories = {};
+  let strFieldsList = [];
+  let contentStructureId = 101726;
+  let groupId = 77144;
+  let acceptLanguage = "en-US";
+  let contentLanguage = "en-GB";
+  let pageSizeForAPI = "50";
+  let parentCategoryId = "101458";
+  let acceptLanguageForBody = ["en-GB"];
+  let structuredContentFolderId = 101767;
+
+  function escapeRelativeLinks(html) {
+    return html.replace(/="\/(.*?)"/g, 'href="&#x2F;$1"');
+  }
+/*
+  function showToast(message, type = "info") {
+    Liferay.Util.openToast({
+      message: escapeRelativeLinks(message),
+      type: type,
+      duration: toastDurationSeconds * 1000
+    });
+  }*/
+  
+  let toastZIndex = 9999;
+  let globalToastContainerId = "global-liferay-toast-container";
+
+  
+function showToast(message, type = "info") {
+  let container = document.getElementById(globalToastContainerId);
+  if (!container) {
+    container = document.createElement("div");
+    container.id = globalToastContainerId;
+    Object.assign(container.style, {
+      position: "fixed",
+      bottom: "20px",
+      right: "20px",
+      zIndex: toastZIndex,
+      display: "flex",
+      flexDirection: "column",
+      gap: "10px",
+      alignItems: "flex-end"
+    });
+    document.body.appendChild(container);
+  }
+
+  // Create a wrapper for this specific toast
+  const toastWrapper = document.createElement("div");
+  container.appendChild(toastWrapper);
+
+  // Show toast using Liferay API
+  Liferay.Util.openToast({
+    message: escapeRelativeLinks(message),
+    type,
+    container: toastWrapper
+  });
+
+  // Auto-remove the toast wrapper
+  setTimeout(() => {
+    toastWrapper.remove();
+    if (!container.hasChildNodes()) {
+      container.remove(); // clean up if no toasts remain
+    }
+  }, toastDurationSeconds * 1000);
+}
+
+  async function fetchStructureFields() {
+    const res = await fetch("/o/headless-delivery/v1.0/content-structures/" + contentStructureId, {
+      headers: {
+        "accept": "application/json",
+        "x-csrf-token": Liferay.authToken
+      }
+    });
+    const data = await res.json();
+    strFieldsList = data.contentStructureFields || [];
+  }
+
+  function findFieldByLabel(label) {
+    for (const field of strFieldsList) {
+      if (field.label === label) return { ...field };
+      if (field.nestedContentStructureFields) {
+        for (const nested of field.nestedContentStructureFields) {
+          if (nested.label === label) return { ...nested, parent: field.name };
+        }
+      }
+    }
+    return null;
+  }
+
+  window.addEventListener("DOMContentLoaded", async () => {
+    try {
+      tags = await fetchAllTags();
+      categories = await fetchAllCategories();
+      await fetchStructureFields();
+      showToast("Structure fields, tags, and categories fetched successfully.", "info");
+    } catch (e) {
+      showToast("Failed to fetch initial data.", "danger");
+    }
+  });
+
+  async function importWebContent() {
+    const textarea = document.getElementById("jsonInput");
+    const fileInput = document.getElementById("jsonFile");
+
+    let jsonData = textarea.value;
+
+    if (!jsonData && fileInput.files.length > 0) {
+      const file = fileInput.files[0];
+      jsonData = await file.text();
+    }
+
+    try {
+      const parsed = JSON.parse(jsonData);
+
+      if (!parsed.articles || !Array.isArray(parsed.articles)) {
+        showToast("Invalid input format. 'articles' array is missing.", "danger");
+        throw new Error("Invalid input format: 'articles' array is missing.");
+      }
+
+      const articles = parsed.articles.map(article => buildStructuredContent(article, tags, categories));
+
+      for (const article of articles) {
+        const response = await fetch("/o/headless-delivery/v1.0/sites/" + groupId + "/structured-contents", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-csrf-token": Liferay.authToken,
+            "Accept-Language": acceptLanguage
+          },
+          body: JSON.stringify(article)
+        });
+
+        if (response.ok) {
+          showToast("Import successful for: " + article.title, "success");
+        } else {
+          const error = await response.json();
+          console.error("Error:", error);
+          showToast("Import failed for: " + article.title, "danger");
+        }
+      }
+
+      showToast("Import process completed. Check console for any errors.", "info");
+    } catch (err) {
+      console.error("Error during import:", err);
+      showToast("Error during import. Check the console for details.", "danger");
+    }
+  }
+
+  async function fetchAllTags() {
+    let tagsMap = {};
+    let page = 1;
+    while (true) {
+      const res = await fetch("/o/headless-admin-taxonomy/v1.0/sites/" + groupId + "/keywords?fields=id,name&page=" + page + "&pageSize=" + pageSizeForAPI, {
+        headers: { "x-csrf-token": Liferay.authToken }
+      });
+      const data = await res.json();
+      for (const tag of data.items) {
+        tagsMap[tag.name.toLowerCase()] = tag.id;
+      }
+      if (data.lastPage && page >= data.lastPage) break;
+      page++;
+    }
+    return tagsMap;
+  }
+
+  async function fetchAllCategories() {
+    let categoriesMap = {};
+    let page = 1;
+    while (true) {
+      const res = await fetch("/o/headless-admin-taxonomy/v1.0/taxonomy-categories/" + parentCategoryId + "/taxonomy-categories?fields=id,name&page=" + page + "&pageSize=" + pageSizeForAPI, {
+        headers: { "x-csrf-token": Liferay.authToken }
+      });
+      const data = await res.json();
+      for (const cat of data.items) {
+        categoriesMap[cat.name.toLowerCase()] = parseInt(cat.id);
+      }
+      if (data.lastPage && page >= data.lastPage) break;
+      page++;
+    }
+    return categoriesMap;
+  }
+
+  function formatToUTC(dateString) {
+    if (!dateString) return "";
+    const date = new Date(dateString);
+    return date.toISOString().split(".")[0] + "Z";
+  }
+
+  function buildStructuredContent(article, tagsMap, categoriesMap) {
+    const content = article.content || {};
+    const contentFieldsList = [];
+
+    for (const label in content) {
+      const field = findFieldByLabel(label);
+      if (!field) continue;
+
+      let value = content[label];
+      if (typeof value === "string") {
+        value = escapeRelativeLinks(value);
+      }
+
+      const obj = {
+        label: field.label,
+        name: field.name
+      };
+
+      if (field.parent) {
+        let parentField = contentFieldsList.find(f => f.name === field.parent);
+        if (!parentField) {
+          parentField = { label: "", name: field.parent, nestedContentFields: [] };
+          contentFieldsList.push(parentField);
+        }
+
+        const nestedObj = {
+          label: field.label,
+          name: field.name,
+          contentFieldValue: {}
+        };
+
+        if (field.label.toLowerCase().includes("image")) {
+          nestedObj.contentFieldValue.image = { id: staticImageId };
+        } else if (field.label.toLowerCase().includes("date")) {
+          nestedObj.contentFieldValue.data = formatToUTC(value);
+        } else {
+          nestedObj.contentFieldValue.data = value;
+        }
+
+        parentField.nestedContentFields.push(nestedObj);
+      } else {
+        obj.contentFieldValue = {};
+
+        if (field.label.toLowerCase().includes("image")) {
+          obj.contentFieldValue.image = { id: staticImageId };
+        } else if (field.label.toLowerCase().includes("date")) {
+          obj.contentFieldValue.data = formatToUTC(value);
+        } else {
+          obj.contentFieldValue.data = value;
+        }
+
+        contentFieldsList.push(obj);
+      }
+    }
+
+    return {
+      availableLanguages: acceptLanguageForBody,
+      contentStructureId: contentStructureId,
+      siteId: groupId,
+      structuredContentFolderId: structuredContentFolderId,
+      title: article.title,
+      title_i18n: {
+        [contentLanguage]: article.title
+      },
+      keywords: (article.tags || []).map(tag => tag.toLowerCase()),
+      taxonomyCategoryIds: article.categories.flatMap(cat => {
+        const id = categoriesMap[cat.toLowerCase()];
+        return id ? [id] : [];
+      }),
+      friendlyUrlPath: article.friendlyUrlPath || "web-content-import-" + Math.random().toString(36).substring(7),
+      contentFields: contentFieldsList
+    };
+  }
+</script>
