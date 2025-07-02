@@ -1,0 +1,232 @@
+---- Article Processing Log ----
+1. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - Štěrkovna Spytihněv hostila více než 1200 návštěvníků"
+2. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX zveřejnil hospodářské výsledky za první čtvrtletí roku 2016"
+3. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX staví v Egyptě první betonovou silnici"
+4. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX roste a vytváří více než 100 nových pracovních pozic"
+5. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX získal nezbytný souhlas pro změnu své úvěrové smlouvy"
+6. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX zveřejnil hospodářské výsledky za 4. čtvrtletí a celý rok 2015"
+7. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX představí základové konstrukce na veletrhu FOR PASIV"
+8. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - Nový web Podlaha.cz: Vše o litých podlahách"
+9. FAIL - Year is 2018 - Skipping. Title: "Uklízeli jsme Česko 2018"
+10. FAIL - Year is 2018 - Skipping. Title: "Novým Vice prezidentem se stal Reinhold Schneider"
+11. FAIL - Year is 2018 - Skipping. Title: "Finanční dar profesionálním hasičům ze stanice Otrokovice"
+12. FAIL - Year is 2017 - Skipping. Title: "Cena CEMEX udělena za práci Obecní dům Těšín"
+13. FAIL - Year is 2017 - Skipping. Title: "CEMEX je generálním partnerem soutěže Young Architect Award"
+14. FAIL - Year is 2017 - Skipping. Title: "Hermann Dietrich jmenován novým generálním ředitelem"
+15. FAIL - Year is 2017 - Skipping. Title: "Saint-Jean-de-Luz zpevňuje mořské hráze za použití „podvodního“ betonu CEMEX"
+16. FAIL - Year is 2017 - Skipping. Title: "Hrdý lev fotbalového klubu Olympique Lyonnais z pemrlovaného betonu"
+17. FAIL - Year is 2017 - Skipping. Title: "Válcovaný beton jako efektivní technologie pro stavbu vozovek"
+18. FAIL - Year is 2018 - Skipping. Title: "Novinka - Prohlášení společnosti CEMEX Czech Republic, s.r.o."
+19. FAIL - Year is 2018 - Skipping. Title: "Novinka - Fúze CEMEX Cement, s.r.o. a CEMEX Development, s.r.o. do CEMEX Czech Republic, s.r.o."
+20. FAIL - Year is 2018 - Skipping. Title: "Tiskové zprávy - Výroční zpráva za rok 2017"
+21. FAIL - Year is 2017 - Skipping. Title: "Tisková zpráva - Rodinný den CEMEX si malí i větší piráti moc užili"
+22. FAIL - Year is 2017 - Skipping. Title: "Tisková zpráva - Časopis Fortune ohodnotil CEMEX jako společnost, která mění svět"
+23. FAIL - Year is 2017 - Skipping. Title: "Tisková zpráva - DIGITÁLNÍ PLATFORMA MĚNÍCÍ STAVEBNICTVÍ: CEMEX GO"
+24. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - Mexická vláda ocenila CEMEX za úsilí při ochraně životního prostředí"
+25. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX se podílí na prodloužení linky metra v Los Angeles"
+26. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX a GCC se dohodli na podmínkách prodeje některých amerických aktiv"
+27. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX získal certifikaci od Wildlife Habitat Council"
+28. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - Štěrkovna Náklo je útočištěm pro ohrožené druhy zvířat a rostlin"
+29. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - Základy rychleji: Betony COMPACTON ušetří při ukládání až 70 % času"
+30. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX Sand získal certifikace ISO a OHSAS"
+31. FAIL - Year is 2017 - Skipping. Title: "DŮLEŽITÉ INFORMACE o změnách ve společnostech skupiny CEMEX"
+32. FAIL - Year is 2017 - Skipping. Title: "Tisková zpráva - CEMEX se stal vítězem soutěže HR Innovation Challenge CEE 2017"
+33. FAIL - Year is 2018 - Skipping. Title: "Tiskové zprávy - CEMEX optimalizuje výrobu kameniva"
+34. FAIL - Missing Creation Date - Skipping. Title: "Společnost CEMEX byla kladně hodnocena Světovou podnikatelskou radou pro udržitelný rozvoj (WBCSD)"
+35. FAIL - Year is 2017 - Skipping. Title: "Ohlédnutí za rokem 2016"
+36. FAIL - Year is 2018 - Skipping. Title: "Tiskové zprávy - CEMEX VENTURES VYHLAŠUJE SOUTĚŽ “CONSTRUCTION STARTUP COMPETITION 2018”"
+37. FAIL - Year is 2018 - Skipping. Title: "Novinka - Společnost CEMEX byla  kladně hodnocena Světovou podnikatelskou radou pro udržitelný rozvoj (WBCSD)"
+38. FAIL - Year is 2018 - Skipping. Title: "Jaké změny s sebou přinese CEMEX Go"
+39. FAIL - Year is 2019 - Skipping. Title: "CEMEX-Tec"
+40. FAIL - Year is 2019 - Skipping. Title: "Rekonstrukce Notre-Dame"
+41. FAIL - Year is 2019 - Skipping. Title: "CEMEX Ventures investuje do technologie ukládání energie pomocí betonových kvádrů"
+42. FAIL - Year is 2019 - Skipping. Title: "Finalizace zavádění CEMEX Go"
+43. FAIL - Year is 2018 - Skipping. Title: "Tiskové zprávy - CEMEX přináší digitální revoluci do stavebnictví: CEMEX Go umožňuje řídit stavbu z mobilu i počítače"
+44. FAIL - Year is 2019 - Skipping. Title: "Workshopy Den země 2019"
+45. FAIL - Year is 2019 - Skipping. Title: "CEMEX VENTURES - PŘÍLEŽITOST PRO ČESKÉ STARTUPY!"
+46. FAIL - Year is 2019 - Skipping. Title: "CEMEX se podílí na renovaci Augustova mostu v Drážďanech"
+47. FAIL - Year is 2019 - Skipping. Title: "Do ocenění CEMEX-Tec se v roce 2019 přihlásil dvojnásobný počet uchazečů"
+48. FAIL - Year is 2019 - Skipping. Title: "CEMEX Ventures představuje 10 nejslibnějších startupových projektů ve stavebnictví v roce 2019"
+49. FAIL - Year is 2019 - Skipping. Title: "Nová kampaň „NERISKUJ ZBYTEČNĚ“"
+50. FAIL - Year is 2018 - Skipping. Title: "CEMEX dbá na zvýšení bezpečnosti dopravy"
+51. FAIL - Year is 2019 - Skipping. Title: "CEMEX ocení projekty světové úrovně"
+52. FAIL - Year is 2019 - Skipping. Title: "CEMEX se podílel na rekonstrukci přehrady poškozené hurikánem María"
+53. FAIL - Year is 2019 - Skipping. Title: "CEMEX ocení projekty světové úrovně"
+54. FAIL - Year is 2019 - Skipping. Title: "CEMEX se podílel na rekonstrukci přehrady poškozené hurikánem María"
+55. FAIL - Year is 2019 - Skipping. Title: "Společnost CEMEX dodává beton pro obnovení slavného madridského tunelu De La Risa"
+56. FAIL - Year is 2019 - Skipping. Title: "Společnost CEMEX Ventures se již druhým rokem po sobě umístila v žebříčku nejdůležitějších investorů ve stavebnictví"
+57. FAIL - Year is 2019 - Skipping. Title: "Společnost CEMEX dokončila zavedení platformy CEMEX Go u zákazníků po celém světě"
+58. FAIL - Year is 2019 - Skipping. Title: "OCENĚNÍ INOVACE V BETONU PŘEKRAČUJE HRANICE"
+59. FAIL - Year is 2019 - Skipping. Title: "CEMEX představuje 27. vydání knihy ze série o ochraně přírody: „Nature's Solutions To Climate Change“"
+60. PASS - Processing. Year: 2020. Title: "Společnost CEMEX oznámila odprodej části aktiv ve Velké Británii"
+Import successful for: Společnost CEMEX oznámila odprodej části aktiv ve Velké Británii
+61. FAIL - Year is 2019 - Skipping. Title: "CEMEX se zapojuje do iniciativy na zvýšení bezpečnosti silničního provozu vedené starostou Londýna"
+62. FAIL - Year is 2019 - Skipping. Title: "CEMEX v roce 2020 plánuje rozšíření dobrovolnických aktivit"
+63. FAIL - Year is 2019 - Skipping. Title: "CEMEX dodal beton na nový Guitar Hotel v Hollywoodu na Floridě"
+64. FAIL - Year is 2019 - Skipping. Title: "CEMEX Ventures dláždí cestu na čínský trh"
+65. PASS - Processing. Year: 2020. Title: "Soutěž CEMEX Förderpreis Beton Central Europe 2020 byla zahájena"
+Import successful for: Soutěž CEMEX Förderpreis Beton Central Europe 2020 byla zahájena
+66. PASS - Processing. Year: 2020. Title: "Společnost CEMEX oznamuje ambiciózní strategii v úsilí o řešení změn klimatu"
+Import successful for: Společnost CEMEX oznamuje ambiciózní strategii v úsilí o řešení změn klimatu
+67. PASS - Processing. Year: 2020. Title: "SPOLEČNOST CEMEX ZVEŘEJNILA VÝZVU K SOUTĚŽI BUILDING AWARD 2020"
+Import successful for: SPOLEČNOST CEMEX ZVEŘEJNILA VÝZVU K SOUTĚŽI BUILDING AWARD 2020
+68. PASS - Processing. Year: 2020. Title: "CEMEX pozastavuje Building Award 2020"
+Import successful for: CEMEX pozastavuje Building Award 2020
+69. PASS - Processing. Year: 2020. Title: "Cemex klima a podpora inovací"
+Import successful for: Cemex klima a podpora inovací
+70. PASS - Processing. Year: 2020. Title: "CEMEX Förderpreis - Prodloužení termínu"
+Import successful for: CEMEX Förderpreis - Prodloužení termínu
+71. PASS - Processing. Year: 2020. Title: "Pět lídrů stavebnictví spouští soutěž pro startupy"
+Import successful for: Pět lídrů stavebnictví spouští soutěž pro startupy
+72. PASS - Processing. Year: 2020. Title: "CEMEX-TEC prodlužuje výzvu k předkládání přihlášek"
+Import successful for: CEMEX-TEC prodlužuje výzvu k předkládání přihlášek
+73. PASS - Processing. Year: 2020. Title: "Ocenění CEMEX-Tec spouští celosvětovou výzvu a slaví desáté výročí"
+Import successful for: Ocenění CEMEX-Tec spouští celosvětovou výzvu a slaví desáté výročí
+74. PASS - Processing. Year: 2020. Title: "Iniciativa společný restart"
+Import successful for: Iniciativa společný restart
+75. PASS - Processing. Year: 2020. Title: "Strategie řešení změn klimatu"
+Import successful for: Strategie řešení změn klimatu
+76. PASS - Processing. Year: 2020. Title: "Recyklace plastů za účelem výroby materiálů"
+Import successful for: Recyklace plastů za účelem výroby materiálů
+77. PASS - Processing. Year: 2020. Title: "CEMEX je o krok dál v záměru vyvinout beton s nulovými čistými emisemi CO2"
+Import successful for: CEMEX je o krok dál v záměru vyvinout beton s nulovými čistými emisemi CO2
+78. PASS - Processing. Year: 2020. Title: "CEMEX uvádí na trh první uhlíkově neutrální beton"
+Import successful for: CEMEX uvádí na trh první uhlíkově neutrální beton
+79. PASS - Processing. Year: 2020. Title: "Druhá největší budova pro uskladnění vozidel"
+Import successful for: Druhá největší budova pro uskladnění vozidel
+80. PASS - Processing. Year: 2020. Title: "Nejrušnější letiště světa v Atlantě"
+Import successful for: Nejrušnější letiště světa v Atlantě
+81. PASS - Processing. Year: 2020. Title: "Začínající talenti české architektury"
+Import successful for: Začínající talenti české architektury
+82. PASS - Processing. Year: 2020. Title: "280 mil. dolarů do zlepšení ovzduší"
+Import successful for: 280 mil. dolarů do zlepšení ovzduší
+83. PASS - Processing. Year: 2020. Title: "Odolnost otevírá cestu k lepší budoucnosti"
+Import successful for: Odolnost otevírá cestu k lepší budoucnosti
+84. PASS - Processing. Year: 2020. Title: "CEMEX mění svět (podle Fortune)"
+Import successful for: CEMEX mění svět (podle Fortune)
+85. PASS - Processing. Year: 2020. Title: "SNÍŽENÍ EMISÍ CO2 NEJMÉNĚ  O 55 %"
+Import successful for: SNÍŽENÍ EMISÍ CO2 NEJMÉNĚ  O 55 %
+86. PASS - Processing. Year: 2020. Title: "Slunce k dekarbonizaci cementu"
+Import successful for: Slunce k dekarbonizaci cementu
+87. PASS - Processing. Year: 2020. Title: "Nejlepší výrobce stavebnin 2019"
+Import successful for: Nejlepší výrobce stavebnin 2019
+88. PASS - Processing. Year: 2020. Title: "CEMEX mezi vítězi 5. ročníku ABSL Diamonds - novinka"
+Import successful for: CEMEX mezi vítězi 5. ročníku ABSL Diamonds - novinka
+89. PASS - Processing. Year: 2020. Title: "Rekordní počtem přihlášek Cemex Tec 2020"
+Import successful for: Rekordní počtem přihlášek Cemex Tec 2020
+90. PASS - Processing. Year: 2020. Title: "50 nejperspektivnějších startupů ve stavebnictví 2020"
+Import successful for: 50 nejperspektivnějších startupů ve stavebnictví 2020
+91. PASS - Processing. Year: 2020. Title: "rozšíření řešení v segmentu malt v regionu EMEAA"
+Import successful for: rozšíření řešení v segmentu malt v regionu EMEAA
+92. PASS - Processing. Year: 2021. Title: "CEMEX OZNÁMIL OCENĚNÍ PRIORITNÍCH ZAJIŠTĚNÝCH DLUHOPISŮ V HODNOTĚ 1,75 MILIARDY DOLARŮ"
+Import successful for: CEMEX OZNÁMIL OCENĚNÍ PRIORITNÍCH ZAJIŠTĚNÝCH DLUHOPISŮ V HODNOTĚ 1,75 MILIARDY DOLARŮ
+93. FAIL - Year is 2018 - Skipping. Title: "Novinka - Přijďte na květnový Den Země na štěrkovnu Spytihněv (Zlínsko)"
+94. FAIL - Year is 2017 - Skipping. Title: "Zveme vás na 6. ročník Dne Země na štěrkovně Spytihněv (Zlínsko)"
+95. PASS - Processing. Year: 2021. Title: "CEMEX a CARBS Concrete Kinetics jsou partneři"
+Import successful for: CEMEX a CARBS Concrete Kinetics jsou partneři
+96. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX OZNÁMILA ÚČAST V PROJEKTU LEILAC 2 ZAMĚŘENÉM NA DEKARBONIZACI VÝROBY CEMENTU"
+Import successful for: SPOLEČNOST CEMEX OZNÁMILA ÚČAST V PROJEKTU LEILAC 2 ZAMĚŘENÉM NA DEKARBONIZACI VÝROBY CEMENTU
+97. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX ZÍSKALA GRANT MINISTERSTVA ENERGETIKY USA"
+Import successful for: SPOLEČNOST CEMEX ZÍSKALA GRANT MINISTERSTVA ENERGETIKY USA
+98. PASS - Processing. Year: 2021. Title: "CEMEX lídrem v oblasti klimatické akce"
+Import successful for: CEMEX lídrem v oblasti klimatické akce
+99. PASS - Processing. Year: 2021. Title: "VEDOUCÍ PRACOVNÍK SPOLEČNOSTI CEMEX BYL JMENOVÁN DO RADY UDRŽITELNOSTI SPOLKOVÉ ZEMĚ BRANIBORSKO V NĚMECKU"
+Import successful for: VEDOUCÍ PRACOVNÍK SPOLEČNOSTI CEMEX BYL JMENOVÁN DO RADY UDRŽITELNOSTI SPOLKOVÉ ZEMĚ BRANIBORSKO V NĚMECKU
+100. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX ZVEŘEJNILA VÝZVU K SOUTĚŽI CEMEX BUILDING AWARD 2021"
+Import successful for: SPOLEČNOST CEMEX ZVEŘEJNILA VÝZVU K SOUTĚŽI CEMEX BUILDING AWARD 2021
+101. PASS - Processing. Year: 2021. Title: "CEMEX SE PODÍLÍ NA VIA BALTICA, JEDNOM Z NEJVĚTŠÍCH INFRASTRUKTURNÍCH PROJEKTŮ V EVROPĚ"
+Import successful for: CEMEX SE PODÍLÍ NA VIA BALTICA, JEDNOM Z NEJVĚTŠÍCH INFRASTRUKTURNÍCH PROJEKTŮ V EVROPĚ
+102. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX ÚSPĚŠNĚ IMPLEMENTOVALA PRŮLOMOVOU VODÍKOVOU TECHNOLOGII"
+Import successful for: SPOLEČNOST CEMEX ÚSPĚŠNĚ IMPLEMENTOVALA PRŮLOMOVOU VODÍKOVOU TECHNOLOGII
+103. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX INVESTUJE 25 MILIONŮ DOLARŮ DO ÚTLUMU FOSILNÍCH PALIV V CEMENTÁRNĚ V RUGBY VE VELKÉ BRITÁNII"
+Import successful for: SPOLEČNOST CEMEX INVESTUJE 25 MILIONŮ DOLARŮ DO ÚTLUMU FOSILNÍCH PALIV V CEMENTÁRNĚ V RUGBY VE VELKÉ BRITÁNII
+104. PASS - Processing. Year: 2021. Title: "Vyhlášení vítězů soutěže CEMEX Förderpreis Beton Central Europe 2020"
+Import successful for: Vyhlášení vítězů soutěže CEMEX Förderpreis Beton Central Europe 2020
+105. PASS - Processing. Year: 2021. Title: "CEMEX A DIGITÁLNÍ TRANSFORMACE STAVEBNICTVÍ"
+Import successful for: CEMEX A DIGITÁLNÍ TRANSFORMACE STAVEBNICTVÍ
+106. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX OZNÁMILA 28% NÁRŮST EBITDA ZA PRVNÍ ČTVRTLETÍ DÍKY 9% MEZIROČNÍMU ZVÝŠENÍ ČISTÝCH KONSOLIDOVANÝCH TRŽEB"
+Import successful for: SPOLEČNOST CEMEX OZNÁMILA 28% NÁRŮST EBITDA ZA PRVNÍ ČTVRTLETÍ DÍKY 9% MEZIROČNÍMU ZVÝŠENÍ ČISTÝCH KONSOLIDOVANÝCH TRŽEB
+107. PASS - Processing. Year: 2021. Title: "bp a CEMEX se spojily v oblasti nulových emisí"
+Import successful for: bp a CEMEX se spojily v oblasti nulových emisí
+108. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX PŘIPRAVUJE CESTU PRO UDRŽITELNĚJŠÍ BUDOUCNOST"
+Import successful for: SPOLEČNOST CEMEX PŘIPRAVUJE CESTU PRO UDRŽITELNĚJŠÍ BUDOUCNOST
+109. PASS - Processing. Year: 2021. Title: "CEMEX POSILUJE SVÉ AKTIVITY V NĚMECKU"
+Import successful for: CEMEX POSILUJE SVÉ AKTIVITY V NĚMECKU
+110. PASS - Processing. Year: 2021. Title: "CEMEX DODAVATELEM NOVÉHO RESORTU  - STAVBA NEJVYŠŠÍ BUDOVY V CENTRU LAS VEGAS"
+Import successful for: CEMEX DODAVATELEM NOVÉHO RESORTU  - STAVBA NEJVYŠŠÍ BUDOVY V CENTRU LAS VEGAS
+111. PASS - Processing. Year: 2021. Title: "CEMEX POSILUJE KAPITÁLOVOU STRUKTURU PRODEJEM  5,125% PODŘÍZENÝCH DLUHOPISŮ V HODNOTĚ 1,0 MILIARDY AMERICKÝCH DOLARŮ"
+Import successful for: CEMEX POSILUJE KAPITÁLOVOU STRUKTURU PRODEJEM  5,125% PODŘÍZENÝCH DLUHOPISŮ V HODNOTĚ 1,0 MILIARDY AMERICKÝCH DOLARŮ
+112. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX 24. ČERVNA 2021 AKTUALIZOVALA INFORMACE O OBCHODNÍ, FINANČNÍ A KLIMATICKÉ STRATEGII"
+Import successful for: SPOLEČNOST CEMEX 24. ČERVNA 2021 AKTUALIZOVALA INFORMACE O OBCHODNÍ, FINANČNÍ A KLIMATICKÉ STRATEGII
+113. PASS - Processing. Year: 2021. Title: "CEMEX představuje novou generaci přísad Vertua® pro udržitelnou urbanizaci"
+Import successful for: CEMEX představuje novou generaci přísad Vertua® pro udržitelnou urbanizaci
+114. PASS - Processing. Year: 2021. Title: "CEMEX zavádí novou řadu betonů – Vertua®, která je šetrná k životnímu prostředí"
+Import successful for: CEMEX zavádí novou řadu betonů – Vertua®, která je šetrná k životnímu prostředí
+115. PASS - Processing. Year: 2021. Title: "CEMEX JE SOUČÁSTÍ PRŮKOPNICKÉHO KONSORCIA PRO VÝROBU ELEKTRICKÉ ENERGIE S POUŽITÍM SUPERKRITICKÉHO CO2"
+Import successful for: CEMEX JE SOUČÁSTÍ PRŮKOPNICKÉHO KONSORCIA PRO VÝROBU ELEKTRICKÉ ENERGIE S POUŽITÍM SUPERKRITICKÉHO CO2
+116. PASS - Processing. Year: 2021. Title: "CEMEX DOSAHUJE INVESTIČNÍ KAPITÁLOVÉ STRUKTURY A URYCHLUJE RŮSTOVOU STRATEGII"
+Import successful for: CEMEX DOSAHUJE INVESTIČNÍ KAPITÁLOVÉ STRUKTURY A URYCHLUJE RŮSTOVOU STRATEGII
+117. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX SE ZAVAZUJE, ŽE SE STANE LÍDREM V OBLASTI OCHRANY KLIMATU"
+Import successful for: SPOLEČNOST CEMEX SE ZAVAZUJE, ŽE SE STANE LÍDREM V OBLASTI OCHRANY KLIMATU
+118. PASS - Processing. Year: 2021. Title: "CEMEX DOKONČUJE PRODEJ SVÉ TOVÁRNY NA BÍLÝ CEMENT V BUÑOL A ČÁSTI SVÉHO PODNIKÁNÍ V OBLASTI BÍLÉHO CEMENTU"
+Import successful for: CEMEX DOKONČUJE PRODEJ SVÉ TOVÁRNY NA BÍLÝ CEMENT V BUÑOL A ČÁSTI SVÉHO PODNIKÁNÍ V OBLASTI BÍLÉHO CEMENTU
+119. PASS - Processing. Year: 2021. Title: "CEMEX SE PŘIPOJUJE KE DVĚMA PŘEDNÍM SVĚTOVÝM INICIATIVÁM  S CÍLEM DOSÁHNOUT UHLÍKOVÉ NEUTRALITY"
+Import successful for: CEMEX SE PŘIPOJUJE KE DVĚMA PŘEDNÍM SVĚTOVÝM INICIATIVÁM  S CÍLEM DOSÁHNOUT UHLÍKOVÉ NEUTRALITY
+120. PASS - Processing. Year: 2021. Title: "CEMEX VENTURES INVESTUJE DO TECHNOLOGIE BUDOUCNOSTI - ZACHYCOVANI UHLIKU"
+Import successful for: CEMEX VENTURES INVESTUJE DO TECHNOLOGIE BUDOUCNOSTI - ZACHYCOVANI UHLIKU
+121. PASS - Processing. Year: 2021. Title: "CEMEX VENTURES INVESTUJE DO TECHNOLOGIE BUDOUCNOSTI - ZACHYCOVANI UHLIKU"
+Import successful for: CEMEX VENTURES INVESTUJE DO TECHNOLOGIE BUDOUCNOSTI - ZACHYCOVANI UHLIKU
+122. PASS - Processing. Year: 2021. Title: "CEMEX-SE-PODILI-NA VYSTAVBE-NEJVETSIHO-AKVARIA-V-LATINSKE-AMERICE"
+Import successful for: CEMEX-SE-PODILI-NA VYSTAVBE-NEJVETSIHO-AKVARIA-V-LATINSKE-AMERICE
+123. PASS - Processing. Year: 2021. Title: "CEMEX POSILUJE VEDOUCÍ POSTAVENÍ V OBLASTI EKOLOGICKÉHO FINANCOVÁNÍ"
+Import successful for: CEMEX POSILUJE VEDOUCÍ POSTAVENÍ V OBLASTI EKOLOGICKÉHO FINANCOVÁNÍ
+124. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX CHCE VYTVOŘIT PRVNÍ VOZOVÝ PARK S NULOVÝMI EMISEMI"
+Import successful for: SPOLEČNOST CEMEX CHCE VYTVOŘIT PRVNÍ VOZOVÝ PARK S NULOVÝMI EMISEMI
+125. PASS - Processing. Year: 2021. Title: "CEMEX POSKYTNE AKTUÁLNÍ INFORMACE O REGIONÁLNÍCH PODNICÍCH  A STRATEGII V OBLASTI KLIMATU NA „CEMEX DAY“ 7. ŘÍJNA 2021"
+Import successful for: CEMEX POSKYTNE AKTUÁLNÍ INFORMACE O REGIONÁLNÍCH PODNICÍCH  A STRATEGII V OBLASTI KLIMATU NA „CEMEX DAY“ 7. ŘÍJNA 2021
+126. PASS - Processing. Year: 2021. Title: "AMBICIÓZNÍ KLIMATICKÉ CÍLE SPOLEČNOSTI CEMEX DO ROKU 2030 POTVRZENY V SOULADU S NEJNOVĚJŠÍMI VĚDECKÝMI POZNATKY"
+Import successful for: AMBICIÓZNÍ KLIMATICKÉ CÍLE SPOLEČNOSTI CEMEX DO ROKU 2030 POTVRZENY V SOULADU S NEJNOVĚJŠÍMI VĚDECKÝMI POZNATKY
+127. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX DODÁVÁ BETON VERTUA S NIŽŠÍM OBSAHEM UHLÍKU  PRO UDRŽITELNOU VÝSTAVBU V POLSKU"
+Import successful for: SPOLEČNOST CEMEX DODÁVÁ BETON VERTUA S NIŽŠÍM OBSAHEM UHLÍKU  PRO UDRŽITELNOU VÝSTAVBU V POLSKU
+128. PASS - Processing. Year: 2021. Title: "CEMEX VENTURES A TARONGA VENTURES INVESTUJÍ  DO STARTUPU, KTERÝ CHCE ZMÍRNIT PROBLÉMY GLOBÁLNÍ LOGISTIKY"
+Import successful for: CEMEX VENTURES A TARONGA VENTURES INVESTUJÍ  DO STARTUPU, KTERÝ CHCE ZMÍRNIT PROBLÉMY GLOBÁLNÍ LOGISTIKY
+129. PASS - Processing. Year: 2021. Title: "CEMEX INVESTUJE DO PRŮKOPNICKÉ SOLÁRNÍ TECHNOLOGIE"
+Import successful for: CEMEX INVESTUJE DO PRŮKOPNICKÉ SOLÁRNÍ TECHNOLOGIE
+130. PASS - Processing. Year: 2021. Title: "CEMEX JE ZAKLÁDAJÍCÍM ČLENEM KOALICE "FIRST MOVERS COALITION" SVĚTOVÉHO EKONOMICKÉHO FÓRA, KTERÁ PODPORUJE POPTÁVKU PO BEZUHLÍKOVÝCH TECHNOLOGIÍCH"
+Import successful for: CEMEX JE ZAKLÁDAJÍCÍM ČLENEM KOALICE "FIRST MOVERS COALITION" SVĚTOVÉHO EKONOMICKÉHO FÓRA, KTERÁ PODPORUJE POPTÁVKU PO BEZUHLÍKOVÝCH TECHNOLOGIÍCH
+131. PASS - Processing. Year: 2021. Title: "Fotosoutez-pravidla-2021"
+Import successful for: Fotosoutez-pravidla-2021
+132. PASS - Processing. Year: 2021. Title: "Organizace CDP udělila společnosti CEMEX  NEJVYŠŠÍ OHODNOCENÍ ZA VEDENÍ V KLIMATICKÝCH AKTIVITÁCH"
+Import successful for: Organizace CDP udělila společnosti CEMEX  NEJVYŠŠÍ OHODNOCENÍ ZA VEDENÍ V KLIMATICKÝCH AKTIVITÁCH
+133. PASS - Processing. Year: 2022. Title: "CEMEX INVESTUJE DO PRŮLOMOVÉ VODÍKOVÉ TECHNOLOGIE"
+Import successful for: CEMEX INVESTUJE DO PRŮLOMOVÉ VODÍKOVÉ TECHNOLOGIE
+134. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX A CARBON8 SYSTEMS JSOU PARTNERY PŘI VÝVOJI NÍZKOUHLÍKOVÝCH STAVEBNÍCH VÝROBKŮ"
+Import successful for: SPOLEČNOST CEMEX A CARBON8 SYSTEMS JSOU PARTNERY PŘI VÝVOJI NÍZKOUHLÍKOVÝCH STAVEBNÍCH VÝROBKŮ
+135. PASS - Processing. Year: 2021. Title: "S NOVOU TECHNOLOGIÍ 3D TISKU BUDUJÍ SPOLEČNOSTI CEMEX A COBOD LEPŠÍ BUDOUCNOST"
+Import successful for: S NOVOU TECHNOLOGIÍ 3D TISKU BUDUJÍ SPOLEČNOSTI CEMEX A COBOD LEPŠÍ BUDOUCNOST
+136. PASS - Processing. Year: 2021. Title: "SPOLEČNOST CEMEX SE PŘIPOJUJE K PRACOVNÍ SKUPINĚ FINANČNÍCH ŘEDITELŮ NA PODPORU CÍLŮ UDRŽITELNOSTI OSN"
+Import successful for: SPOLEČNOST CEMEX SE PŘIPOJUJE K PRACOVNÍ SKUPINĚ FINANČNÍCH ŘEDITELŮ NA PODPORU CÍLŮ UDRŽITELNOSTI OSN
+137. PASS - Processing. Year: 2022. Title: "ODVÁŽNÝ KROK SPOLEČNOSTI CEMEX V OBLASTI DIGITÁLNÍCH INOVACÍ VYTVÁŘÍ JEDINEČNOU KONKURENČNÍ VÝHODU"
+Import successful for: ODVÁŽNÝ KROK SPOLEČNOSTI CEMEX V OBLASTI DIGITÁLNÍCH INOVACÍ VYTVÁŘÍ JEDINEČNOU KONKURENČNÍ VÝHODU
+138. PASS - Processing. Year: 2022. Title: "SPOLEČNOSTI CEMEX A SYNHELION DOSÁHLY PRŮLOMU VE VÝROBĚ CEMENTU POMOCÍ SOLÁRNÍ ENERGIE"
+Import successful for: SPOLEČNOSTI CEMEX A SYNHELION DOSÁHLY PRŮLOMU VE VÝROBĚ CEMENTU POMOCÍ SOLÁRNÍ ENERGIE
+139. PASS - Processing. Year: 2022. Title: "spolecnost-cemex-byla-uznana-za-globalniho-lidra-v-usili-o-snizovani-emisi-uhliku"
+Import successful for: spolecnost-cemex-byla-uznana-za-globalniho-lidra-v-usili-o-snizovani-emisi-uhliku
+140. PASS - Processing. Year: 2022. Title: "CEMEX INVESTUJE DO CIRKULÁRNÍ EKONOMIKY V MEXIKU"
+Import successful for: CEMEX INVESTUJE DO CIRKULÁRNÍ EKONOMIKY V MEXIKU
+141. PASS - Processing. Year: 2022. Title: "CEMEX-premeni-CO2-na-udrzitelne-letecke-palivo"
+Import successful for: CEMEX-premeni-CO2-na-udrzitelne-letecke-palivo
+142. PASS - Processing. Year: 2022. Title: "Förderpreis-Beton-Central-Europe-Award-2022"
+Import successful for: Förderpreis-Beton-Central-Europe-Award-2022
+143. PASS - Processing. Year: 2022. Title: "SPOLEČNOST CEMEX OZNAMUJE VÝZNAMNÉ ZMĚNY V ŘÍZENÍ SPOLEČNOSTI"
+Import successful for: SPOLEČNOST CEMEX OZNAMUJE VÝZNAMNÉ ZMĚNY V ŘÍZENÍ SPOLEČNOSTI
+144. FAIL - Year is 2016 - Skipping. Title: "Tisková zpráva - CEMEX oznámil prodej svých aktiv v Bangladéši a Thajsku"
+145. PASS - Processing. Year: 2022. Title: "CEMEX INVESTUJE DO TECHNOLOGIE, KTERÁ SNIŽUJE EMISE UHLÍKU CEMENTU AŽ O 30 %"
+Import successful for: CEMEX INVESTUJE DO TECHNOLOGIE, KTERÁ SNIŽUJE EMISE UHLÍKU CEMENTU AŽ O 30 %
+146. PASS - Processing. Year: 2025. Title: "Test 1"
+Import successful for: Test 1
+press-release-page:5015 ---- Processing Summary ----
+press-release-page:5016 Total Content: 146
+press-release-page:5017 Total Imported (PASS): 80
+press-release-page:5018 Total Failed (Skipped): 66
+Import process completed. 
