@@ -1,0 +1,165 @@
+================================================================================================================
+								Html
+================================================================================================================
+<div class="dropdown" id="planttype-dropdown">
+	<button class="btn btn-primary dropdown-toggle planttype-dropdown-toggle" type="button" id="planttype-filter-dropdown">
+		<span class="caret"></span>
+	</button>
+	<ul id="planttype-data" class="dropdown-menu" aria-labelledby="planttype-filter-dropdown">
+		<li data-filter="All">All</li>
+	</ul>
+</div>
+
+
+================================================================================================================
+								CSS
+================================================================================================================
+<style>
+.dataTable-main .action-main #planttype-data.dropdown-menu {
+    left: 493px;
+}
+.dataTable-main .action-main .planttype-dropdown-toggle {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 1px solid #B0B0B0;
+    width: 240px;
+    position: absolute;
+    height: 40px;
+    top: -10px;
+    left: 493px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dataTable-main .action-main .planttype-dropdown-toggle .caret {
+    color: #0074D4;
+}
+
+.dataTable-main .action-main .btn-primary.planttype-dropdown-toggle:hover,
+.dataTable-main .action-main .btn-primary.planttype-dropdown-toggle:focus {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #B0B0B0;
+    outline: none;
+}
+
+	.dataTable-main .action-main .region-dropdown-toggle{
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+	.dropdown-toggle::after{
+  margin-left: auto;
+}
+	
+	@media (max-width: 1600px)  {
+  .location-table .dataTable-wrapper{
+     margin-top: 150px;
+  }
+  .action-main .action-btn{
+     top: 80px;
+  }
+}
+
+@media (max-width: 768px)  {
+  .location-table .dataTable-wrapper{
+     margin-top: 380px;
+  }
+  .action-main .action-btn .round-btn {
+    width: 100%;
+		margin-top: 5px;
+  }
+
+  .location-table .dataTable-wrapper .dataTable-search{
+    top: 40px;
+    left: 0;
+  }
+  .dataTable-main .action-main .planttype-dropdown-toggle{
+    top :90px;
+    left: 0;
+  }
+  .action-main .action-btn{
+     top: 160px;
+  }
+
+}
+
+@media (max-width: 450px){
+    .location-table .dataTable-wrapper .dataTable-search{
+    top: 40px;
+    left: 0;
+    width: 100%;
+	  padding: 0 12px;
+  }
+  
+  .dataTable-main .action-main .planttype-dropdown-toggle{
+    top :90px;
+    left: 0;
+    width: 100%;
+  }
+	.dataTable-main .action-main .region-dropdown-toggle ,.location-table .dataTable-wrapper .dataTable-search .dataTable-input{
+	  width: 100%;
+	}
+}
+</style>
+
+
+================================================================================================================
+							Js
+================================================================================================================
+<script>
+    // Render the categories
+    var interval = setInterval(function() {
+      if (productTypeCategories && productTypeCategories.length) {
+        var html = '<li data-filter="All">All</li>';
+        for (var i = 0; i < productTypeCategories.length; i++) {
+          html += '<li data-filter="' + productTypeCategories[i].name + '">' + productTypeCategories[i].name + '</li>';
+        }
+        document.getElementById('planttype-data').innerHTML = html;
+        clearInterval(interval);
+      }
+    }, 500);
+
+
+    // 2. Toggle open/close
+    document.getElementById('planttype-filter-dropdown').addEventListener('click', function (e) {
+      e.stopPropagation();
+      document.getElementById('region-data').classList.remove('show'); // Close region if open
+      document.getElementById('planttype-data').classList.toggle('show');
+    });
+
+    // 3. Handle selection
+    document.getElementById('planttype-data').addEventListener('click', function (e) {
+      if (e.target.tagName === 'LI') {
+        const selected = e.target.dataset.filter;
+        const btn = document.getElementById('planttype-filter-dropdown');
+        btn.textContent = 'Plant Type: ' + selected + ' ';
+        const caret = document.createElement('span');
+        caret.className = 'caret';
+        btn.appendChild(caret);
+
+        selectedRowsMap = {};
+        updateSelectedCount();
+
+        datatable.search(selected === 'All' ? '' : selected);
+        document.getElementById('planttype-data').classList.remove('show');
+      }
+    });
+
+    // 4. Close on outside click
+    document.addEventListener('click', function (e) {
+      const plantTypeDropdown = document.getElementById('planttype-data');
+      const plantTypeButton = document.getElementById('planttype-filter-dropdown');
+      if (!plantTypeButton.contains(e.target)) {
+        plantTypeDropdown.classList.remove('show');
+      }
+    });
