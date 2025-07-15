@@ -1,0 +1,467 @@
+🔍 Analyzing categories for: Czech
+📊 Group ID: 46856796
+🏗️  Structure Key: 169349
+============================================================
+📄 Found 146 articles to analyze
+
+📊 CATEGORY ANALYSIS RESULTS
+============================================================
+📈 Total Articles Analyzed: 146
+✅ Articles with Categories: 145
+❌ Articles without Categories: 1
+🏷️  Total Unique Categories Found: 11
+
+🔥 CATEGORY USAGE STATISTICS
+============================================================
+Tiskové zprávy                 | 123 articles
+2021                           |  40 articles
+2020                           |  25 articles
+Novinky                        |  22 articles
+2019                           |  22 articles
+2016                           |  16 articles
+2022                           |  10 articles
+Homepage                       |   9 articles
+2018                           |   6 articles
+2017                           |   4 articles
+Slider                         |   3 articles
+
+📋 DETAILED ARTICLE-CATEGORY MAPPING
+============================================================
+📄 46987804 - Tisková zpráva - Štěrkovna Spytihněv hostila více než 1200 návštěvníků
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987813 - Tisková zpráva - CEMEX zveřejnil hospodářské výsledky za první čtvrtletí roku 2016
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987824 - Tisková zpráva - CEMEX staví v Egyptě první betonovou silnici
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987835 - Tisková zpráva - CEMEX roste a vytváří více než 100 nových pracovních pozic
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987846 - Tisková zpráva - CEMEX získal nezbytný souhlas pro změnu své úvěrové smlouvy
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987868 - Tisková zpráva - CEMEX zveřejnil hospodářské výsledky za 4. čtvrtletí a celý rok 2015
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987879 - Tisková zpráva - CEMEX představí základové konstrukce na veletrhu FOR PASIV
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987888 - Tisková zpráva - Nový web Podlaha.cz: Vše o litých podlahách
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46987895 - Uklízeli jsme Česko 2018
+   🏷️  Categories: Novinky
+
+📄 46987904 - Novým Vice prezidentem se stal Reinhold Schneider
+   🏷️  Categories: Novinky
+
+📄 46987913 - Finanční dar profesionálním hasičům ze stanice Otrokovice
+   🏷️  Categories: Novinky
+
+📄 46987924 - Cena CEMEX udělena za práci Obecní dům Těšín
+   🏷️  Categories: Novinky
+
+📄 46987933 - CEMEX je generálním partnerem soutěže Young Architect Award
+   🏷️  Categories: Novinky
+
+📄 46987942 - Hermann Dietrich jmenován novým generálním ředitelem
+   🏷️  Categories: Novinky
+
+📄 46987958 - Saint-Jean-de-Luz zpevňuje mořské hráze za použití „podvodního“ betonu CEMEX
+   🏷️  Categories: Novinky
+
+📄 46987967 - Hrdý lev fotbalového klubu Olympique Lyonnais z pemrlovaného betonu
+   🏷️  Categories: Novinky
+
+📄 46987976 - Válcovaný beton jako efektivní technologie pro stavbu vozovek
+   🏷️  Categories: Novinky
+
+📄 46988029 - Novinka - Prohlášení společnosti CEMEX Czech Republic, s.r.o.
+   🏷️  Categories: Novinky
+
+📄 46988038 - Novinka - Fúze CEMEX Cement, s.r.o. a CEMEX Development, s.r.o. do CEMEX Czech Republic, s.r.o.
+   🏷️  Categories: Novinky
+
+📄 46988058 - Tiskové zprávy - Výroční zpráva za rok 2017
+   🏷️  Categories: Tiskové zprávy, 2018
+
+📄 46988078 - Tisková zpráva - Rodinný den CEMEX si malí i větší piráti moc užili
+   🏷️  Categories: Tiskové zprávy, 2017
+
+📄 46988096 - Tisková zpráva - Časopis Fortune ohodnotil CEMEX jako společnost, která mění svět
+   🏷️  Categories: Tiskové zprávy, 2017
+
+📄 46988105 - Tisková zpráva - DIGITÁLNÍ PLATFORMA MĚNÍCÍ STAVEBNICTVÍ: CEMEX GO
+   🏷️  Categories: Tiskové zprávy, 2017
+
+📄 46988114 - Tisková zpráva - Mexická vláda ocenila CEMEX za úsilí při ochraně životního prostředí
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46988123 - Tisková zpráva - CEMEX se podílí na prodloužení linky metra v Los Angeles
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46988132 - Tisková zpráva - CEMEX a GCC se dohodli na podmínkách prodeje některých amerických aktiv
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46988141 - Tisková zpráva - CEMEX získal certifikaci od Wildlife Habitat Council
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46988150 - Tisková zpráva - Štěrkovna Náklo je útočištěm pro ohrožené druhy zvířat a rostlin
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46988157 - Tisková zpráva - Základy rychleji: Betony COMPACTON ušetří při ukládání až 70 % času
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46988164 - Tisková zpráva - CEMEX Sand získal certifikace ISO a OHSAS
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 46988410 - DŮLEŽITÉ INFORMACE o změnách ve společnostech skupiny CEMEX
+   🏷️  Categories: Novinky
+
+📄 46988087 - Tisková zpráva - CEMEX se stal vítězem soutěže HR Innovation Challenge CEE 2017
+   🏷️  Categories: Tiskové zprávy, 2017
+
+📄 46988068 - Tiskové zprávy - CEMEX optimalizuje výrobu kameniva
+   🏷️  Categories: Tiskové zprávy, 2018
+
+📄 47158153 - Společnost CEMEX byla kladně hodnocena Světovou podnikatelskou radou pro udržitelný rozvoj (WBCSD)
+   🏷️  Categories: Novinky
+
+📄 46988171 - Ohlédnutí za rokem 2016
+   🏷️  Categories: Novinky
+
+📄 46988049 - Tiskové zprávy - CEMEX VENTURES VYHLAŠUJE SOUTĚŽ “CONSTRUCTION STARTUP COMPETITION 2018”
+   🏷️  Categories: Tiskové zprávy, 2018
+
+📄 47158193 - Novinka - Společnost CEMEX byla  kladně hodnocena Světovou podnikatelskou radou pro udržitelný rozvoj (WBCSD)
+   🏷️  Categories: Novinky
+
+📄 47092669 - Jaké změny s sebou přinese CEMEX Go
+   🏷️  Categories: Tiskové zprávy, 2018
+
+📄 47880775 - CEMEX-Tec
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 47914420 - Rekonstrukce Notre-Dame
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 48056724 - CEMEX Ventures investuje do technologie ukládání energie pomocí betonových kvádrů
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 48074498 - Finalizace zavádění CEMEX Go
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 47231890 - Tiskové zprávy - CEMEX přináší digitální revoluci do stavebnictví: CEMEX Go umožňuje řídit stavbu z mobilu i počítače
+   🏷️  Categories: Tiskové zprávy, 2018
+
+📄 47880660 - Workshopy Den země 2019
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 47681925 - CEMEX VENTURES - PŘÍLEŽITOST PRO ČESKÉ STARTUPY!
+   🏷️  Categories: Novinky
+
+📄 48374425 - CEMEX se podílí na renovaci Augustova mostu v Drážďanech
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 48374451 - Do ocenění CEMEX-Tec se v roce 2019 přihlásil dvojnásobný počet uchazečů
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 48494141 - CEMEX Ventures představuje 10 nejslibnějších startupových projektů ve stavebnictví v roce 2019
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 47826077 - Nová kampaň „NERISKUJ ZBYTEČNĚ“
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 47322421 - CEMEX dbá na zvýšení bezpečnosti dopravy
+   🏷️  Categories: Tiskové zprávy, 2018
+
+📄 48848197 - CEMEX ocení projekty světové úrovně
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 48852455 - CEMEX se podílel na rekonstrukci přehrady poškozené hurikánem María
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 48900524 - CEMEX ocení projekty světové úrovně
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 48900532 - CEMEX se podílel na rekonstrukci přehrady poškozené hurikánem María
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 48900389 - Společnost CEMEX dodává beton pro obnovení slavného madridského tunelu De La Risa
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 48900430 - Společnost CEMEX Ventures se již druhým rokem po sobě umístila v žebříčku nejdůležitějších investorů ve stavebnictví
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 48095672 - Společnost CEMEX dokončila zavedení platformy CEMEX Go u zákazníků po celém světě
+   🏷️  Categories: Tiskové zprávy, Homepage, 2019
+
+📄 49081572 - OCENĚNÍ INOVACE V BETONU PŘEKRAČUJE HRANICE
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 49112017 - CEMEX představuje 27. vydání knihy ze série o ochraně přírody: „Nature's Solutions To Climate Change“
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 49220953 - Společnost CEMEX oznámila odprodej části aktiv ve Velké Británii
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 49293825 - CEMEX se zapojuje do iniciativy na zvýšení bezpečnosti silničního provozu vedené starostou Londýna
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 49296603 - CEMEX v roce 2020 plánuje rozšíření dobrovolnických aktivit
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 49296738 - CEMEX dodal beton na nový Guitar Hotel v Hollywoodu na Floridě
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 49296700 - CEMEX Ventures dláždí cestu na čínský trh
+   🏷️  Categories: Tiskové zprávy, 2019
+
+📄 49373818 - Soutěž CEMEX Förderpreis Beton Central Europe 2020 byla zahájena
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 49496863 - Společnost CEMEX oznamuje ambiciózní strategii v úsilí o řešení změn klimatu
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 49675312 - SPOLEČNOST CEMEX ZVEŘEJNILA VÝZVU K SOUTĚŽI BUILDING AWARD 2020
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 49810549 - CEMEX pozastavuje Building Award 2020
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 49920505 - Cemex klima a podpora inovací
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50040583 - CEMEX Förderpreis - Prodloužení termínu
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50016799 - Pět lídrů stavebnictví spouští soutěž pro startupy
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50050885 - CEMEX-TEC prodlužuje výzvu k předkládání přihlášek
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 49516610 - Ocenění CEMEX-Tec spouští celosvětovou výzvu a slaví desáté výročí
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50089760 - Iniciativa společný restart
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50285530 - Strategie řešení změn klimatu
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50330664 - Recyklace plastů za účelem výroby materiálů
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50387218 - CEMEX je o krok dál v záměru vyvinout beton s nulovými čistými emisemi CO2
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 50399215 - CEMEX uvádí na trh první uhlíkově neutrální beton
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51255716 - Druhá největší budova pro uskladnění vozidel
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51259401 - Nejrušnější letiště světa v Atlantě
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51345004 - Začínající talenti české architektury
+   🏷️  Categories: Novinky
+
+📄 51359334 - 280 mil. dolarů do zlepšení ovzduší
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51359513 - Odolnost otevírá cestu k lepší budoucnosti
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51406111 - CEMEX mění svět (podle Fortune)
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51450602 - SNÍŽENÍ EMISÍ CO2 NEJMÉNĚ  O 55 %
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51465448 - Slunce k dekarbonizaci cementu
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 51469969 - Nejlepší výrobce stavebnin 2019
+   🏷️  Categories: Novinky
+
+📄 51896761 - CEMEX mezi vítězi 5. ročníku ABSL Diamonds - novinka
+   🏷️  Categories: Novinky
+
+📄 50331067 - Rekordní počtem přihlášek Cemex Tec 2020
+   🏷️  Categories: Tiskové zprávy, 2020
+
+📄 52010724 - 50 nejperspektivnějších startupů ve stavebnictví 2020
+   🏷️  Categories: Tiskové zprávy, Slider, 2020
+
+📄 52010526 - rozšíření řešení v segmentu malt v regionu EMEAA
+   🏷️  Categories: Tiskové zprávy, Slider, 2020
+
+📄 52103749 - CEMEX OZNÁMIL OCENĚNÍ PRIORITNÍCH ZAJIŠTĚNÝCH DLUHOPISŮ V HODNOTĚ 1,75 MILIARDY DOLARŮ
+   🏷️  Categories: Tiskové zprávy, Slider, 2021
+
+📄 46988020 - Novinka - Přijďte na květnový Den Země na štěrkovnu Spytihněv (Zlínsko)
+   🏷️  Categories: Novinky
+
+📄 46987951 - Zveme vás na 6. ročník Dne Země na štěrkovně Spytihněv (Zlínsko)
+   🏷️  Categories: Novinky
+
+📄 52223090 - CEMEX a CARBS Concrete Kinetics jsou partneři
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52258605 - SPOLEČNOST CEMEX OZNÁMILA ÚČAST V PROJEKTU LEILAC 2 ZAMĚŘENÉM NA DEKARBONIZACI VÝROBY CEMENTU
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52274715 - SPOLEČNOST CEMEX ZÍSKALA GRANT MINISTERSTVA ENERGETIKY USA
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52284312 - CEMEX lídrem v oblasti klimatické akce
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52300940 - VEDOUCÍ PRACOVNÍK SPOLEČNOSTI CEMEX BYL JMENOVÁN DO RADY UDRŽITELNOSTI SPOLKOVÉ ZEMĚ BRANIBORSKO V NĚMECKU
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52313657 - SPOLEČNOST CEMEX ZVEŘEJNILA VÝZVU K SOUTĚŽI CEMEX BUILDING AWARD 2021
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52383311 - CEMEX SE PODÍLÍ NA VIA BALTICA, JEDNOM Z NEJVĚTŠÍCH INFRASTRUKTURNÍCH PROJEKTŮ V EVROPĚ
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52390593 - SPOLEČNOST CEMEX ÚSPĚŠNĚ IMPLEMENTOVALA PRŮLOMOVOU VODÍKOVOU TECHNOLOGII
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52480591 - SPOLEČNOST CEMEX INVESTUJE 25 MILIONŮ DOLARŮ DO ÚTLUMU FOSILNÍCH PALIV V CEMENTÁRNĚ V RUGBY VE VELKÉ BRITÁNII
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52607694 - Vyhlášení vítězů soutěže CEMEX Förderpreis Beton Central Europe 2020
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52712115 - CEMEX A DIGITÁLNÍ TRANSFORMACE STAVEBNICTVÍ
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52869067 - SPOLEČNOST CEMEX OZNÁMILA 28% NÁRŮST EBITDA ZA PRVNÍ ČTVRTLETÍ DÍKY 9% MEZIROČNÍMU ZVÝŠENÍ ČISTÝCH KONSOLIDOVANÝCH TRŽEB
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52869089 - bp a CEMEX se spojily v oblasti nulových emisí
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52711749 - SPOLEČNOST CEMEX PŘIPRAVUJE CESTU PRO UDRŽITELNĚJŠÍ BUDOUCNOST
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52911265 - CEMEX POSILUJE SVÉ AKTIVITY V NĚMECKU
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52911280 - CEMEX DODAVATELEM NOVÉHO RESORTU  - STAVBA NEJVYŠŠÍ BUDOVY V CENTRU LAS VEGAS
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52968746 - CEMEX POSILUJE KAPITÁLOVOU STRUKTURU PRODEJEM  5,125% PODŘÍZENÝCH DLUHOPISŮ V HODNOTĚ 1,0 MILIARDY AMERICKÝCH DOLARŮ
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53056054 - SPOLEČNOST CEMEX 24. ČERVNA 2021 AKTUALIZOVALA INFORMACE O OBCHODNÍ, FINANČNÍ A KLIMATICKÉ STRATEGII
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53076489 - CEMEX představuje novou generaci přísad Vertua® pro udržitelnou urbanizaci
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53076467 - CEMEX zavádí novou řadu betonů – Vertua®, která je šetrná k životnímu prostředí
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52999333 - CEMEX JE SOUČÁSTÍ PRŮKOPNICKÉHO KONSORCIA PRO VÝROBU ELEKTRICKÉ ENERGIE S POUŽITÍM SUPERKRITICKÉHO CO2
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53307258 - CEMEX DOSAHUJE INVESTIČNÍ KAPITÁLOVÉ STRUKTURY A URYCHLUJE RŮSTOVOU STRATEGII
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53321914 - SPOLEČNOST CEMEX SE ZAVAZUJE, ŽE SE STANE LÍDREM V OBLASTI OCHRANY KLIMATU
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53321939 - CEMEX DOKONČUJE PRODEJ SVÉ TOVÁRNY NA BÍLÝ CEMENT V BUÑOL A ČÁSTI SVÉHO PODNIKÁNÍ V OBLASTI BÍLÉHO CEMENTU
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53353580 - CEMEX SE PŘIPOJUJE KE DVĚMA PŘEDNÍM SVĚTOVÝM INICIATIVÁM  S CÍLEM DOSÁHNOUT UHLÍKOVÉ NEUTRALITY
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53361953 - CEMEX VENTURES INVESTUJE DO TECHNOLOGIE BUDOUCNOSTI - ZACHYCOVANI UHLIKU
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53523717 - CEMEX-SE-PODILI-NA VYSTAVBE-NEJVETSIHO-AKVARIA-V-LATINSKE-AMERICE
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53580227 - CEMEX POSILUJE VEDOUCÍ POSTAVENÍ V OBLASTI EKOLOGICKÉHO FINANCOVÁNÍ
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53947876 - SPOLEČNOST CEMEX CHCE VYTVOŘIT PRVNÍ VOZOVÝ PARK S NULOVÝMI EMISEMI
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 53947933 - CEMEX POSKYTNE AKTUÁLNÍ INFORMACE O REGIONÁLNÍCH PODNICÍCH  A STRATEGII V OBLASTI KLIMATU NA „CEMEX DAY“ 7. ŘÍJNA 2021
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 54333058 - AMBICIÓZNÍ KLIMATICKÉ CÍLE SPOLEČNOSTI CEMEX DO ROKU 2030 POTVRZENY V SOULADU S NEJNOVĚJŠÍMI VĚDECKÝMI POZNATKY
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 54387795 - SPOLEČNOST CEMEX DODÁVÁ BETON VERTUA S NIŽŠÍM OBSAHEM UHLÍKU  PRO UDRŽITELNOU VÝSTAVBU V POLSKU
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 54404112 - CEMEX VENTURES A TARONGA VENTURES INVESTUJÍ  DO STARTUPU, KTERÝ CHCE ZMÍRNIT PROBLÉMY GLOBÁLNÍ LOGISTIKY
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 54404159 - CEMEX INVESTUJE DO PRŮKOPNICKÉ SOLÁRNÍ TECHNOLOGIE
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 54404314 - CEMEX JE ZAKLÁDAJÍCÍM ČLENEM KOALICE "FIRST MOVERS COALITION" SVĚTOVÉHO EKONOMICKÉHO FÓRA, KTERÁ PODPORUJE POPTÁVKU PO BEZUHLÍKOVÝCH TECHNOLOGIÍCH
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 52523512 - Fotosoutez-pravidla-2021
+   🏷️  Categories: Novinky
+
+📄 55078423 - Organizace CDP udělila společnosti CEMEX  NEJVYŠŠÍ OHODNOCENÍ ZA VEDENÍ V KLIMATICKÝCH AKTIVITÁCH
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 56013431 - CEMEX INVESTUJE DO PRŮLOMOVÉ VODÍKOVÉ TECHNOLOGIE
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 55385968 - SPOLEČNOST CEMEX A CARBON8 SYSTEMS JSOU PARTNERY PŘI VÝVOJI NÍZKOUHLÍKOVÝCH STAVEBNÍCH VÝROBKŮ
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 55395913 - S NOVOU TECHNOLOGIÍ 3D TISKU BUDUJÍ SPOLEČNOSTI CEMEX A COBOD LEPŠÍ BUDOUCNOST
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 55473341 - SPOLEČNOST CEMEX SE PŘIPOJUJE K PRACOVNÍ SKUPINĚ FINANČNÍCH ŘEDITELŮ NA PODPORU CÍLŮ UDRŽITELNOSTI OSN
+   🏷️  Categories: Tiskové zprávy, 2021
+
+📄 56150756 - ODVÁŽNÝ KROK SPOLEČNOSTI CEMEX V OBLASTI DIGITÁLNÍCH INOVACÍ VYTVÁŘÍ JEDINEČNOU KONKURENČNÍ VÝHODU
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 56116481 - SPOLEČNOSTI CEMEX A SYNHELION DOSÁHLY PRŮLOMU VE VÝROBĚ CEMENTU POMOCÍ SOLÁRNÍ ENERGIE
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 56406268 - spolecnost-cemex-byla-uznana-za-globalniho-lidra-v-usili-o-snizovani-emisi-uhliku
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 55902622 - CEMEX INVESTUJE DO CIRKULÁRNÍ EKONOMIKY V MEXIKU
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 57731497 - CEMEX-premeni-CO2-na-udrzitelne-letecke-palivo
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 56609311 - Förderpreis-Beton-Central-Europe-Award-2022
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 56556235 - SPOLEČNOST CEMEX OZNAMUJE VÝZNAMNÉ ZMĚNY V ŘÍZENÍ SPOLEČNOSTI
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 46987857 - Tisková zpráva - CEMEX oznámil prodej svých aktiv v Bangladéši a Thajsku
+   🏷️  Categories: Tiskové zprávy, 2016
+
+📄 59274894 - CEMEX INVESTUJE DO TECHNOLOGIE, KTERÁ SNIŽUJE EMISE UHLÍKU CEMENTU AŽ O 30 %
+   🏷️  Categories: Tiskové zprávy, 2022
+
+📄 61999006 - Test 1
+   🏷️  Categories: Tiskové zprávy, 2022
+
+
+✅ Category analysis completed!
+============================================================

@@ -1,0 +1,17 @@
+🚀 Starting export for: United Kingdom
+📊 Loading structure fields...
+📋 Loaded 6 structure fields
+📄 Fetching articles...
+✨ Found 1307 articles to process
+📦 Created final JSON with 1307 articles
+📤 Uploading to Documents and Media...
+✅ File uploaded successfully!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 File ID: 108518839
+📄 File Name: web_content_export_United_Kingdom_20250617_143100.json
+🔗 Liferay Portal Path: UK >> Documents and Media >> Home >> Press Release Import
+📂 Folder ID: 108282896
+🔗 Download URL: /documents/45807659/108282896/web_content_export_United_Kingdom_20250617_143100.json
+📅 Created: Tue Jun 17 14:31:00 GMT 2025
+📋 Articles Exported: 1307
+🌍 Country: United Kingdom

@@ -1,0 +1,17 @@
+🚀 Starting export for: United Kingdom
+📊 Loading structure fields...
+📋 Loaded 6 structure fields
+📄 Fetching articles...
+✨ Found 1185 articles to process
+📦 Created final JSON with 1185 articles
+📤 Uploading to Documents and Media...
+✅ File uploaded successfully!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 File ID: 61973712
+📄 File Name: press_release_content_export_United_Kingdom_20250613_102424.json
+🔗 Liferay Portal Path: UK >> Documents and Media >> Home >> Press Release Import
+📂 Folder ID: 61973592
+🔗 Download URL: https://liferayqa.cemex.com/documents/45807659/61973592/press_release_content_export_United_Kingdom_20250613_102424.json
+📅 Created: Fri Jun 13 10:24:24 GMT 2025
+📋 Articles Exported: 1185
+🌍 Country: United Kingdom
