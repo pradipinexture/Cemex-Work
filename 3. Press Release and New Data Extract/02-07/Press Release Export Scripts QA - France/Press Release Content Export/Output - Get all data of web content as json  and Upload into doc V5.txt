@@ -1,0 +1,18 @@
+🚀 Starting export for: France
+📊 Loading structure fields...
+📋 Loaded 7 structure fields
+📄 Fetching articles...
+✨ Found 353 articles to process
+📦 Created final JSON with 353 articles
+📤 Uploading to Documents and Media...
+✅ File uploaded successfully!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 File ID: 62017214
+📄 File Name: web_content_export_France_20250702_142640.json
+🔗 Liferay Portal Path: UK >> Documents and Media >> Home >> Press Release Import
+📂 Folder ID: 62017051
+🔗 Download URL: /documents/51489845/62017051/web_content_export_France_20250702_142640.json
+📅 Created: Wed Jul 02 14:26:40 GMT 2025
+📋 Articles Exported: 353
+🌍 Country: France
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

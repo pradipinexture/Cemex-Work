@@ -1,0 +1,18 @@
+🏷️  Analyzing tags for: Czech
+📊 Group ID: 46856796
+🏗️  Structure Key: 169349
+============================================================
+📄 Found 146 articles to analyze
+
+🏷️  TAG ANALYSIS RESULTS
+============================================================
+📈 Total Articles Analyzed: 146
+✅ Articles with Tags: 0
+❌ Articles without Tags: 146
+🏷️  Total Unique Tags Found: 0
+
+⚠️  NO TAGS FOUND
+All articles are untagged or have no asset entries.
+
+✅ Tag analysis completed!
+============================================================

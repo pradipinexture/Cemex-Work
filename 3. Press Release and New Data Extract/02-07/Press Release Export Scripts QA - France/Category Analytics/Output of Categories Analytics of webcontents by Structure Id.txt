@@ -1,0 +1,1088 @@
+🔍 Analyzing categories for: France
+📊 Group ID: 51489845
+🏗️  Structure Key: 49393081
+============================================================
+📄 Found 353 articles to analyze
+
+📊 CATEGORY ANALYSIS RESULTS
+============================================================
+📈 Total Articles Analyzed: 353
+✅ Articles with Categories: 353
+❌ Articles without Categories: 0
+🏷️  Total Unique Categories Found: 8
+
+🔥 CATEGORY USAGE STATISTICS
+============================================================
+Press Release                  | 353 articles
+MEDIA-PressReleases            | 353 articles
+2021                           |  76 articles
+2020                           |  70 articles
+2018                           |  63 articles
+2017                           |  61 articles
+2019                           |  55 articles
+2022                           |  28 articles
+
+📋 DETAILED ARTICLE-CATEGORY MAPPING
+============================================================
+📄 55153004 - Avec la nouvelle technologie d'impression 3D, CEMEX et COBOD construisent un avenir meilleur
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 58148408 - CEMEX développe le lien entre la rémunération des cadres et l'action climatique
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57400018 - CEMEX annonce une étape importante dans son projet de captage du carbone
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57861763 - CEMEX augmente sa capacité en République dominicaine avec la réouverture d'une ligne de production
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57230443 - CEMEX affiche des résultats record en matière d'exploitation et d'action climatique en 2021
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 56589069 - CEMEX annonce des changements importants en matière de gouvernance d'entreprise
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 58211991 - CEMEX augmente ses investissements dans la technologie de capture du carbone du futur
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 56208470 - CEMEX enregistre la plus forte croissance de l EBITDA depuis dix ans  et realise de grands progres dans le domaine de l action pour le climat
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 58264869 - CEMEX et Coolbrook electrifient le processus de production du ciment
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57932686 - CEMEX enregistre une croissance à deux chiffres de ses ventes et une augmentation de l'EBITDA
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57475218 - CEMEX et 3M s'associent pour créer un avenir meilleur
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 56356620 - CEMEX est reconnu par CDP comme un leader mondial en matière de réduction des émissions de carbone dans la chaîne d'approvisionnement
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 58684059 - CEMEX et Enel Green Power sassocient au Guatemala pour construire un avenir plus durable
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 58684016 - CEMEX et ses partenaires inaugurent lAlliance pour la neutralite carbone  a la cimenterie de Rudersdorf
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 56043116 - CEMEX et Synhelion font une percée dans la production de ciment grâce à l'énergie solaire
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 55855487 - CEMEX investit dans l'économie circulaire au Mexique
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57773170 - CEMEX investit dans une technologie permettant de réduire les émissions de carbone dans le ciment jusqu'à 30 %
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 55992232 - CEMEX investit dans la technologie révolutionnaire de l'hydrogène propre
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 58147064 - CEMEX investit dans une technologie de surveillance automatisée du béton
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57861725 - CEMEX réussit à transformer le CO2 en nanomatériaux de carbone
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 55219829 - CEMEX rejoint le groupe de travail dédié aux directeurs financiers CFO taskforce
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 56660910 - CEMEX investit dans une solution de livraison digitale à la demande
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57773131 - CEMEX va transformer le CO2 en carburant durable pour l'aviation
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 56746748 - CEMEX utilise ses capacités de production mexicaines pour répondre aux besoins des marchés américains.
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 55434558 - CEMEX va céder ses activités au Costa Rica et au Salvador
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 56356655 - CEMEX va intégrer des camions-malaxeurs électriques à émissions nulles
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 58572557 - CEMEX utilisera exclusivement des carburants alternatifs dans lune de ses cimenteries au Royaume-Uni
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 54294849 - CEMEX fournit du béton bas carbone Vertua® pour un bâtiment durable en Pologne
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54635374 - Florence Boutmy, nommée directrice générale Matériaux Nord  de CEMEX France
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54294883 - CEMEX Ventures et Taronga Ventures investissent dans une startup visant à relever les défis de la logistique mondiale
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54742164 - CEMEX s'associe à CASE Construction Equipment pour intégrer des véhicules  à faible émission de carbone dans sa flotte européenne
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54789553 - Paris : CEMEX inaugure Le Pavillon by CEMEX,  un espace dédié au béton prêt à l’emploi et à ses solutions constructives
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54541247 - CEMEX enregistre une forte croissance de son chiffre d'affaires grâce aux volumes et aux prix
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54541280 - CEMEX investit dans une technologie solaire pionnière
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54295023 - CEMEX et la LPO:  18 ans de partenariat ininterrompu en faveur de la biodiversité
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54742229 - Responsabilité élargie des producteurs de produits et matériaux de construction minéraux du bâtiment :  Michel André nommé à la tête du nouvel éco-organisme Ecominéro
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53473402 - CEMEX fournit du béton durable à faible émission de carbone et des services de recyclage pour un projet historique à Paris
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54541422 - CEMEX, membre fondateur de la "First Movers Coalition" du Forum économique mondial
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53652694 - CEMEX s’engage dans la démarche FRET21  et renforce le critère carbone dans sa stratégie logistique
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53632953 - CEMEX renforce sa présence au Guatemala
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 55110876 - CEMEX et Carbon8 Systems s'associent pour développer  des produits de construction à faible émission de carbone
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54883880 - Label RSE UNICEM Entreprises Engagées :  CEMEX renforce son exemplarité pour ses activités bétons et granulats
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54876161 - CDP attribue à CEMEX la note la plus élevée pour son leadership en matière d'action climatique
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53652742 - CEMEX, partenaire de l’Odyssée
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53078797 - CEMEX obtient une structure de capital de qualité d’investissement et accélère sa stratégie de croissance.
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53078757 - CEMEX s’engage à être à la pointe de l’industrie en matière d’action pour le climat
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53327417 - CEMEX, partie prenante du parcours d’art urbain Street Art Avenue®
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53140283 - CEMEX présente sa gamme d'adjuvants nouvelle génération  pour une urbanisation durable
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53473336 - CEMEX renforce sa présence en Jamaïque
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53327447 - CEMEX annonce une augmentation de 39% de son EBITDA au deuxième trimestre et dépasse l’objectif de désendettement de moins de 3 fois.
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53626586 - CEMEX participe à la construction du plus grand aquarium d'Amérique latine
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53473325 - CEMEX Ventures investit dans la technologie de capture du carbone du futur
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53473297 - CEMEX s'associe à deux initiatives de premier plan au niveau mondial pour atteindre la neutralité carbone
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53884368 - CEMEX signe la nouvelle édition de la Charte d’Amélioration des Ports (CAP)  et réaffirme son engagement pour une intégration environnementale optimale
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54039445 - Les objectifs climatiques ambitieux de CEMEX à l'horizon 2030  validés pour être conformes aux dernières avancées scientifiques
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53183192 - CEMEX conclut la cession de sa cimenterie de Buñol et d'une partie de ses activités liées au ciment blanc
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53626649 - CEMEX vise à créer la première flotte à zéro émission
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 54086801 - CEMEX renforce sa présence dans les principales zones métropolitaines en Espagne
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53140456 - Gennevilliers (Hauts-de-Seine) :  CEMEX investit en faveur de la construction durable
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 53626620 - CEMEX renforce son leadership en matière de financement vert en présentant son cadre de financement lié au développement durable
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51535939 - CEMEX Ventures lance le concours Startups Construction 2018
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536218 - CEMEX et Eagle finalisent la vente de l'usine de ciment de Fairborn, aux États-Unis
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536344 - Partenariat CEMEX / LPO : des actions concrètes en faveur de la biodiversité
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535984 - CEMEX fournit du ciment pour alimenter le boom de la construction au Monténégro
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51974229 - Avec la Ville de Paris et CEMEX, les feuilles mortes montent sur Seine !
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536209 - CEMEX et GCC annoncent le prix de leur participation de 15,6 % dans Grupo Cementos de Chihuahua
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51533116 - CEMEX lance un appel à participation au Building Award 2020
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536690 - Le Prix CEMEX de la construction récompense les meilleurs projets d’architecture et de construction dans 17 pays
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51713667 - Le CEMEX signe les Principes d'autonomisation des femmes de l'ONU
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52281071 - CEMEX à la pointe de l'action climatique  grâce à sa transition vers des sources d'énergie plus durables
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51720531 - CEMEX expérimente la logistique urbaine fluviale - Un premier test grandeur nature validé
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52486607 - CEMEX lance un appel à candidatures pour la bourse Marcelo Zambrano
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536398 - CEMEX participera à la pose du revêtement de la plus importante route à la frontière entre le Mexique et les États-Unis
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 52292866 - En 2020, la trésorerie disponible de CLH a atteint 79 millions d’USD  et la dette nette a été réduite de 11%
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51541420 - Le rapport de CEMEX Pologne sur le développement durable remporte un prix dans un grand concours national
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51583742 - L'Opération Résilience ouvre la voie à un avenir meilleur
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52292855 - CEMEX annonce une augmentation de 19% de l'EBITDA au quatrième trimestre  et une croissance de 10% des volumes de ciment
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51535639 - CEMEX Ventures, BCG et Tracxn publient la liste des 50 start-up les plus prometteuses dans l'écosystème du bâtiment en 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536164 - CEMEX France renouvelle ses reconnaissances en matière de responsabilité sociétale
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536407 - CEMEX Ventures investit dans le développement de jumeaux numériques de chantiers via StructionSite
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51541402 - La technologie de CEMEX au service du pont « Puente La Unidad »
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536146 - Entrée de CEMEX Ventures dans la liste des   investisseurs les plus importants dans l'écosystème de la construction
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535948 - CEMEX livre du béton anti-radiations pour un centre de recherches allemand
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535666 - CEMEX présente la 27ème édition de sa série de livres sur la conservation : "Nature's Solutions to Climate Change"
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52481750 - CEMEX annonce un changement d’organisation
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536638 - CEMEX est la première société à obtenir une certification de bilan carbone neutre pour sa flotte en Colombie
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535288 - Prix « CEMEX-TEC Award » : deux nouvelles catégories récompensées pour l’édition 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51533125 - CEMEX annonce ses résultats pour le quatrième trimestre et l’exercice 2019
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536074 - Biodiversité : CEMEX s’engage dans l’initiative Act4nature
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51542008 - CEMEX participe au célèbre projet de « l’Arbre blanc
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583442 - Grâce à son ciment, CEMEX facilite les voyages à l’aéroport d’Atlanta, le plus fréquenté au monde
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51583881 - Bétons bas carbone : CEMEX poursuit ses innovations Signature d’un partenariat avec Hoffmann Green Cement Technologies
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541370 - Journée santé-sécurité 2018 - CEMEX revient aux fondamentaux
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536038 - 10 000 clients adoptent CEMEX Go
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536506 - CEMEX célèbre 25 ans de croissance mondiale
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536254 - Innovation : CEMEX France intègre des fibres 100% recyclables dans ses bétons fibrés
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536416 - CEMEX fournit du béton pour la plus grande opération immobilière de Coral Gables, en Floride
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535315 - Fitch Ratings révise la notation de CEMEX à la hausse
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52924752 - BP et CEMEX s'associent pour atteindre le zéro émission nette
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51535522 - CEMEX ajoute à son long palmarès le plus grand pont jamais construit à Los Angeles
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51541482 - CEMEX fournit du béton cryogénique pour une centrale au gaz naturel liquéfié
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51533206 - CEMEX suspend le Building Award 2020
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535594 - Le “revêtement eau et lumière” primé pour son caractère innovant
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52648602 - CEMEX rejoint OpenBuilt pour accélérer la transformation digitale de l’industrie de la construction
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536227 - CEMEX annonce un appel d'offres pour des obligations portant intérêts à 7,25 % / 6,50 % et 9,37 %.
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51583892 - CEMEX prend les devants dans la finance "verte" et étend avec succès son accord de facilité de crédit
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51996263 - CEMEX Ventures lance les 50 startups les plus prometteuses  de l'écosystème 2020 de la construction et des villes du futur
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536699 - 2 récompenses pour la médiathèque de Vitrolles (13) aux CEMEX Building Awards 2017
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535270 - CEMEX reconstruit l’aéroport de Jamaïque
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52122536 - CEMEX présente sa gamme ISOFINES séries 5000 pour assécher simplement et durablement les déblais de construction
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 52993162 - Plateforme Impact : CEMEX, parmi les 100 premières entreprises signataires, confirme son engagement en tant qu’entreprise responsable
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 52135792 - CEMEX Ventures encourage la redéfinition de la conception et de la construction des maisons  grâce à son investissement dans Modulous
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536047 - Logement durable : CEMEX France s’associe à ICF Performance pour le déploiement de sa solution THERMOFORM®
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536263 - CEMEX lance CEMEX Ventures
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536515 - CEMEX participe à un projet européen favorisant l'efficacité industrielle
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536708 - CEMEX fournit du béton pour la reconstruction du plus grand lieu de spectacle en plein air de Riga
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51541948 - CEMEX utilise sa technologie de polissage du béton par powerfloating pour la première fois au Royaume-Uni
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 52656218 - Le concours Startups de la construction 2021 lance un appel aux entrepreneurs qui bâtissent les nouvelles légendes de la construction
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 52310222 - CEMEX lance un appel à participation au CEMEX Building Award 2021
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 52299328 - CEMEX est leader dans les énergies propres, notamment dans les énergies renouvelables
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51541505 - CEMEX participe à la restauration d'un monument historique en Allemagne, le pont Auguste
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51541304 - CEMEX participe au nouveau stade de baseball emblématique du Mexique
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52995922 - CEMEX rejoint un consortium d’avant-garde pour produire de l’électricité en utilisant la technologie du CO2 supercritique
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51535504 - CEMEX fournit du béton pour la rénovation du Túnel de la Risa à Madrid, en Espagne
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51541905 - La plateforme digitale CEMEX Go célèbre ses 1 an en France
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535351 - Jour de la Terre 2019 : CEMEX sensibilise les écoliers pour donner une seconde vie aux déchets
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51533215 - Communique de presse - 16 avril 2020
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52313341 - CEMEX Colombie est autorisé à augmenter sa capacité de production
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 52012057 - CEMEX annonce l’augmentation de sa participation dans CLH
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536362 - Cemex annonce la cession de son activité Matériaux Nord-ouest Pacifique aux États-Unis
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 52310232 - CEMEX se développe sur les marchés du Texas du Sud grâce à une nouvelle acquisition
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51533134 - Le prix CEMEX-Tec lance un appel mondial et célèbre son 10éme anniversaire
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535648 - CEMEX fournit du béton pour le nouvel hôtel Guitare à Hollywood, en Floride
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535396 - CEMEX Ventures investit dans Energy Vault pour soutenir le déploiement rapide d'une technologie de stockage d'énergie à l'aide de blocs de béton
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536083 - CEMEX participe à la construction de la New School of Art du Museum District de Houston
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 53011753 - Le béton Vertua® zéro carbone conquiert le monde
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51535993 - Loire : CEMEX participe à la réhabilitation d'un ancien site industriel
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583325 - CEMEX poursuit son ambition de fournir des bétons zéro carbone
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536425 - Journée Internationale des Monuments et des Sites : 3 questions à Lucia Alarcon Ruiz
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535468 - CEMEX récompensera des projets de niveau international
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52486627 - CEMEX crée une « alliance neutre en carbone » en Allemagne
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51541914 - CEMEX offre une solution particulièrement souple pour le centre de R&D d'un constructeur automobile allemand
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535540 - CEMEX Ventures figure dans la liste des investisseurs les plus importants dans l'écosystème de la construction pour la deuxième année consécutive
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51583452 - CEMEX participe au deuxième plus grand bâtiment de stockage de véhicules au monde
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535957 - CEMEX fournit du béton pour le nouveau «poumon» de Mexico City
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536272 - CEMEX Go déployé en France avec succès
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535657 - CEMEX, partie prenante du projet d’immeuble en béton bleu « Trait d’Union », triplement récompensé
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535279 - CEMEX Ventures lance l’édition 2019 de son concours Construction Startup Competition sous la devise « Apply. Grow. Make Your Mark.
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535966 - Le rapport de CEMEX Pologne sur le développement durable remporte le Prix du meilleur rapport d'Europe centrale décerné par Deloitte
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51533013 - CEMEX participe à la construction du stade national de base-ball du Nicaragua
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536524 - CEMEX contribue à la 1ère « villa » thérapeutique en France
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51533143 - CEMEX annonce une stratégie ambitieuse pour répondre au changement climatique
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51583753 - CEMEX et Carbon Clean développent une technologie de captage du carbone à faible coût
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535450 - CEMEX Ventures présente les 10 start-ups du bâtiment les plus prometteuses de l'année 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51541992 - Journée mondiale de la biodiversité
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51541630 - Pour BMV, CEMEX est l’entreprise la plus performante en matière de développement durable pour la quatrième année consécutive
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51533242 - Cinq leaders de l’industrie lancent l’édition 2020 de la “Construction Startup Competition”
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536470 - CEMEX obtient un nouveau prêt bancaire de 4,05 milliards d'USD
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535603 - CEMEX Ventures ouvre la voie à l'entrée sur le marché chinois
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52208017 - CEMEX annonce la vente de certains actifs en Rhône-Alpes (France)
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536299 - Le WBCSD salue la déclaration de valeur nette pour la société CEMEX
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535576 - CEMEX participe à un programme de sécurité routière dirigé par le maire de Londres
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51541923 - CEMEX fournit des éléments de construction pour le nouveau Chase Center de San Francisco
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535903 - Le Wildlife Habitat Council accorde sa plus haute certification à CEMEX en République dominicaine
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51533323 - CEMEX contribue à neutraliser le bilan carbone des bâtiments grâce à sa nouvelle offre de bétons Vertua®
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536533 - CEMEX annonce le lancement d'une offre d'achat de toutes les obligations de CEMEX Finance LLC
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536137 - CEMEX présente les finalistes internationaux de l'édition 2018 des Prix CEMEX de la construction
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536056 - Grand Paris Express : CEMEX propose un nouveau revêtement innovant à l’Haÿ-les-Roses
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 52156307 - CEMEX contribue à la prévention de la pollution  dans le cadre du plus grand projet de traitement des eaux usées au Royaume-Uni
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51648033 - CEMEX rejoint l’association ORÉE
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535405 - CEMEX, l'entreprise qui détient le plus de certifications du WHC en matière de conservation environnementale au Mexique
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51541655 - CEMEX fournit du béton pour les routes les plus fréquentées du Parc National du Grand Canyon
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583764 - FORTUNE reconnaît à nouveau CEMEX comme une entreprise qui change le monde
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51533251 - CEMEX annonce des changements organisationnels
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535912 - Des usines CEMEX sont les premières à recevoir la Certification du Concrete Sustainability Council aux États-Unis
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51533088 - CEMEX participe à la construction d'un centre commercial de nouvelle génération au Mexique
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51533003 - CEMEX participe à la construction d'un barrage dans le nord-ouest du Mexique
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52349369 - CEMEX déploie avec succès une technologie révolutionnaire basée sur l'hydrogène
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51583335 - CEMEX lance le premier béton neutre en carbone
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51533296 - Communique de presse - 22 juin 2020
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541279 - CEMEX crée un béton spécifique pour la Cité des Archives du Mexique
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51533224 - CEMEX met en œuvre 50 nouveaux protocoles d'hygiène et de sécurité pour lutter contre le COVID-19
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51583345 - CEMEX, bon élève à la Toulouse School of Economics
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535549 - CEMEX adopte la plateforme cloud d’intelligence visuelle delair.ai pour digitaliser ses carrières
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535224 - CEMEX adhère à All4YOUth pour renforcer l'employabilité des jeunes
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536647 - CEMEX participe à un projet de macro-infrastructure en Colombie
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535477 - CEMEX participe à un projet de reconstruction à Porto Rico
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536434 - CEMEX permet la construction du Musée International du Baroque
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536353 - CEMEX et le syndicat du Bassin Versant de la Reyssouze nouent un partenariat en faveur de la biodiversité
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583774 - CEMEX annonce un objectif de réduction de CO2 d’au moins 55% d’ici 2030 pour ses activités en Europe
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52401409 - CEMEX participe à la Via Baltica, l'un des plus grands projets d'infrastructure en Europe
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51535360 - CEMEX annonce une croissance de 1% de son chiffre d'affaires et une augmentation de 92% de son bénéfice net au cours du premier trimestre de 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535558 - CEMEX annonce ses résultats pour le troisième trimestre 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535459 - CEMEX publie ses résultats du deuxième trimestre 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536173 - CEMEX et GCC annoncent une offre de vente jusqu'à 23 % de leur participation dans Grupo Cementos de Chihuahua
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536128 - Tourisme durable : Les Chantiers de la Haute-Seine au service du projet « Ducasse sur Seine »
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51533260 - CEMEX modifie avec succès son principal accord bancaire
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541429 - CEMEX participe à des projets de macro-infrastructures dans la zone du canal de Suez, en Égypte
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51533170 - CEMEX annonce des changements organisationnels
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52556509 - CEMEX ouvre la voie à un avenir plus durable
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51533269 - Le prix CEMEX-Tec prolonge son appel à candidatures en raison du COVID-19
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51533305 - CEMEX poursuit sa lutte contre le changement climatique
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52181917 - CEMEX fournit des matériaux pour le plus grand aéroport de maintenance d’Europe
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536584 - S&P Global Ratings relève la note de CEMEX pour la deuxième fois en 2017
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51541673 - CEMEX présente le 26ème titre de sa collection d’ouvrages consacrée à la nature et à sa protection : « Îles »
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536479 - Le revenu net de CEMEX augmente de 41 %
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536281 - CEMEX annonce une augmentation de ses ventes de 8% et de son EBITDA de 2% au troisième trimestre 2018
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536092 - CEMEX annonce un bond de 32 % de son revenu net pour le deuxième trimestre
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535921 - CEMEX décidera de ne pas donner suite à sa proposition d'augmentation du capital
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51773689 - Les bétons bas carbone Vertua®  séduisent les maîtres d’ouvrage et maîtres d’œuvre
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535612 - CEMEX annonce la cession d’une cimenterie dans le Kentucky et d’actifs associés aux États-Unis
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535486 - CEMEX figure sur la liste Forbes des entreprises mondiales les mieux cotées en 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51541598 - CEMEX doublement primé pour ses bonnes pratiques en santé-sécurité et sa contribution économique à la société
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51533179 - CEMEX continue de lutter contre le changement climatique et de favoriser l'innovation
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536656 - Le revenu net de CEMEX a augmenté de 72 % au cours des neuf premiers mois de 2017
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51648330 - CEMEX s’apprête à lancer sa gamme de bétons bas carbone Vertua® dans le monde entier
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536065 - CEMEX participe à la restauration de la noria provençale du Moulin de Saint Claude
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583462 - Le projet de construction intelligente de CEMEX et Matter Design récompensé
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541614 - Canicule: et si le béton apportait la fraîcheur?
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51583355 - Les efforts de maîtrise des coûts de CEMEX se traduisent par une augmentation des marges
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541411 - CEMEX participe à la construction de la plus haute tour du Mexique
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535432 - CEMEX-Tec Award double le nombre de projets inscrits en 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535414 - CEMEX renforce son engagement envers les objectifs de développement durable des Nations Unies
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535495 - CEMEX fait partie pour la troisième année consécutive de l'indice Dow Jones Sustainability MILA Pacific Alliance Index
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536236 - CEMEX annonce les résultats du dépôt anticipé pour certaines obligations garanties de premier rang et le règlement anticipé de l'offre publique d'achat
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536593 - CEMEX annonce l'expiration et le règlement de son offre d'achat de toutes les Obligations de CEMEX Finance LLC
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536452 - CEMEX annonce le prix de la souscription d'actions CPO nouvelles
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 52925071 - CEMEX fournit le plus récent complexe hôtelier et plus haut bâtiment du centre-ville de Las Vegas
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51533058 - CDP augmente la notation de CEMEX grâce à sa transparence et ses actions en lien avec le changement climatique
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51583804 - Le développement durable dans l’ADN de CEMEX
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541539 - CEMEX fournit du béton pour l'aquaparc dernier cri d'Universal à Orlando
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536371 - CEMEX entame son programme de rachat d'actions
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536717 - CEMEX annonce l'émission d'obligations garanties de premier rang
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51672787 - CEMEX annonce un EBITDA, une marge d'EBITDA et une trésorerie disponible trimestriels les plus élevés depuis 2016
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535252 - CEMEX contribue à la rénovation d'une promenade emblématique à Veracruz, au Mexique
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51583814 - Réduction des émissions de CO2 de CEMEX pour 2030 : Objectif et feuille de route validés par Carbon Trust
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535233 - Le GTL, nouveau carburant propre des bateaux pousseurs CEMEX
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52743967 - CEMEX annonce une augmentation de 28 % de l'EBITDA au premier trimestre
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536602 - CEMEX vend son intérêt direct restant de Grupo Cementos de Chihuahua
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536290 - CEMEX Ventures lance son premier appel ouvert aux entrepreneurs, aux start‐up et aux innovateurs pour faire évoluer l'écosystème de la construction
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535306 - CEMEX, acteur majeur de la fourniture de matériaux du Grand Paris Express
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535567 - CEMEX remettra le Prix Lorenzo H. Zambrano à Benjamin Romano
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535621 - Les carrières CEMEX d’Auriol et de Buzet-sur-Tarn doublement primées en 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52203007 - CEMEX, leader des matériaux de construction, met en service trois nouvelles unités de production de bétons dans le sud-ouest
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 52221901 - CEMEX renforce sa logistique afin de soutenir ses opérations américaines dans leurs efforts pour remédier à la pénurie de ciment
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536611 - Le bâtiment du terminal du nouvel aéroport international de Mexico fabriqué avec du béton CEMEX
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51541896 - CEMEX est classé « Industry Mover » pour ses efforts en faveur du développement durable
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535378 - Le centre de développement continental s'agrandit avec le béton CEMEX
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51672797 - CEMEX et Carbon Upcycling vont utiliser les nanotechnologies pour produire du béton bas carbone
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51583472 - CEMEX annonce le lauréat de La bourse d’études « Architecte Marcelo Zambrano »
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541523 - CEMEX dépose son rapport annuel sur formulaire 20-F pour l'exercice 2017
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536182 - CEMEX voit sa note relevée par S&P Global Ratings
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536002 - CEMEX récompense ses fournisseurs internationaux
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51533278 - Des entreprises internationales de premier plan lancent Restarting Together
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535975 - CEMEX annonce un EBITDA d’exploitation stable pendant le premier trimestre 2018
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51541932 - CEMEX France sélectionné par la Société du Grand Paris et l’Ademe Île-de-France dans le cadre de l’appel à projets « le Grand Paris des déblais »
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51533233 - CEMEX annonce une croissance de 2% de son chiffre d’affaires, s’élevant à 3,1 milliards d’USD
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51533314 - CEMEX Ventures recyclera le plastique pour produire des bétons et des granulats grâce à son investissement dans Arqlite
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536461 - CEMEX finalise la cession de Pacific Northwest Materials Business aux États-Unis
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51533049 - CEMEX améliore l'employabilité d'environ 45000 jeunes
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535423 - CEMEX annonce la réussite du déploiement de CEMEX Go auprès de ses clients dans le monde entier
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536110 - CEMEX récompensée par le Conseil latino-américain des écoles de gestion
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51541864 - La solution de CEMEX pour redonner vie aux mangroves remporte un prix international du design
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51583830 - CEMEX souhaite utiliser le soleil pour décarboner le ciment
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541880 - CEMEX célèbre le 25ème anniversaire de son engagement en faveur de la protection de la nature
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51541295 - Le prix Cemex-tec 2019 récompense des projets à fortes répercussions dans le domaine du développement durable
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536101 - CEMEX Ventures marque la clôture de son concours « Construction Startup Competition 2018 »
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536191 - CEMEX et Quikrete finalisent la vente de l'activité de fabrication de canalisations en béton renforcé aux États-Unis
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51541646 - CEMEX décerne le prix « Lorenzo H. Zambrano » à Mario Schjetnan
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535243 - Une unité de production de bétons CEMEX au Panama reçoit la Certification du Concrete Sustainability Council
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51583366 - CEMEX clôture le désinvestissement de certains actifs au Royaume-Uni
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51533097 - CDP reconnaît le leadership de CEMEX Latam Holdings en termes de stratégie liée au changement climatique
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535297 - CEMEX rénove la promenade de Mazatlán au Mexique, l'une des plus longues du monde
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535531 - Les Chantiers de la Haute-Seine fêtent leurs 100 ans !
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536726 - CEMEX se distingue en tant qu’employeur responsable en Croatie
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51583482 - CEMEX Admixtures lance une application digitale ultra personnalisée
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51533152 - Le bison américain réintroduit avec succès dans le nord du Mexique
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535333 - CEMEX présente CEMEX Go Developer Center
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536380 - CEMEX continue à œuvrer pour des routes plus sûres pour tous les usagers
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 52226122 - CEMEX s'associe à CARBS - Concrete Kinetics
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51541514 - CEMEX participe à un projet d'usine de traitement des eaux usées en Colombie
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51533287 - CEMEX franchit une étape dans l'approvisionnement de matériaux
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52401695 - CEMEX renforce son engagement en faveur de la biodiversité avec la mise en liberté d'espèces
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536011 - La BMV récompense les efforts de CEMEX en matière de développement durable pour la troisième année consécutive
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 52420143 - CEMEX participe au barrage de Santolea,  l'un des projets hydrauliques les plus importants en Espagne
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51541354 - Marcelo Catalá nommé président de CEMEX France
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536326 - CEMEX maintient ses opérations en Croatie
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535630 - CEMEX annonce son objectif d’étendre ses engagements de volontariat en 2020
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52837489 - Nomination de Johanna Moreau, responsable biodiversité chez CEMEX France, au poste de présidente de l’association ROSELIERE
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51533106 - CEMEX joue un rôle clé dans la réalisation du projet « On Vine » à Los Angeles
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51541438 - CEMEX dote le nouveau bâtiment Foro Boca d'une durabilité maximale
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536629 - CEMEX et CLH sélectionnés pour l'indice FTSE4Good Emerging Amérique latine 2017
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51583851 - Le prix CEMEX-Tec 2020 récompense des projets qui visent à transformer le monde
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535930 - CEMEX crée de la valeur grâce à la transformation numérique: rapport intégré de 2017
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583840 - CEMEX s’engage dans le dispositif « Entreprises Engagées pour la Nature - act4nature France »
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536620 - Journée « Santé-Sécurité CEMEX » 2017: écouter pour se préserver
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51542045 - CEMEX participe au troisième plus grand projet fluvial sur le Nil
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583287 - Normandie : CEMEX teste un nouveau dispositif de caméra 360° sur les camions malaxeurs pour la sécurité des piétons et cyclistes
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51533188 - CEMEX se conforme à toutes les mesures établies par le gouvernement mexicain pour contenir le COVID-19
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536488 - CEMEX dévoile le nom des finalistes internationaux du concours CEMEX Building Award 2017
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51533197 - CEMEX reprend ses opérations au Mexique
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536020 - CEMEX lance le magasin en ligne Construrama
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51541555 - La démarche RSE de CEMEX évaluée au niveau « exemplarité »
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535261 - CEMEX affiche une croissance de son chiffre d’affaires de 6 %, une trésorerie disponible de plus de 900 millions USD
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51974004 - CEMEX lance Vertua® au Mexique, des bétons à faible teneur en carbone ou entièrement décarbonés
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52081702 - LAB experts, la qualité et l’innovation techniques  au service de la construction durable
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536672 - CEMEX met l'avenir à portée de main avec CEMEX Go
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536681 - Les Chantiers de la Haute-Seine, spécialistes de la construction navale depuis 1919, déploient leur nouvelle communication!
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536389 - CEMEX Go remporte un prix allemand réputé
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536497 - Le magazine Fortune voit dans CEMEX une entreprise qui transforme le monde
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51536308 - CEMEX Go atteint les 20 000 clients dans 18 pays dès la première année
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583722 - CEMEX lance CEMEX CIRCLE, une démarche d’économie circulaire au service de la construction durable
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51974014 - CEMEX Ventures investit dans Soil Connect  pour digitaliser la gestion des matériaux d'excavation et réduire la mise en remblai des déchets
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51536119 - Le prix CEMEX-Tec récompense l'impact social des entrepreneurs
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 52614644 - CEMEX USA participe à la construction du plus long périphérique autoroutier des États-Unis
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51533077 - CEMEX annonce la cession de certains actifs au Royaume-Uni
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 52258477 - CEMEX reçoit une subvention du département américain de l’énergie pour développer une technologie pionnière de captage du carbone
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536317 - CEMEX Ventures et NEINOR Homes signent un accord de collaboration
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536245 - CEMEX organisera sa Journée CEMEX annuelle le 16 mars 2017
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 52426606 - CEMEX annonce son intention de développer ses activités en République dominicaine
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536029 - Musée de l'Hydraviation de Biscarrosse: CEMEX participe à la mise en valeur du mythique hydravion Grumman HU-16 Albatross
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51583861 - COVID-19 : CEMEX apporte son soutien financier et matériel aux communautés locales pour les aider à lutter contre le virus
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535585 - 32 projets internationaux ont participé au CEMEX Building Award 2019
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51583871 - Wildlife Habitat Council attribue à CEMEX le prix Corporate Conservation Leadership 2020
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51583732 - CEMEX investit 280 millions de dollars US pour améliorer la qualité de l'air à travers le monde
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535342 - CEMEX fournit de solides fondations pour un nouveau gratte-ciel à Houston
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51533068 - CEMEX lance sa nouvelle gamme de bétons bas carbone : Vertua©
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535441 - Des leaders donnent des pistes pour optimiser le secteur de la construction
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 52276918 - Nomination d'un cadre de CEMEX  au Conseil du développement durable du Land de Brandebourg en Allemagne
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536200 - CEMEX déclare avoir décuplé son résultat net
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51583303 - Le prix CEMEX-Tec clôture son appel mondial 2020 avec un nombre record de candidatures
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535387 - Le Prix CEMEX-Tec reçoit 600 propositions émanant de plus de 30 pays
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51536155 - CEMEX annonce des changements et des variations dans l'offre publique d'achat de Trinidad Cement Limited
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 52995932 - CEMEX renforce sa structure de capital par la vente d’obligations subordonnées à 5,125% pour un montant de 1 milliard d’USD.
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 52433085 - CEMEX investit 25 millions de dollars pour éliminer progressivement les combustibles fossiles dans la cimenterie de Rugby au Royaume-Uni
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51536335 - 63 projets internationaux ont participé à la 27ème édition des Prix CEMEX de la construction
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51541379 - Du béton CEMEX pour construire la plus haute tour de San Francisco
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 52426635 - CEMEX innove sur sa carrière de Pécy pour économiser  la ressource minérale naturelle
+   🏷️  Categories: Press Release, 2021, MEDIA-PressReleases
+
+📄 51535858 - CEMEX accepte d'augmenter sa participation dans la Lehigh White Cement Company
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51541589 - Communique presse - 12 mars 2018
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51720521 - CEMEX reçoit une subvention du département de l’énergie des États-Unis  pour adopter une technologie innovante de capture du carbone
+   🏷️  Categories: Press Release, 2020, MEDIA-PressReleases
+
+📄 51535513 - CEMEX ambitionne de lancer le premier bateau « zéro émission » dans paris pour 2022
+   🏷️  Categories: Press Release, 2019, MEDIA-PressReleases
+
+📄 51535867 - CEMEX renouvelle son partenariat avec BirdLife International (BirdLife)
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535876 - RSE: CEMEX s’inscrit dans une démarche d’excellence durable et responsable
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535885 - Construrama atteint environ 2 300 magasins en Amérique latine
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51541313 - CEMEX livre du béton pour les travaux du principal canal de navigation intérieure d'Allemagne
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51536443 - CEMEX déclare avoir quasiment décuplé son revenu net au premier trimestre 2017
+   🏷️  Categories: Press Release, 2017, MEDIA-PressReleases
+
+📄 51535849 - CEMEX annonce le plus haut revenu net des dix dernières années
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 51535840 - Lancement mondial du Prix CEMEX-Tec
+   🏷️  Categories: Press Release, 2018, MEDIA-PressReleases
+
+📄 56208282 - L'ambition de CEMEX en matière d'innovation digitale crée un avantage concurrentiel unique
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 56361493 - Préservation de la biodiversité :  CEMEX agit en faveur de la conservation de la vache marine landaise
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 58166988 - Les produits bas carbone Vertua® représenteront la majorité des ventes de ciment et de béton d'ici 2025
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+📄 57086075 - Parc de loisirs de Léry-Poses : coup d’envoi des travaux du futur bassin d’entraînement d’aviron et de canoë-kayak des JO 2024
+   🏷️  Categories: Press Release, 2022, MEDIA-PressReleases
+
+
+✅ Category analysis completed!
+============================================================
