@@ -10,6 +10,13 @@
 	</ul>
 </div>
 
+//Map Serach
+.map-search__filter .accordion .accordion__title strong{
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
 
 ================================================================================================================
 								CSS
@@ -17,6 +24,10 @@
 <style>
 .dataTable-main .action-main #planttype-data.dropdown-menu {
     left: 493px;
+	max-height: 186px;
+	z-index: 1;
+	min-width: 220px;
+	width: 220px;
 }
 .dataTable-main .action-main .planttype-dropdown-toggle {
     
@@ -25,7 +36,7 @@
     justify-content: space-between;
     overflow: hidden;
     border: 1px solid #B0B0B0;
-    width: 240px;
+    width: 220px;
     position: absolute;
     height: 40px;
     top: -10px;
@@ -36,6 +47,7 @@
     font-size: 16px;
     text-align: left;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .dataTable-main .action-main .planttype-dropdown-toggle .caret {
@@ -56,9 +68,18 @@
     justify-content: space-between;
     overflow: hidden;
 }
+	.dataTable-main .action-main #region-data.dropdown-menu{
+	  z-index: 1;
+		max-height: 186px;
+	}
+
 
 	.dropdown-toggle::after{
   margin-left: auto;
+}
+
+.round-btn{
+  margin: 0 0 !important;
 }
 	
 	@media (max-width: 1600px)  {
@@ -68,6 +89,10 @@
   .action-main .action-btn{
      top: 80px;
   }
+  .round-btn{
+  margin: 0 10px !important;
+}
+
 }
 
 @media (max-width: 768px)  {
@@ -111,6 +136,7 @@
 	}
 }
 </style>
+
 
 
 ================================================================================================================
