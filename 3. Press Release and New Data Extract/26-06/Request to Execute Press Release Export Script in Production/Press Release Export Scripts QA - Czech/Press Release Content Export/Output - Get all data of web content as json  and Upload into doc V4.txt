@@ -1,0 +1,18 @@
+🚀 Starting export for: Czech
+📊 Loading structure fields...
+📋 Loaded 8 structure fields
+📄 Fetching articles...
+✨ Found 146 articles to process
+📦 Created final JSON with 146 articles
+📤 Uploading to Documents and Media...
+✅ File uploaded successfully!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 File ID: 62003695
+📄 File Name: web_content_export_Czech_20250626_125833.json
+🔗 Liferay Portal Path: UK >> Documents and Media >> Home >> Press Release Import
+📂 Folder ID: 62003368
+🔗 Download URL: /documents/46856796/62003368/web_content_export_Czech_20250626_125833.json
+📅 Created: Thu Jun 26 12:58:33 GMT 2025
+📋 Articles Exported: 146
+🌍 Country: Czech
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
